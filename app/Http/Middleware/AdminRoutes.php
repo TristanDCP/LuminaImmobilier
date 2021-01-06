@@ -4,7 +4,7 @@ namespace App\Http\Middleware;
 
 use Closure;
 
-class ProtectedAdminRoutes
+class AdminRoutes
 {
    
 
@@ -20,8 +20,8 @@ class ProtectedAdminRoutes
 {
     if (auth()->user()->idRole != 1) {
        return $next($request);
+    } else {
+        return response()->json(['message' => "Vous n'êtes pas autorisé à visualiser cette page."], 401);
     }
-
-    abort(401);
 }
 }

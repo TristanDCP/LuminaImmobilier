@@ -22,17 +22,19 @@ $router->group(['prefix' => 'api/v1/'], function () use ($router) {
 
     // Matches "/api/v1/login
     $router->post('login', 'AuthController@login');
+    
+    $router->group(['middleware' => App\Http\Middleware\AdminRoutes::class], function () use ($router) {
+        
+        // Matches "/api/v1/profile
+        $router->get('profile', 'UserController@profile');
 
-    // Matches "/api/v1/profile
-    $router->get('profile', 'UserController@profile');
-
-    // Matches "/api/v1/users/1 
-    //get one user by id
-    $router->get('users/{idUser}', 'UserController@singleUser');
-
-    $router->group(['middleware' => App\Http\Middleware\ProtectedAdminRoutes::class], function () use ($router) {
         // Matches "/api/v1/users
         $router->get('users', 'UserController@allUsers');
+
+        // Matches "/api/v1/users/1 
+        //get one user by id
+        $router->get('users/{idUser}', 'UserController@singleUser');
+
     });
     
     
