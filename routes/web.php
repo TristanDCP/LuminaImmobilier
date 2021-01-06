@@ -28,9 +28,13 @@ $router->group(['prefix' => 'api/v1/'], function () use ($router) {
 
     // Matches "/api/v1/users/1 
     //get one user by id
-    $router->get('users/{id}', 'UserController@singleUser');
+    $router->get('users/{idUser}', 'UserController@singleUser');
 
-    // Matches "/api/v1/users
-    $router->get('users', 'UserController@allUsers');
+    $router->group(['middleware' => App\Http\Middleware\ProtectedAdminRoutes::class], function () use ($router) {
+        // Matches "/api/v1/users
+        $router->get('users', 'UserController@allUsers');
+    });
+    
+    
  
  });

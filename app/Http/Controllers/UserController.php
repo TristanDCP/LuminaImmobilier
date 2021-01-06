@@ -42,10 +42,10 @@ class UserController extends Controller
      *
      * @return Response
      */
-    public function singleUser($id)
+    public function singleUser($idUser)
     {
         try {
-            $user = User::findOrFail($id);
+            $user = User::findOrFail($idUser);
 
             return response()->json(['user' => $user], 200);
 
