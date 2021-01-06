@@ -18,6 +18,7 @@ class AuthController extends Controller
     {
         //validate incoming request 
         $this->validate($request, [
+            'idUser' => 'required|integer|unique:users',
             'userLastname' => 'required|string',
             'userFirstname' => 'required|string',
             'userEmail' => 'required|email|unique:users',
@@ -31,6 +32,7 @@ class AuthController extends Controller
         try {
            
             $user = new User;
+            $user->idUser = $request->input('idUser');
             $user->userLastname = $request->input('userLastname');
             $user->userFirstname = $request->input('userFirstname');
             $user->userEmail = $request->input('userEmail');
@@ -63,13 +65,14 @@ class AuthController extends Controller
         //validate incoming request 
         $this->validate($request, [
             'userEmail' => 'required|string',
-            'userPassword' => 'required|string',
+            'userPassword' => 'required|string'
         ]);
 
         $email    = $request->input('userEmail');
         $password = $request->input('userPassword');
+        $idUser = $request->input('idUser');
 
-        if(! $token = Auth::attempt(['userEmail'=>$email, 'password' =>$password])) {
+        if(! $token = Auth::attempt(['userEmail'=>$email, 'password' =>$password, 'idUser'=>$idUser])) {
             return response()->json(['message' => 'Failed to login'], 401);
         }
 
