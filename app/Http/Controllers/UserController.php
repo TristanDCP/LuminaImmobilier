@@ -42,6 +42,25 @@ class UserController extends Controller
      *
      * @return Response
      */
+    public function userByRole($idRole)
+    {
+        try {
+            $user = User::findOrFail($idRole);
+
+            return response()->json(['user' => $user], 200);
+
+        } catch (\Exception $e) {
+
+            return response()->json(['message' => 'user not found!'], 404);
+        }
+
+    }
+
+    /**
+     * Get one user.
+     *
+     * @return Response
+     */
     public function singleUser($id)
     {
         try {

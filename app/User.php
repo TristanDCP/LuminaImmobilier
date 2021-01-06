@@ -18,13 +18,14 @@ class User extends Model implements AuthenticatableContract, AuthorizableContrac
     const UPDATED_AT = 'updatedAt';
     const DELETED_AT = 'deletedAt';
 
+    protected $primaryKey = 'idUser';
     /**
      * The attributes that are mass assignable.
      *
      * @var array
      */
     protected $fillable = [
-        'userLastname', 'userFirstname', 'userEmail', 'userDob', 'userPhone', 'userAdr',
+        'userLastname', 'userFirstname', 'userEmail', 'userDob', 'userPhone', 'userAdr', 'idRole'
     ];
 
     /**
@@ -33,7 +34,7 @@ class User extends Model implements AuthenticatableContract, AuthorizableContrac
      * @var array
      */
     protected $hidden = [
-        'userPassword', 'idRole',
+        'userPassword'
     ];
 
     /**
@@ -53,7 +54,9 @@ class User extends Model implements AuthenticatableContract, AuthorizableContrac
      */
     public function getJWTCustomClaims()
     {
-        return [];
+        return [
+            'id' => $this->idUser
+        ];
     }
 
     /**

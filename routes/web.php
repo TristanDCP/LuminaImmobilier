@@ -30,7 +30,7 @@ $router->group(['prefix' => 'api/v1/'], function () use ($router) {
     //get one user by id
     $router->get('users/{id}', 'UserController@singleUser');
 
+    $router->get('users/role/{idRole}', 'UserController@userByRole');
     // Matches "/api/v1/users
     $router->get('users', 'UserController@allUsers');
- 
- });
+});
