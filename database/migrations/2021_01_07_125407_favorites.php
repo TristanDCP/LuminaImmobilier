@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateFavorites extends Migration
+class Favorites extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,13 @@ class CreateFavorites extends Migration
      */
     public function up()
     {
+        /*
         Schema::create('favorite', function (Blueprint $table) {
-            $table->bigInteger('idUser', 11);
-            $table->bigInteger('idProperty', 11);
+            $table->bigInteger('idUser');
+            $table->bigInteger('idProperty');
         });
+        */
+        
     }
 
     /**

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateDocument extends Migration
+class Document extends Migration
 {
     /**
      * Run the migrations.
@@ -20,7 +20,8 @@ class CreateDocument extends Migration
             $table->datetime('createdAt');
             $table->datetime('updatedAt')->nullable()->default(NULL);
             $table->datetime('deletedAt')->nullable()->default(NULL);
-            $table->bigInteger('idUser', 11);
+            //$table->softDeletes($column = 'deletedAt', $precision = 0);
+            //$table->bigInteger('idUser');
         });
     }
 

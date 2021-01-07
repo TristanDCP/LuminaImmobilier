@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePieces extends Migration
+class Pieces extends Migration
 {
     /**
      * Run the migrations.
@@ -16,12 +16,12 @@ class CreatePieces extends Migration
         Schema::create('piece', function (Blueprint $table) {
             $table->bigIncrements('idPiece', 11);
             $table->string('pieceName');
-            $table->integer('pieceSurface', 11);
+            $table->integer('pieceSurface');
             $table->string('pieceExposure')->nullable()->default(NULL);
             $table->datetime('createdAt');
             $table->datetime('updatedAt')->nullable()->default(NULL);
             $table->datetime('deletedAt')->nullable()->default(NULL);
-            $table->bigInteger('idProperty', 11);
+            //$table->bigInteger('idProperty');
         });
     }
 

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateAppointment extends Migration
+class Appointment extends Migration
 {
     /**
      * Run the migrations.
@@ -18,11 +18,11 @@ class CreateAppointment extends Migration
             $table->datetime('appointmentDate');
             $table->string('appointmentAgent');
             $table->string('appointmentMotif');
-            $table->integer('appointmentType', 11);
+            $table->integer('appointmentType');
             $table->datetime('createdAt');
             $table->datetime('updatedAt')->nullable()->default(NULL);
             $table->datetime('deletedAt')->nullable()->default(NULL);
-            $table->bigInteger('idUser', 11);
+            //$table->bigInteger('idUser');
         });
     }
 

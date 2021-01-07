@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateUsers extends Migration
+class Users extends Migration
 {
     /**
      * Run the migrations.
@@ -25,8 +25,8 @@ class CreateUsers extends Migration
             $table->datetime('createdAt');
             $table->datetime('updatedAt')->nullable()->default(NULL);
             $table->datetime('deletedAt')->nullable()->default(NULL);
-            $table->integer('idRole', 11);
-            $table->integer('idAgency', 11)->nullable()->default(NULL);
+            //$table->integer('idRole');
+            //$table->integer('idAgency')->nullable()->default(NULL);
         });
     }
 

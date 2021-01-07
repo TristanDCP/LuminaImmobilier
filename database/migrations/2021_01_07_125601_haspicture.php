@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateHaspicture extends Migration
+class Haspicture extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,12 @@ class CreateHaspicture extends Migration
      */
     public function up()
     {
+        /*
         Schema::create('haspicture', function (Blueprint $table) {
-            $table->bigInteger('idPicture', 11);
-            $table->bigInteger('idProperty', 11);
+            $table->bigInteger('idPicture');
+            $table->bigInteger('idProperty');
         });
+        */
     }
 
     /**

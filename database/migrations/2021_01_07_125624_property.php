@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateProperty extends Migration
+class Property extends Migration
 {
     /**
      * Run the migrations.
@@ -15,11 +15,11 @@ class CreateProperty extends Migration
     {
         Schema::create('property', function (Blueprint $table) {
             $table->bigIncrements('idProperty', 11);
-            $table->integer('propertyStatus', 11);
+            $table->integer('propertyStatus');
             $table->datetime('createdAt');
             $table->datetime('updatedAt')->nullable()->default(NULL);
             $table->datetime('deletedAt')->nullable()->default(NULL);
-            $table->bigInteger('idUser', 11)->nullable()->default(NULL);
+            //$table->bigInteger('idUser')->nullable()->default(NULL);
         });
     }
 

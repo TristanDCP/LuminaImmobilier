@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateHasparameter extends Migration
+class Hasparameter extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,12 @@ class CreateHasparameter extends Migration
      */
     public function up()
     {
+        /*
         Schema::create('hasparameter', function (Blueprint $table) {
-            $table->bigInteger('idParameter', 11);
-            $table->bigInteger('idProperty', 11);
+            $table->bigInteger('idParameter');
+            $table->bigInteger('idProperty');
         });
+        */
     }
 
     /**
