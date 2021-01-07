@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Hash;
 
 class UserSeeder extends Seeder
 {
@@ -18,8 +19,9 @@ class UserSeeder extends Seeder
             'userDob'       => '1990-01-01',
             'userPhone'     => '0102030405',
             'userAdr'       => '1 rue de truc',
-            'userPassword'  => 'dflbog',
-            'idRole'        => '1'
+            'userPassword'  => Hash::make('dflbog'),
+            'idRole'        => '1',
+            'idAgency'      => '1'
         ]);
 
         App\User::create([
@@ -29,8 +31,9 @@ class UserSeeder extends Seeder
             'userDob'       => '1990-01-01',
             'userPhone'     => '0102030405',
             'userAdr'       => '1 rue de truc',
-            'userPassword'  => 'dflbog',
-            'idRole'        => '1'
+            'userPassword'  => Hash::make('dflbog'),
+            'idRole'        => '1',
+            'idAgency'      => '1'
         ]);
 
         App\User::create([
@@ -40,8 +43,9 @@ class UserSeeder extends Seeder
             'userDob'       => '1990-01-01',
             'userPhone'     => '0102030405',
             'userAdr'       => '1 rue de truc',
-            'userPassword'  => 'dflbog',
-            'idRole'        => '1'
+            'userPassword'  => Hash::make('dflbog'),
+            'idRole'        => '1',
+            'idAgency'      => '1'
         ]);
 
         App\User::create([
@@ -51,8 +55,9 @@ class UserSeeder extends Seeder
             'userDob'       => '1990-01-01',
             'userPhone'     => '0102030405',
             'userAdr'       => '1 rue de truc',
-            'userPassword'  => 'dflbog',
-            'idRole'        => '2'
+            'userPassword'  => Hash::make('dflbog'),
+            'idRole'        => '2',
+            'idAgency'      => '1'
         ]);
 
         App\User::create([
@@ -62,8 +67,9 @@ class UserSeeder extends Seeder
             'userDob'       => '1990-01-01',
             'userPhone'     => '0102030405',
             'userAdr'       => '1 rue de truc',
-            'userPassword'  => 'dflbog',
-            'idRole'        => '3'
+            'userPassword'  => Hash::make('dflbog'),
+            'idRole'        => '3',
+            'idAgency'      => '1'
         ]);
 
         App\User::create([
@@ -73,8 +79,9 @@ class UserSeeder extends Seeder
             'userDob'       => '1990-01-01',
             'userPhone'     => '0102030405',
             'userAdr'       => '1 rue de truc',
-            'userPassword'  => 'dflbog',
-            'idRole'        => '4'
+            'userPassword'  => Hash::make('dflbog'),
+            'idRole'        => '4',
+            'idAgency'      => '1'
         ]);
         
     }
