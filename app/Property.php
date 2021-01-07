@@ -4,10 +4,10 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Agency extends Model
+class Property extends Model
 {
 
-    protected $table = 'prperty';
+    protected $table = 'property';
     protected $primaryKey = 'idProperty';
 
     const CREATED_AT = 'createdAt';

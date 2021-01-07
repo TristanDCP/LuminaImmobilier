@@ -22,12 +22,13 @@ $router->group(['prefix' => 'api/v1/'], function () use ($router) {
 
     // Matches "/api/v1/login
     $router->post('login', 'AuthController@login');
+
     // get all property
     $router->get('property', 'PropertyController@allProperties');
 
     // get one property by id
     $router->get('property/{idProperty}', 'PropertyController@singleProperty');
-    
+
     $router->group(['middleware' => App\Http\Middleware\AdminRoutes::class], function () use ($router) {
 
         // Matches "/api/v1/profile

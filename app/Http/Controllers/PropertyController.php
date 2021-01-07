@@ -2,50 +2,29 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Support\Facades\Auth;
-use  App\User;
+use App\Property;
 
 class PropertyController extends Controller
 {
     /**
-     * Instantiate a new UserController instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
-
-    /**
-     * Get the authenticated User.
-     *
-     * @return Response
-     */
-    public function profile()
-    {
-        return response()->json(['user' => Auth::user()], 200);
-    }
-
-    /**
-     * Get all User.
+     * Get all Properties.
      *
      * @return Response
      */
     public function allProperties()
     {
-        return response()->json(['property' =>  User::all()], 200);
+        return response()->json(['property' =>  Property::all()], 200);
     }
 
     /**
-     * Get one user.
+     * Get one property.
      *
      * @return Response
      */
     public function singleProperty($idProperty)
     {
         try {
-            $property = User::findOrFail($idProperty);
+            $property = Property::findOrFail($idProperty);
 
             return response()->json(['property' => $property], 200);
         } catch (\Exception $e) {
