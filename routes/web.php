@@ -22,9 +22,9 @@ $router->group(['prefix' => 'api/v1/'], function () use ($router) {
 
     // Matches "/api/v1/login
     $router->post('login', 'AuthController@login');
-    
+
     $router->group(['middleware' => App\Http\Middleware\AdminRoutes::class], function () use ($router) {
-        
+
         // Matches "/api/v1/profile
         $router->get('profile', 'UserController@profile');
 
@@ -32,11 +32,13 @@ $router->group(['prefix' => 'api/v1/'], function () use ($router) {
         $router->get('users', 'UserController@allUsers');
 
         // Matches "/api/v1/users/1 
-        //get one user by id
+        // get one user by id
         $router->get('users/{idUser}', 'UserController@singleUser');
 
+        // get all property
+        $router->get('property', 'PropertyController@allProperties');
+
+        // get one property by id
+        $router->get('property/{idProperty}', 'PropertyController@singleProperty');
     });
-    
-    
- 
- });
+});
