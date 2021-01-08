@@ -19,7 +19,6 @@ class User extends Model implements AuthenticatableContract, AuthorizableContrac
     const DELETED_AT = 'deletedAt';
 
     protected $primaryKey = 'idUser';
-
     /**
      * The attributes that are mass assignable.
      *

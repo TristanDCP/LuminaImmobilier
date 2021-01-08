@@ -4,7 +4,11 @@
 
 namespace Composer\Autoload;
 
+<<<<<<< HEAD
 class ComposerStaticInit77bfc95537e4c7332b466e0f60d0247b
+=======
+class ComposerStaticInitdd47169a2f7247422906bb1105fff798
+>>>>>>> 96ced1934b729786e7793d0ac715624a2fee7564
 {
     public static $files = array (
         'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
@@ -15,6 +19,7 @@ class ComposerStaticInit77bfc95537e4c7332b466e0f60d0247b
         'f598d06aa772fa33d905e87be6398fb1' => __DIR__ . '/..' . '/symfony/polyfill-intl-idn/bootstrap.php',
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         '0d59ee240a4cd96ddbb4ff164fccea4d' => __DIR__ . '/..' . '/symfony/polyfill-php73/bootstrap.php',
+<<<<<<< HEAD
         '8825ede83f2f289127722d4e842cf7e8' => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme/bootstrap.php',
         'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
         'a1105708a18b76903365ca1c4aa61b02' => __DIR__ . '/..' . '/symfony/translation/Resources/functions.php',
@@ -24,6 +29,17 @@ class ComposerStaticInit77bfc95537e4c7332b466e0f60d0247b
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
         '253c157292f75eb38082b5acb06f3f01' => __DIR__ . '/..' . '/nikic/fast-route/src/functions.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
+=======
+        'a1105708a18b76903365ca1c4aa61b02' => __DIR__ . '/..' . '/symfony/translation/Resources/functions.php',
+        '72579e7bd17821bb1321b87411366eae' => __DIR__ . '/..' . '/illuminate/support/helpers.php',
+        '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
+        '538ca81a9a966a6716601ecf48f4eaef' => __DIR__ . '/..' . '/opis/closure/functions.php',
+        'e39a8b23c42d4e1452234d762b03835a' => __DIR__ . '/..' . '/ramsey/uuid/src/functions.php',
+        '8825ede83f2f289127722d4e842cf7e8' => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme/bootstrap.php',
+        '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
+        '253c157292f75eb38082b5acb06f3f01' => __DIR__ . '/..' . '/nikic/fast-route/src/functions.php',
+        'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
+>>>>>>> 96ced1934b729786e7793d0ac715624a2fee7564
         'bee9632da3ca00a99623b9c35d0c4f8b' => __DIR__ . '/..' . '/laravel/lumen-framework/src/helpers.php',
     );
 
@@ -168,8 +184,13 @@ class ComposerStaticInit77bfc95537e4c7332b466e0f60d0247b
         'phpDocumentor\\Reflection\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
+<<<<<<< HEAD
             1 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
             2 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
+=======
+            1 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
+            2 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
+>>>>>>> 96ced1934b729786e7793d0ac715624a2fee7564
         ),
         'Webmozart\\Assert\\' => 
         array (
@@ -480,6 +501,11 @@ class ComposerStaticInit77bfc95537e4c7332b466e0f60d0247b
     );
 
     public static $classMap = array (
+<<<<<<< HEAD
+=======
+        'AgencySeeder' => __DIR__ . '/../..' . '/database/seeds/AgencySeeder.php',
+        'App\\Agency' => __DIR__ . '/../..' . '/app/Agency.php',
+>>>>>>> 96ced1934b729786e7793d0ac715624a2fee7564
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Events\\Event' => __DIR__ . '/../..' . '/app/Events/Event.php',
         'App\\Events\\ExampleEvent' => __DIR__ . '/../..' . '/app/Events/ExampleEvent.php',
@@ -487,7 +513,13 @@ class ComposerStaticInit77bfc95537e4c7332b466e0f60d0247b
         'App\\Http\\Controllers\\AuthController' => __DIR__ . '/../..' . '/app/Http/Controllers/AuthController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\ExampleController' => __DIR__ . '/../..' . '/app/Http/Controllers/ExampleController.php',
+<<<<<<< HEAD
         'App\\Http\\Controllers\\UserController' => __DIR__ . '/../..' . '/app/Http/Controllers/UserController.php',
+=======
+        'App\\Http\\Controllers\\PropertyController' => __DIR__ . '/../..' . '/app/Http/Controllers/PropertyController.php',
+        'App\\Http\\Controllers\\UserController' => __DIR__ . '/../..' . '/app/Http/Controllers/UserController.php',
+        'App\\Http\\Middleware\\AdminRoutes' => __DIR__ . '/../..' . '/app/Http/Middleware/AdminRoutes.php',
+>>>>>>> 96ced1934b729786e7793d0ac715624a2fee7564
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\ExampleMiddleware' => __DIR__ . '/../..' . '/app/Http/Middleware/ExampleMiddleware.php',
         'App\\Jobs\\ExampleJob' => __DIR__ . '/../..' . '/app/Jobs/ExampleJob.php',
@@ -496,6 +528,10 @@ class ComposerStaticInit77bfc95537e4c7332b466e0f60d0247b
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
         'App\\Providers\\EventServiceProvider' => __DIR__ . '/../..' . '/app/Providers/EventServiceProvider.php',
+<<<<<<< HEAD
+=======
+        'App\\Role' => __DIR__ . '/../..' . '/app/Role.php',
+>>>>>>> 96ced1934b729786e7793d0ac715624a2fee7564
         'App\\User' => __DIR__ . '/../..' . '/app/User.php',
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
         'Brick\\Math\\BigDecimal' => __DIR__ . '/..' . '/brick/math/src/BigDecimal.php',
@@ -2724,6 +2760,10 @@ class ComposerStaticInit77bfc95537e4c7332b466e0f60d0247b
         'PhpOption\\None' => __DIR__ . '/..' . '/phpoption/phpoption/src/PhpOption/None.php',
         'PhpOption\\Option' => __DIR__ . '/..' . '/phpoption/phpoption/src/PhpOption/Option.php',
         'PhpOption\\Some' => __DIR__ . '/..' . '/phpoption/phpoption/src/PhpOption/Some.php',
+<<<<<<< HEAD
+=======
+        'PropertySeeder' => __DIR__ . '/../..' . '/database/seeds/PropertySeeder.php',
+>>>>>>> 96ced1934b729786e7793d0ac715624a2fee7564
         'Prophecy\\Argument' => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy/Argument.php',
         'Prophecy\\Argument\\ArgumentsWildcard' => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy/Argument/ArgumentsWildcard.php',
         'Prophecy\\Argument\\Token\\AnyValueToken' => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy/Argument/Token/AnyValueToken.php',
@@ -2970,6 +3010,10 @@ class ComposerStaticInit77bfc95537e4c7332b466e0f60d0247b
         'Ramsey\\Uuid\\UuidInterface' => __DIR__ . '/..' . '/ramsey/uuid/src/UuidInterface.php',
         'Ramsey\\Uuid\\Validator\\GenericValidator' => __DIR__ . '/..' . '/ramsey/uuid/src/Validator/GenericValidator.php',
         'Ramsey\\Uuid\\Validator\\ValidatorInterface' => __DIR__ . '/..' . '/ramsey/uuid/src/Validator/ValidatorInterface.php',
+<<<<<<< HEAD
+=======
+        'RoleSeeder' => __DIR__ . '/../..' . '/database/seeds/RoleSeeder.php',
+>>>>>>> 96ced1934b729786e7793d0ac715624a2fee7564
         'SebastianBergmann\\CodeCoverage\\CodeCoverage' => __DIR__ . '/..' . '/phpunit/php-code-coverage/src/CodeCoverage.php',
         'SebastianBergmann\\CodeCoverage\\CoveredCodeNotExecutedException' => __DIR__ . '/..' . '/phpunit/php-code-coverage/src/Exception/CoveredCodeNotExecutedException.php',
         'SebastianBergmann\\CodeCoverage\\Driver\\Driver' => __DIR__ . '/..' . '/phpunit/php-code-coverage/src/Driver/Driver.php',
@@ -3789,6 +3833,10 @@ class ComposerStaticInit77bfc95537e4c7332b466e0f60d0247b
         'Tymon\\JWTAuth\\Validators\\TokenValidator' => __DIR__ . '/..' . '/tymon/jwt-auth/src/Validators/TokenValidator.php',
         'Tymon\\JWTAuth\\Validators\\Validator' => __DIR__ . '/..' . '/tymon/jwt-auth/src/Validators/Validator.php',
         'UnhandledMatchError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/UnhandledMatchError.php',
+<<<<<<< HEAD
+=======
+        'UserSeeder' => __DIR__ . '/../..' . '/database/seeds/UserSeeder.php',
+>>>>>>> 96ced1934b729786e7793d0ac715624a2fee7564
         'ValueError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/ValueError.php',
         'Webmozart\\Assert\\Assert' => __DIR__ . '/..' . '/webmozart/assert/src/Assert.php',
         'Webmozart\\Assert\\Mixin' => __DIR__ . '/..' . '/webmozart/assert/src/Mixin.php',
@@ -3878,10 +3926,17 @@ class ComposerStaticInit77bfc95537e4c7332b466e0f60d0247b
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
+<<<<<<< HEAD
             $loader->prefixLengthsPsr4 = ComposerStaticInit77bfc95537e4c7332b466e0f60d0247b::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit77bfc95537e4c7332b466e0f60d0247b::$prefixDirsPsr4;
             $loader->prefixesPsr0 = ComposerStaticInit77bfc95537e4c7332b466e0f60d0247b::$prefixesPsr0;
             $loader->classMap = ComposerStaticInit77bfc95537e4c7332b466e0f60d0247b::$classMap;
+=======
+            $loader->prefixLengthsPsr4 = ComposerStaticInitdd47169a2f7247422906bb1105fff798::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitdd47169a2f7247422906bb1105fff798::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInitdd47169a2f7247422906bb1105fff798::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInitdd47169a2f7247422906bb1105fff798::$classMap;
+>>>>>>> 96ced1934b729786e7793d0ac715624a2fee7564
 
         }, null, ClassLoader::class);
     }

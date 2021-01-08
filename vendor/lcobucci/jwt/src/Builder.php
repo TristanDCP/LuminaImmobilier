@@ -437,13 +437,21 @@ class Builder
     {
         $signer = $signer ?: $this->signer;
         $key = $key ?: $this->key;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 96ced1934b729786e7793d0ac715624a2fee7564
         if ($signer instanceof Signer) {
             $signer->modifyHeader($this->headers);
         }
 
         $payload = [
             $this->encoder->base64UrlEncode($this->encoder->jsonEncode($this->headers)),
+<<<<<<< HEAD
             $this->encoder->base64UrlEncode($this->encoder->jsonEncode($this->claims)),
+=======
+            $this->encoder->base64UrlEncode($this->encoder->jsonEncode($this->claims))
+>>>>>>> 96ced1934b729786e7793d0ac715624a2fee7564
         ];
 
         $signature = $this->createSignature($payload, $signer, $key);
