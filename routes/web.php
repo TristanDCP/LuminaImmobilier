@@ -17,28 +17,46 @@ $router->get('/', function () use ($router) {
 
 // API route group
 $router->group(['prefix' => 'api/v1/'], function () use ($router) {
-    // Matches "/api/v1/register
+
+    // Matches "/api/v1/register" - Registering
     $router->post('register', 'AuthController@register');
 
-    // Matches "/api/v1/login
+    // Matches "/api/v1/login" - Login
     $router->post('login', 'AuthController@login');
 
-    // get all property
+    // Matches "/ap/v1/property" - Get all properties
     $router->get('property', 'PropertyController@allProperties');
 
-    // get one property by id
+    // Matches "/api/v1/property/1" - Get one property by id
     $router->get('property/{idProperty}', 'PropertyController@singleProperty');
+
+    // Matches "/ap/v1/agency" - Get all agencies
+    $router->get('agency', 'AgencyController@allAgency');
+
+    // Matches "/api/v1/agency/1" - Get one agency by id
+    $router->get('agency/{idAgency}', 'AgencyController@singleAgency');
+
+    // Matches "/ap/v1/roles" - Get all properties
+    $router->get('roles', 'RoleController@allRoles');
 
     $router->group(['middleware' => App\Http\Middleware\AdminRoutes::class], function () use ($router) {
 
-        // Matches "/api/v1/profile
+        // Matches "/api/v1/profile" - Get profile of User
         $router->get('profile', 'UserController@profile');
 
-        // Matches "/api/v1/users
+        // Matches "/api/v1/users" - Get users list
         $router->get('users', 'UserController@allUsers');
 
-        // Matches "/api/v1/users/1 
-        // get one user by id
+        // Matches "/api/v1/users/1" - Get info on specific user
         $router->get('users/{idUser}', 'UserController@singleUser');
+
+        // Matches "/ap/v1/property/create" - Create a Property
+        $router->post('property/create', 'PropertyController@createProperty');
+
+        // Matches "/ap/v1/role/create" - Create a Role
+        $router->post('role/create', 'RoleController@createRole');
+
+        // Matches "/ap/v1/agency/create" - Create an Agency
+        $router->post('agency/create', 'AgencyController@createAgency');
     });
 });

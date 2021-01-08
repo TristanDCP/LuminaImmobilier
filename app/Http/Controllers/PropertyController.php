@@ -2,10 +2,43 @@
 
 namespace App\Http\Controllers;
 
+
+use Illuminate\Http\Request;
 use App\Property;
 
 class PropertyController extends Controller
 {
+    /**
+     * Store a new property.
+     *
+     * @param  Request  $request
+     * @return Response
+     */
+    public function createProperty(Request $request) {
+         //validate incoming request 
+         $this->validate($request, [
+            'propertyStatus' => 'required|integer', 
+            'idUser' => 'required|integer',
+        ]);
+
+        try {
+           
+            $property = new Property;
+            $property->propertyStatus = $request->input('propertyStatus');
+            $property->idUser = $request->input('idUser');
+
+            $property->save();
+
+            //return successful response
+            return response()->json(['property' => $property, 'message' => 'CREATED'], 201);
+
+        } catch (\Exception $e) {
+            //return error message
+            return response()->json(['message' => 'Property Registration Failed!'], 409);
+        }
+    }
+
+
     /**
      * Get all Properties.
      *
