@@ -36,7 +36,7 @@ $router->group(['prefix' => 'api/v1/'], function () use ($router) {
     // Matches "/api/v1/agency/1" - Get one agency by id
     $router->get('agency/{idAgency}', 'AgencyController@singleAgency');
 
-    // Matches "/ap/v1/roles" - Get all properties
+    // Matches "/ap/v1/roles" - Get all roles
     $router->get('roles', 'RoleController@allRoles');
 
     $router->group(['middleware' => App\Http\Middleware\AdminRoutes::class], function () use ($router) {
