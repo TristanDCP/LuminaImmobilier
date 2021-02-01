@@ -36,6 +36,15 @@ $router->group(['prefix' => 'api/v1/'], function () use ($router) {
     // Matches "/api/v1/agency/1" - Get one agency by id
     $router->get('agency/{idAgency}', 'AgencyController@singleAgency');
 
+    // Matches "/ap/v1/appointments" - Get all appointments
+    $router->get('appointments', 'AppointmentController@allAppointment');
+
+    // Matches "/api/v1/appointment/1" - Get one appointment by id
+    $router->get('appointment/{idAppointment}', 'AppointmentController@singleAppointment');
+
+    // Matches "/ap/v1/appointment/create" - Create an Appointment
+    $router->post('appointment/create', 'AppointmentController@createAppointment');
+
     // Matches "/ap/v1/roles" - Get all properties
     $router->get('roles', 'RoleController@allRoles');
 
