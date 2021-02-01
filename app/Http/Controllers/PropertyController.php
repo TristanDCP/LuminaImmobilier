@@ -62,7 +62,34 @@ class PropertyController extends Controller
             return response()->json(['property' => $property], 200);
         } catch (\Exception $e) {
 
-            return response()->json(['message' => 'user not found!'], 404);
+            return response()->json(['message' => 'Property not found!'], 404);
+        }
+    }
+
+    /**
+     * Remove Property.
+     */
+    public function deleteProperty($idProperty) 
+    {
+        try {
+            Property::findOrFail($idProperty)->delete();
+            return response()->json(['message' => 'Property deleted'], 200);
+
+        } catch (\Exception $e) {
+            return response()->json(['message' => 'Property not found!'], 404);
+        }
+    }
+
+    public function updateProperty($idProperty, Request $request)
+    {
+        try {
+            $property = Property::findOrFail($idProperty);
+            $property->update($request->all());
+
+            return response()->json(['property' => $property], 200);
+        } catch (\Exception $e) {
+            //return response()->json(['message' => 'user not found!'], 404);
+            return $e->getMessage();
         }
     }
 }

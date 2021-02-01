@@ -7,12 +7,13 @@ use Illuminate\Contracts\Auth\Access\Authorizable as AuthorizableContract;
 use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
 use Illuminate\Database\Eloquent\Model;
 use Laravel\Lumen\Auth\Authorizable;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 use Tymon\JWTAuth\Contracts\JWTSubject;
 
 class Agency extends Model implements AuthenticatableContract, AuthorizableContract, JWTSubject
 {
-    use Authenticatable, Authorizable;
+    use Authenticatable, Authorizable, SoftDeletes;
 
     protected $table = 'agency';
     protected $primaryKey = 'idAgency';

@@ -38,7 +38,7 @@ class AgencyController extends Controller
 
         } catch (\Exception $e) {
             //return error message
-            return response()->json(['message' => 'Property Registration Failed!'], 409);
+            return response()->json(['message' => 'Agency Registration Failed!'], 409);
         }
     }
 
@@ -66,7 +66,34 @@ class AgencyController extends Controller
             return response()->json(['agency' => $agency], 200);
         } catch (\Exception $e) {
 
-            return response()->json(['message' => 'user not found!'], 404);
+            return response()->json(['message' => 'Agency not found!'], 404);
+        }
+    }
+
+    /**
+     * Remove Agency.
+     */
+    public function deleteAgency($idAgency) 
+    {
+        try {
+            Agency::findOrFail($idAgency)->delete();
+            return response()->json(['message' => 'Agency deleted'], 200);
+
+        } catch (\Exception $e) {
+            return response()->json(['message' => 'Agency not found!'], 404);
+        }
+    }
+
+    public function updateAgency($idAgency, Request $request)
+    {
+        try {
+            $agency = Agency::findOrFail($idAgency);
+            $agency->update($request->all());
+
+            return response()->json(['agency' => $agency], 200);
+        } catch (\Exception $e) {
+            //return response()->json(['message' => 'user not found!'], 404);
+            return $e->getMessage();
         }
     }
 }

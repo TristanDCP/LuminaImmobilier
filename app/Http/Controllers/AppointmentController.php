@@ -71,4 +71,31 @@ class AppointmentController extends Controller
             return response()->json(['message' => 'Appointment not found!'], 404);
         }
     }
+
+    /**
+     * Remove Appointment.
+     */
+    public function deleteAppointment($idAppointment) 
+    {
+        try {
+            Appointment::findOrFail($idAppointment)->delete();
+            return response()->json(['message' => 'Appointment deleted'], 200);
+
+        } catch (\Exception $e) {
+            return response()->json(['message' => 'Appointment not found!'], 404);
+        }
+    }
+
+    public function updateAppointment($idAppointment, Request $request)
+    {
+        try {
+            $appointment = Appointment::findOrFail($idAppointment);
+            $appointment->update($request->all());
+
+            return response()->json(['appointment' => $appointment], 200);
+        } catch (\Exception $e) {
+            //return response()->json(['message' => 'user not found!'], 404);
+            return $e->getMessage();
+        }
+    }
 }
