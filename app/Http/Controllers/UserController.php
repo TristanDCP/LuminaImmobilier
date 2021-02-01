@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use  App\User;
 
@@ -50,9 +51,35 @@ class UserController extends Controller
             return response()->json(['user' => $user], 200);
 
         } catch (\Exception $e) {
-
             return response()->json(['message' => 'user not found!'], 404);
         }
 
+    }
+
+    /**
+     * Remove User.
+     */
+    public function deleteUser($idUser) 
+    {
+        try {
+            User::findOrFail($idUser)->delete();
+            return response()->json(['message' => 'user deleted'], 200);
+
+        } catch (\Exception $e) {
+            return response()->json(['message' => 'user not found!'], 404);
+        }
+    }
+
+    public function updateUser($idUser, Request $request)
+    {
+        try {
+            $user = User::findOrFail($idUser);
+            $user->update($request->all());
+
+            return response()->json(['user' => $user], 200);
+        } catch (\Exception $e) {
+            //return response()->json(['message' => 'user not found!'], 404);
+            return $e->getMessage();
+        }
     }
 }

@@ -62,8 +62,14 @@ $router->group(['prefix' => 'api/v1/'], function () use ($router) {
         // Matches "/api/v1/users" - Get users list
         $router->get('users', 'UserController@allUsers');
 
-        // Matches "/api/v1/users/1" - Get info on specific user
+        // Matches "/api/v1/user/1" - Get info on specific user
         $router->get('user/{idUser}', 'UserController@singleUser');
+
+        // Matches "/api/v1/user/delete/1" - Delete specific user
+        $router->delete('user/delete/{idUser}', 'UserController@deleteUser');
+
+        // Matches "/api/v1/user/update/1" - Update info on specific user
+        $router->put('user/update/{idUser}', 'UserController@updateUser');
 
         // Matches "/api/v1/property/create" - Create a Property
         $router->post('property/create', 'PropertyController@createProperty');
