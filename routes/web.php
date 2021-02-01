@@ -25,19 +25,25 @@ $router->group(['prefix' => 'api/v1/'], function () use ($router) {
     $router->post('login', 'AuthController@login');
 
     // Matches "/ap/v1/property" - Get all properties
-    $router->get('property', 'PropertyController@allProperties');
+    $router->get('properties', 'PropertyController@allProperties');
 
     // Matches "/api/v1/property/1" - Get one property by id
     $router->get('property/{idProperty}', 'PropertyController@singleProperty');
 
     // Matches "/ap/v1/agency" - Get all agencies
-    $router->get('agency', 'AgencyController@allAgency');
+    $router->get('agencies', 'AgencyController@allAgency');
 
     // Matches "/api/v1/agency/1" - Get one agency by id
     $router->get('agency/{idAgency}', 'AgencyController@singleAgency');
 
-    // Matches "/ap/v1/roles" - Get all properties
+    // Matches "/api/v1/roles" - Get all Roles
     $router->get('roles', 'RoleController@allRoles');
+
+    // Matches "/api/v1/pictures" - Get all Pictures
+    $router->get('pictures', 'PictureController@allPictures');
+
+    // Matches "/api/v1/picture/1" - Get specific Picture
+    $router->get('picture/{idPicture}', 'PictureController@singlePicture');
 
     $router->group(['middleware' => App\Http\Middleware\AdminRoutes::class], function () use ($router) {
 
@@ -48,15 +54,18 @@ $router->group(['prefix' => 'api/v1/'], function () use ($router) {
         $router->get('users', 'UserController@allUsers');
 
         // Matches "/api/v1/users/1" - Get info on specific user
-        $router->get('users/{idUser}', 'UserController@singleUser');
+        $router->get('user/{idUser}', 'UserController@singleUser');
 
-        // Matches "/ap/v1/property/create" - Create a Property
+        // Matches "/api/v1/property/create" - Create a Property
         $router->post('property/create', 'PropertyController@createProperty');
 
-        // Matches "/ap/v1/role/create" - Create a Role
+        // Matches "/api/v1/role/create" - Create a Role
         $router->post('role/create', 'RoleController@createRole');
 
-        // Matches "/ap/v1/agency/create" - Create an Agency
+        // Matches "/api/v1/agency/create" - Create an Agency
         $router->post('agency/create', 'AgencyController@createAgency');
+
+        // Matches "/api/v1/picture/create" - Create a Picture
+        $router->post('picture/create', 'PictureController@createPicture');
     });
 });
