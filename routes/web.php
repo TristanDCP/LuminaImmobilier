@@ -68,9 +68,6 @@ $router->group(['prefix' => 'api/v1/'], function () use ($router) {
         // Matches "/api/v1/user/delete/1" - Delete specific user
         $router->delete('user/delete/{idUser}', 'UserController@deleteUser');
 
-        // Matches "/api/v1/user/update/1" - Update info on specific user
-        $router->put('user/update/{idUser}', 'UserController@updateUser');
-
         // Matches "/api/v1/property/create" - Create a Property
         $router->post('property/create', 'PropertyController@createProperty');
 
@@ -82,5 +79,11 @@ $router->group(['prefix' => 'api/v1/'], function () use ($router) {
 
         // Matches "/api/v1/picture/create" - Create a Picture
         $router->post('picture/create', 'PictureController@createPicture');
+    });
+
+    $router->group(['auth' => App\Http\Middleware\Authenticate::class], function () use ($router) {
+        
+        // Matches "/api/v1/user/update/1" - Update info on specific user
+        $router->put('user/update/{idUser}', 'UserController@updateUser');
     });
 });
