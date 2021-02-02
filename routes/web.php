@@ -42,6 +42,12 @@ $router->group(['prefix' => 'api/v1/'], function () use ($router) {
     // Matches "/api/v1/picture/1" - Get specific Picture
     $router->get('picture/{idPicture}', 'PictureController@singlePicture');
 
+    // Matches "/ap/v1/parameters" - Get all parameters
+    $router->get('parameters', 'ParameterController@allParameters');
+
+    // Matches "/api/v1/parameter/1" - Get one parameter by id
+    $router->get('parameter/{idParameter}', 'ParameterController@singleParameter');
+
     // Group where it need to be admin to use the routes
     $router->group(['middleware' => App\Http\Middleware\AdminRoutes::class], function () use ($router) {
 
@@ -92,6 +98,15 @@ $router->group(['prefix' => 'api/v1/'], function () use ($router) {
 
         // Matches "/api/v1/appointment/1" - Delete a Appointment
         $router->delete('appointment/{idAppointment}', 'AppointmentController@deleteAppointment');
+        
+        // Matches "/api/v1/parameter" - Create a Parameter
+        $router->post('parameter', 'ParameterController@createParameter');
+        
+        // Matches "/api/v1/parameter/1" - Update Info on a parameter
+        $router->put('parameter/{idParameter}', 'ParameterController@updateParameter');
+
+        // Matches "/api/v1/parameter/1" - Delete a parameter
+        $router->delete('parameter/{idParameter}', 'ParameterController@deleteParameter');
     });
 
     // Group where it need to be connected to use the routes
