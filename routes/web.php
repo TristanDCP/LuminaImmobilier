@@ -42,6 +42,12 @@ $router->group(['prefix' => 'api/v1/'], function () use ($router) {
     // Matches "/api/v1/agency/1" - Get one agency by id
     $router->get('agency/{idAgency}', 'AgencyController@singleAgency');
 
+    // Matches "/ap/v1/parameters" - Get all parameters
+    $router->get('parameters', 'ParameterController@allParameters');
+
+    // Matches "/api/v1/parameter/1" - Get one parameter by id
+    $router->get('parameter/{idParameter}', 'ParameterController@singleParameter');
+
 
     // Group where it need to be connected to use the routes
     $router->group(['auth' => App\Http\Middleware\Authenticate::class], function () use ($router) {
@@ -150,7 +156,19 @@ $router->group(['prefix' => 'api/v1/'], function () use ($router) {
                 // Matches "/api/v1/picture/1" - Get specific Picture
                 $router->get('picture/{idPicture}', 'PictureController@singlePicture');
 
+                // Créer un paramètre
+                // Matches "/api/v1/parameter" - Create a Parameter
+                $router->post('parameter', 'ParameterController@createParameter');
+        
+                // Modifier un paramètre
+                // Matches "/api/v1/parameter/1" - Update Info on a parameter
+                $router->put('parameter/{idParameter}', 'ParameterController@updateParameter');
+
+                // Supprimer un paramètre
+                // Matches "/api/v1/parameter/1" - Delete a parameter
+                $router->delete('parameter/{idParameter}', 'ParameterController@deleteParameter');
+            }); 
         });
     });
-});
+
 
