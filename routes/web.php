@@ -54,54 +54,54 @@ $router->group(['prefix' => 'api/v1/'], function () use ($router) {
         // Matches "/api/v1/user/1" - Get info on specific user
         $router->get('user/{idUser}', 'UserController@singleUser');
 
-        // Matches "/api/v1/user/delete/1" - Delete specific user
-        $router->delete('user/delete/{idUser}', 'UserController@deleteUser');
+        // Matches "/api/v1/user/1" - Delete specific user
+        $router->delete('user/{idUser}', 'UserController@deleteUser');
 
-        // Matches "/api/v1/property/create" - Create a Property
-        $router->post('property/create', 'PropertyController@createProperty');
+        // Matches "/api/v1/property" - Create a Property
+        $router->post('property', 'PropertyController@createProperty');
 
-        // Matches "/api/v1/property/update/1" - Update Info on a property
-        $router->put('property/update/{idProperty}', 'PropertyController@updateProperty');
+        // Matches "/api/v1/property/1" - Update Info on a property
+        $router->put('property/{idProperty}', 'PropertyController@updateProperty');
 
-        // Matches "/api/v1/property/delete/1" - Delete a property
-        $router->delete('property/delete/{idProperty}', 'PropertyController@deleteProperty');
+        // Matches "/api/v1/property/1" - Delete a property
+        $router->delete('property/{idProperty}', 'PropertyController@deleteProperty');
 
-        // Matches "/api/v1/role/create" - Create a Role
-        $router->post('role/create', 'RoleController@createRole');
+        // Matches "/api/v1/role" - Create a Role
+        $router->post('role', 'RoleController@createRole');
 
         // Matches "/api/v1/roles" - Get all Roles
         $router->get('roles', 'RoleController@allRoles');
 
-        // Matches "/api/v1/agency/create" - Create an Agency
-        $router->post('agency/create', 'AgencyController@createAgency');
+        // Matches "/api/v1/agency" - Create an Agency
+        $router->post('agency', 'AgencyController@createAgency');
 
-        // Matches "/api/v1/agency/update/1" - Update Info on an agency
-        $router->put('agency/update/{idAgency}', 'AgencyController@updateAgency');
+        // Matches "/api/v1/agency/1" - Update Info on an agency
+        $router->put('agency/{idAgency}', 'AgencyController@updateAgency');
 
-        // Matches "/api/v1/agency/delete/1" - Delete an agency
-        $router->delete('agency/delete/{idAgency}', 'AgencyController@deleteAgency');
+        // Matches "/api/v1/agency/1" - Delete an agency
+        $router->delete('agency/{idAgency}', 'AgencyController@deleteAgency');
 
-        // Matches "/api/v1/picture/create" - Create a Picture
-        $router->post('picture/create', 'PictureController@createPicture');
+        // Matches "/api/v1/picture" - Create a Picture
+        $router->post('picture', 'PictureController@createPicture');
 
         // Matches "/ap/v1/appointments" - Get all appointments
         $router->get('appointments', 'AppointmentController@allAppointment');
 
-        // Matches "/api/v1/appointment/update/1" - Update Info on a Appointment
-        $router->put('appointment/update/{idAppointment}', 'AppointmentController@updateAppointment');
+        // Matches "/api/v1/appointment/1" - Update Info on a Appointment
+        $router->put('appointment/{idAppointment}', 'AppointmentController@updateAppointment');
 
-        // Matches "/api/v1/appointment/delete/1" - Delete a Appointment
-        $router->delete('appointment/delete/{idAppointment}', 'AppointmentController@deleteAppointment');
+        // Matches "/api/v1/appointment/1" - Delete a Appointment
+        $router->delete('appointment/{idAppointment}', 'AppointmentController@deleteAppointment');
     });
 
     // Group where it need to be connected to use the routes
     $router->group(['auth' => App\Http\Middleware\Authenticate::class], function () use ($router) {
 
-        // Matches "/api/v1/user/update/1" - Update info on specific user
-        $router->put('user/update/{idUser}', 'UserController@updateUser');
+        // Matches "/api/v1/user/1" - Update info on specific user
+        $router->put('user/{idUser}', 'UserController@updateUser');
 
         // Matches "/ap/v1/appointment/create" - Create an Appointment
-        $router->post('appointment/create', 'AppointmentController@createAppointment');
+        $router->post('appointment', 'AppointmentController@createAppointment');
 
         // Matches "/api/v1/appointment/1" - Get one appointment by id
         $router->get('appointment/{idAppointment}', 'AppointmentController@singleAppointment');
