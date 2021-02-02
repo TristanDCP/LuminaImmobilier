@@ -9,7 +9,7 @@ use App\Agency;
 class AgencyController extends Controller
 {
     /**
-     * Store a new property.
+     * Store a new agency.
      *
      * @param  Request  $request
      * @return Response
@@ -44,7 +44,7 @@ class AgencyController extends Controller
 
 
     /**
-     * Get all Properties.
+     * Get all Agencies.
      *
      * @return Response
      */
@@ -54,7 +54,7 @@ class AgencyController extends Controller
     }
 
     /**
-     * Get one property.
+     * Get one agency.
      *
      * @return Response
      */
@@ -92,8 +92,7 @@ class AgencyController extends Controller
 
             return response()->json(['agency' => $agency], 200);
         } catch (\Exception $e) {
-            //return response()->json(['message' => 'user not found!'], 404);
-            return $e->getMessage();
+            return response()->json(['message' => 'user not found!'], 404);
         }
     }
 }

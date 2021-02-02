@@ -92,6 +92,9 @@ $router->group(['prefix' => 'api/v1/'], function () use ($router) {
 
         // Matches "/api/v1/appointment/1" - Delete a Appointment
         $router->delete('appointment/{idAppointment}', 'AppointmentController@deleteAppointment');
+
+        
+
     });
 
     // Group where it need to be connected to use the routes
@@ -105,5 +108,22 @@ $router->group(['prefix' => 'api/v1/'], function () use ($router) {
 
         // Matches "/api/v1/appointment/1" - Get one appointment by id
         $router->get('appointment/{idAppointment}', 'AppointmentController@singleAppointment');
+
+        // Matches "/api/v1/document" - Create a document
+        $router->post('document', 'DocumentController@createDocument');
+
+        // Matches "/api/v1/document/1" - Create a document
+        $router->put('document/{idDocument}', 'DocumentController@updateDocument');
+
+        // Matches "/api/v1/document/1" - Create a document
+        $router->delete('document/{idDocument}', 'DocumentController@deleteDocument');
+
+        // Matches "/api/v1/document/1" - Get a single document
+        $router->get('document/{idDocument}', 'DocumentController@singleDocument');
+
+        // Matches "/api/v1/documents" - Get all documents
+        $router->get('documents', 'DocumentController@allDocuments');
+
+        
     });
 });
