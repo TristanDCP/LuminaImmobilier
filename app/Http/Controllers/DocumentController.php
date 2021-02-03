@@ -36,8 +36,7 @@ class DocumentController extends Controller
 
         } catch (\Exception $e) {
             //return error message
-            //return response()->json(['message' => 'Document Registration Failed!'], 409);
-            return $e->getMessage();
+            return response()->json(['message' => 'Document Registration Failed!'], 409);
         }
     }
 

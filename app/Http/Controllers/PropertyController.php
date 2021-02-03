@@ -4,7 +4,11 @@ namespace App\Http\Controllers;
 
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+
 use App\Property;
+use App\hasParameter;
+use App\Parameter;
 
 class PropertyController extends Controller
 {
@@ -58,10 +62,9 @@ class PropertyController extends Controller
     {
         try {
             $property = Property::findOrFail($idProperty);
-
-            return response()->json(['property' => $property], 200);
+            $parameters = $this->getParameters($idProperty);
+            return response()->json(['property' => $property, 'parameters' => $parameters], 200);
         } catch (\Exception $e) {
-
             return response()->json(['message' => 'Property not found!'], 404);
         }
     }
@@ -92,4 +95,18 @@ class PropertyController extends Controller
             return $e->getMessage();
         }
     }
+
+    public function getParameters($idProperty)
+    {
+        $query = DB::table('property')
+            ->join('hasParameter', 'property.idProperty', '=', 'hasParameter.idProperty')
+            ->join('propertyparameters', 'hasParameter.idParameter', '=', 'propertyparameters.idParameter')
+            ->select('propertyparameters.*')
+            ->where('property.idProperty', $idProperty)
+            ->get();
+        
+        return $query;
+
+    }
+
 }

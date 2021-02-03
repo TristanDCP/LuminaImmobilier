@@ -10,12 +10,21 @@ use Laravel\Lumen\Auth\Authorizable;
 
 use Tymon\JWTAuth\Contracts\JWTSubject;
 
-class Parameter extends Model implements AuthenticatableContract, AuthorizableContract, JWTSubject
+class hasParameter extends Model implements AuthenticatableContract, AuthorizableContract, JWTSubject
 {
     use Authenticatable, Authorizable;
 
-    protected $table = 'propertyparameters';
-    protected $primaryKey = 'idParameter';
+    protected $table = 'hasParameter';
+    protected $primaryKey = 'idProperty';
+
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
+    protected $fillable = [
+        'idParameter',
+    ];
 
     /**
      * Get the identifier that will be stored in the subject claim of the JWT.
