@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
-
 use App\Property;
 use App\hasParameter;
 use App\Parameter;
@@ -19,10 +18,11 @@ class PropertyController extends Controller
      * @return Response
      */
     public function createProperty(Request $request) {
-         //validate incoming request 
-         $this->validate($request, [
-            'propertyStatus' => 'required|integer', 
+        //validate incoming request 
+        $this->validate($request, [
+            'propertyStatus' => 'required|integer',
             'idUser' => 'required|integer',
+            'propertyParameters' => 'required|string',
         ]);
 
         try {
@@ -31,7 +31,26 @@ class PropertyController extends Controller
             $property->propertyStatus = $request->input('propertyStatus');
             $property->idUser = $request->input('idUser');
 
+            /*
+                Recup les param (json)
+                Parse les data : key / value
+                -> OK : insert into propertyparameters
+                -> OK : ajout des id dans la table hasParameter
+            */
+            
+            $param = new Parameter;
+            $param->keyParameter = $request->input('propertyParameters');
+            $param->valueParameter = "foo";
+            
             $property->save();
+            $propertyId = $property->idProperty;
+            $param->save();
+            $paramId = $param->idParameter;
+
+            $hasParam = new hasParameter;
+            $hasParam->idProperty = $propertyId;
+            $hasParam->idParameter = $paramId;
+            $hasParam->save();
 
             //return successful response
             return response()->json(['property' => $property, 'message' => 'CREATED'], 201);
@@ -106,6 +125,11 @@ class PropertyController extends Controller
             ->get();
         
         return $query;
+
+    }
+
+    public function setParameters($idProperty)
+    {
 
     }
 

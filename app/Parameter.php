@@ -17,6 +17,19 @@ class Parameter extends Model implements AuthenticatableContract, AuthorizableCo
     protected $table = 'propertyparameters';
     protected $primaryKey = 'idParameter';
 
+    const CREATED_AT = 'createdAt';
+    const UPDATED_AT = 'updatedAt';
+    const DELETED_AT = 'deletedAt';
+
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
+    protected $fillable = [
+        'idParameter', 'keyParameter', 'valueParameter',
+    ];
+    
     /**
      * Get the identifier that will be stored in the subject claim of the JWT.
      *

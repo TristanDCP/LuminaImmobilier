@@ -17,6 +17,8 @@ class hasParameter extends Model implements AuthenticatableContract, Authorizabl
     protected $table = 'hasParameter';
     protected $primaryKey = 'idProperty';
 
+    public $timestamps = false;
+
     /**
      * The attributes that are mass assignable.
      *
