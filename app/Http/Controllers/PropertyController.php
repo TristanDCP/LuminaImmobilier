@@ -22,7 +22,7 @@ class PropertyController extends Controller
         $this->validate($request, [
             'propertyStatus' => 'required|integer',
             'idUser' => 'required|integer',
-            'propertyParameters' => 'required|string',
+            'propertyParameters' => 'required|json',
         ]);
 
         try {
@@ -30,32 +30,35 @@ class PropertyController extends Controller
             $property = new Property;
             $property->propertyStatus = $request->input('propertyStatus');
             $property->idUser = $request->input('idUser');
-
-            /*
-                Recup les param (json)
-                Parse les data : key / value
-                -> OK : insert into propertyparameters
-                -> OK : ajout des id dans la table hasParameter
-            */
-            
-            $param = new Parameter;
-            $param->keyParameter = $request->input('propertyParameters');
-            $param->valueParameter = "foo";
-            
             $property->save();
             $propertyId = $property->idProperty;
-            $param->save();
-            $paramId = $param->idParameter;
 
-            $hasParam = new hasParameter;
-            $hasParam->idProperty = $propertyId;
-            $hasParam->idParameter = $paramId;
-            $hasParam->save();
+            $json = json_decode($request->input('propertyParameters'), true);
+            
+            foreach( $json as $k => $v ){
+                $parameter = new Parameter;
+               
+                $keys = array_keys($v);
+                $values = array_values($v);
+
+                $parameter->keyParameter = $keys[0];
+                $parameter->valueParameter = $values[0];
+
+                $parameter->save();
+                $parameterId = $parameter->idParameter;
+
+                $hasParam = new hasParameter;
+                $hasParam->idProperty = $propertyId;
+                $hasParam->idParameter = $parameterId;
+                $hasParam->save();
+            };
 
             //return successful response
             return response()->json(['property' => $property, 'message' => 'CREATED'], 201);
 
         } catch (\Exception $e) {
+            // debug return
+            return $e->getMessage();
             //return error message
             return response()->json(['message' => 'Property Registration Failed!'], 409);
         }
