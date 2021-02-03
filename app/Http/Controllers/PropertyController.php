@@ -130,10 +130,4 @@ class PropertyController extends Controller
         return $query;
 
     }
-
-    public function setParameters($idProperty)
-    {
-
-    }
-
 }

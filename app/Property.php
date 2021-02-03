@@ -13,7 +13,8 @@ use Tymon\JWTAuth\Contracts\JWTSubject;
 
 class Property extends Model implements AuthenticatableContract, AuthorizableContract, JWTSubject
 {
-    use Authenticatable, Authorizable, SoftDeletes;
+    use Authenticatable, Authorizable;
+    use SoftDeletes;
 
     protected $table = 'property';
     protected $primaryKey = 'idProperty';
