@@ -34,6 +34,10 @@ $router->group(['prefix' => 'api/v1/'], function () use ($router) {
     // Matches "/api/v1/property/1" - Get one property by id
     $router->get('property/{idProperty}', 'PropertyController@singleProperty');
 
+    // Voir une pièce
+    // Matches "/api/v1/property/1/1" - Get one piece by id
+    $router->get('property/{idProperty}/{idPiece}', 'PieceController@singlePiece');
+
     // Voir toutes les agences 
     // Matches "/api/v1/agencies" - Get all agencies
     $router->get('agencies', 'AgencyController@allAgency');
@@ -112,6 +116,18 @@ $router->group(['prefix' => 'api/v1/'], function () use ($router) {
                 // Matches "/api/v1/property/1" - Delete a property
                 $router->delete('property/{idProperty}', 'PropertyController@deleteProperty');
 
+                // Créer une pièce
+                // Matches "/api/v1/property/1" - Create a piece
+                $router->post('property/{idProperty}', 'PieceController@createPiece');
+
+                // Modifier les informations d'une pièce
+                // Matches "/api/v1/property/1/1" - Update Info on a property
+                $router->put('property/{idProperty}/{idPiece}', 'PieceController@updatePiece');
+
+                // Supprimer une pièce
+                // Matches "/api/v1/property/1/1" - Update Info on a property
+                $router->delete('property/{idProperty}/{idPiece}', 'PieceController@deletePiece');
+
                 // Créer un role
                 // Matches "/api/v1/role" - Create a Role
                 $router->post('role', 'RoleController@createRole');
@@ -147,26 +163,6 @@ $router->group(['prefix' => 'api/v1/'], function () use ($router) {
                 // Supprimer un RDV
                 // Matches "/api/v1/appointment/1" - Delete a Appointment
                 $router->delete('appointment/{idAppointment}', 'AppointmentController@deleteAppointment');
-
-                // Voir toutes les images
-                // Matches "/api/v1/pictures" - Get all Pictures
-                $router->get('pictures', 'PictureController@allPictures');
-
-                // Voir une image spécifique 
-                // Matches "/api/v1/picture/1" - Get specific Picture
-                $router->get('picture/{idPicture}', 'PictureController@singlePicture');
-
-                // Créer un paramètre
-                // Matches "/api/v1/parameter" - Create a Parameter
-                $router->post('parameter', 'ParameterController@createParameter');
-        
-                // Modifier un paramètre
-                // Matches "/api/v1/parameter/1" - Update Info on a parameter
-                $router->put('parameter/{idParameter}', 'ParameterController@updateParameter');
-
-                // Supprimer un paramètre
-                // Matches "/api/v1/parameter/1" - Delete a parameter
-                $router->delete('parameter/{idParameter}', 'ParameterController@deleteParameter');
             }); 
         });
     });
