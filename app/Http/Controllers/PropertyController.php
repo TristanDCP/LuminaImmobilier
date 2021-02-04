@@ -107,64 +107,55 @@ class PropertyController extends Controller
 
     public function updateProperty($idProperty, Request $request)
     {
-        /*
-            OK -> Récup le bien en fonction de l'id donné
-            OK -> Récup les params du bien
-            OK -> Parser les params de la requête
-            OK -> Parser les params actuelles du bien
-            OK -> Comparer les deux listes de param
-            OK -> Stocker les deux listes dans des tableaux
-            OK -> Comparer les tableaux
-            OK -> Ajouter les nouveaux params
-            Mettre à jour les params existant
-            Save
-        */
         try {
             $property = Property::findOrFail($idProperty);
             $oldParameters = $this->getParameters($idProperty);
             
             $requestParameters = json_decode($request->input('propertyParameters'), true);
 
-            $array1 = []; // les anciens param
-            $array2 = []; // les nouveaux param
+            $oldParametersAsArray = [];
+            $requestParametersAsArray = [];
             
             foreach( $oldParameters as $k => $v ){
                 $oldParameterKey = $v->keyParameter;
                 $oldParameterValue = $v->valueParameter;
-                $array1[$oldParameterKey] = $oldParameterValue;  
+                $oldParametersAsArray[$oldParameterKey] = $oldParameterValue;  
             };
 
             foreach( $requestParameters as $k => $v ){
                 $requestParametersKeys = implode('|', array_keys($v));
                 $requestParametersValues = implode('|', array_values($v));
-                $array2[$requestParametersKeys] = $requestParametersValues;
+                $requestParametersAsArray[$requestParametersKeys] = $requestParametersValues;
             };
 
-            $result = array_diff($array2, $array1);
+            $result = array_diff($requestParametersAsArray, $oldParametersAsArray);
             if($result != null) {
                 foreach($result as $resultKey => $resultValue) {
-                    /*
-                    $parameter = new Parameter;
-                    $parameter->keyParameter = $resultKey;
-                    $parameter->valueParameter = $resultValue;
+                    
+                    if( array_key_exists($resultKey, $oldParametersAsArray) ) {
+                        $test = Parameter::where('keyParameter', '=', $resultKey)->first();
+                        $test->valueParameter = $resultValue;
+                        $test->save();
+                    } else {
+                        $parameter = new Parameter;
+                        $parameter->keyParameter = $resultKey;
+                        $parameter->valueParameter = $resultValue;
+                        $parameter->save();
+                        $parameterId = $parameter->idParameter;
 
-                    $parameter->save();
-                    $parameterId = $parameter->idParameter;
-
-                    $hasParam = new hasParameter;
-                    $hasParam->idProperty = $property->idProperty;
-                    $hasParam->idParameter = $parameterId;
-                    $hasParam->save();
-                    */
+                        $hasParam = new hasParameter;
+                        $hasParam->idProperty = $property->idProperty;
+                        $hasParam->idParameter = $parameterId;
+                        $hasParam->save();
+                    }
                 }
             }
 
             $property->update($request->all());
 
-            return response()->json(['property' => $property, 'message' => 'CREATED', 'array_diff' => $result], 200);
+            return response()->json(['property' => $property, 'message' => 'CREATED'], 200);
         } catch (\Exception $e) {
-            //return response()->json(['message' => 'user not found!'], 404);
-            return $e->getMessage();
+            return response()->json(['message' => 'Property not found!'], 404);
         }
     }
 
