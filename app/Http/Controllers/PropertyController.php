@@ -105,6 +105,9 @@ class PropertyController extends Controller
         }
     }
 
+    /**
+     * Update Property.
+     */
     public function updateProperty($idProperty, Request $request)
     {
         try {
