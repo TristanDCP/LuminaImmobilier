@@ -65,7 +65,7 @@ class UserController extends Controller
   *   path="/userlist",
   *   summary="Return the list of users",
   *   tags={"User List"},
-  *   @OA\Parameter(ref="#/components/parameters/get_users_request_parameter_limit"),
+  *   @OA\Parameter(ref="#/components/parameters/    get_users_request_parameter_limit"),
    *    @OA\Response(
   *      response=200,
   *      description="List of users",
