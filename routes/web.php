@@ -34,6 +34,10 @@ $router->group(['prefix' => 'api/v1/'], function () use ($router) {
     // Matches "/api/v1/property/1" - Get one property by id
     $router->get('property/{idProperty}', 'PropertyController@singleProperty');
 
+    // Voir une pièce
+    // Matches "/api/v1/property/1/1" - Get one piece by id
+    $router->get('property/{idProperty}/{idPiece}', 'PieceController@singlePiece');
+
     // Voir toutes les agences 
     // Matches "/api/v1/agencies" - Get all agencies
     $router->get('agencies', 'AgencyController@allAgency');
