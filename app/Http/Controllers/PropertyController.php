@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\DB;
 use App\Property;
 use App\hasParameter;
 use App\Parameter;
+use App\Piece;
 
 class PropertyController extends Controller
 {
@@ -85,9 +86,11 @@ class PropertyController extends Controller
         try {
             $property = Property::findOrFail($idProperty);
             $parameters = $this->getParameters($idProperty);
-            return response()->json(['property' => $property, 'parameters' => $parameters], 200);
+            $pieces = $this->getPieces($idProperty);
+            return response()->json(['property' => $property, 'parameters' => $parameters, 'pieces' => $pieces], 200);
         } catch (\Exception $e) {
-            return response()->json(['message' => 'Property not found!'], 404);
+            return $e->getMessage();
+            //return response()->json(['message' => 'Property not found!'], 404);
         }
     }
 
@@ -156,12 +159,15 @@ class PropertyController extends Controller
 
             $property->update($request->all());
 
-            return response()->json(['property' => $property, 'message' => 'CREATED'], 200);
+            return response()->json(['property' => $property, 'message' => 'UPDATED'], 200);
         } catch (\Exception $e) {
             return response()->json(['message' => 'Property not found!'], 404);
         }
     }
 
+    /**
+     * Get parameters from a property
+     */
     public function getParameters($idProperty)
     {
         $query = DB::table('property')
@@ -173,5 +179,17 @@ class PropertyController extends Controller
         
         return $query;
 
+    }
+
+    /**
+     * Get pieces from a property
+     */
+    public function getPieces($idProperty)
+    {
+        $query = DB::table('piece')
+            ->where('idProperty', $idProperty)
+            ->get();
+        
+            return $query;
     }
 }
