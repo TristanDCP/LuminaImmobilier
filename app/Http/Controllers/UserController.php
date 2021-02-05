@@ -4,36 +4,31 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use  App\User;
+use App\User;
 
-// We can define the User Scheme here or in our App\User model
-/**
- * @OA\Schema(
- *   schema="UserSchema",
- *   title="User Model",
- *   description="User controller",
- *   @OA\Property(
- *     property="id", description="ID of the user",
- *     @OA\Schema(type="number", example=1)
- *  ),
- *   @OA\Property(
- *     property="name", description="Name of the user",
- *     @OA\Schema(type="string", example="User Name")
- *  )
- * )
- */
-// We can define the request parameter inside the Requests or here
-/**
- * @OA\Parameter(
- *   parameter="get_users_request_parameter_limit",
- *   name="limit",
- *   description="Limit the number of results",
- *   in="query",
- *   @OA\Schema(
- *     type="number", default=10
- *   )
- * ),
- */
+    /**
+     * @OA\Parameter(
+     *   parameter="get_users_request_parameter_limit",
+     *   name="limit",
+     *   description="Limit the number of results",
+     *   in="query",
+     *   @OA\Schema(
+     *     type="number", default=10
+     *   )
+     * ),
+     */
+
+    /**
+     * @OA\Parameter(
+     *   parameter="get_user_id",
+     *   name="idUser",
+     *   description="Replace the user id",
+     *   in="path",
+     *   @OA\Schema(
+     *     type="integer", default=1
+     *   )
+     * ),
+     */
 class UserController extends Controller
 {
 
@@ -49,7 +44,6 @@ class UserController extends Controller
         $this->middleware('auth');
     }
 
-
     /**
      * Get the authenticated User.
      *
@@ -62,11 +56,10 @@ class UserController extends Controller
 
 /**
   * @OA\Get(
-  *   path="/userlist",
+  *   path="/users",
   *   summary="Return the list of users",
-  *   tags={"User List"},
-  *   @OA\Parameter(ref="#/components/parameters/get_users_request_parameter_limit"),
-   *    @OA\Response(
+  *   tags={"User"},
+  *    @OA\Response(
   *      response=200,
   *      description="List of users",
   *      @OA\JsonContent(
@@ -78,13 +71,7 @@ class UserController extends Controller
   *      )
   *    )
   * )
-  */
-      
-    /**
-     * Get all User.
-     *
-     * @return Response
-     */
+*/
     public function allUsers()
     {
          return response()->json(['users' =>  User::all()], 200);
@@ -92,28 +79,23 @@ class UserController extends Controller
 
 /**
   * @OA\Get(
-  *   path="/user/profile",
-  *   summary="Return one user profile",
-  *   tags={"User List"},
+  *   path="/user/{idUser}",
+  *   summary="Get one user information",
+  *   tags={"User"},
   *   @OA\Parameter(ref="#/components/parameters/get_users_request_parameter_limit"),
-   *    @OA\Response(
+  *    @OA\Response(
   *      response=200,
-  *      description="One user profile",
+  *      description="User retrieved",
   *      @OA\JsonContent(
   *        @OA\Property(
   *          property="data",
-  *          description="One user profile"
+  *          description="Get one user"
   *          )
   *        )
   *      )
   *    )
   * )
   */
-    /**
-     * Get one user.
-     *
-     * @return Response
-     */
     public function singleUser($idUser)
     {
         try {
@@ -128,11 +110,11 @@ class UserController extends Controller
     }
 /**
   * @OA\Delete(
-  *   path="/user/delete",
+  *   path="/user/{idUser}",
   *   summary="Delete user",
-  *   tags={"User List"},
+  *   tags={"User"},
   *   @OA\Parameter(ref="#/components/parameters/get_users_request_parameter_limit"),
-   *    @OA\Response(
+  *    @OA\Response(
   *      response=200,
   *      description="Delete user",
   *      @OA\JsonContent(
@@ -145,10 +127,6 @@ class UserController extends Controller
   *    )
   * )
   */
-     
-    /**
-     * Remove User.
-     */
     public function deleteUser($idUser) 
     {
         try {
