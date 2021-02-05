@@ -22,6 +22,11 @@ class Agency extends Model implements AuthenticatableContract, AuthorizableContr
     const UPDATED_AT = 'updatedAt';
     const DELETED_AT = 'deletedAt';
 
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
     protected $fillable = [
         'agencyName', 'agencyAdr', 'agencyPhone', 'agencyContact',
     ];

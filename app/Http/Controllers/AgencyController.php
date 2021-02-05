@@ -47,7 +47,12 @@ use App\Agency;
  */
 class AgencyController extends Controller
 {
-
+    /**
+     * Store a new agency.
+     *
+     * @param  Request  $request
+     * @return Response
+     */
     public function createAgency(Request $request)
     {
         //validate incoming request 
@@ -92,11 +97,7 @@ class AgencyController extends Controller
      *          @OA\Schema(
      *            type="array",
      *            @OA\Items(ref="#/components/schemas/allAgencies"),
-     *          ),
-     *          @OA\Example(
-     *              id=1,
-     *              agencyName="Lumina Le Havre",
-     *          )        
+     *          ),      
      *        )
      *      )
      *    )

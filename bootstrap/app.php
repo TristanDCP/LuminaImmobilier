@@ -61,7 +61,6 @@ $app->singleton(
 */
 
 $app->configure('app');
-$app->configure('swagger-lume');
 
 /*
 |--------------------------------------------------------------------------
@@ -81,7 +80,6 @@ $app->configure('swagger-lume');
 $app->routeMiddleware([
     'auth' => App\Http\Middleware\Authenticate::class,
     'roles' => App\Http\Middleware\CheckRole::class,
-    'docs' => App\Http\Middleware\SecureApiDocs::class,
 ]);
 
 /*
@@ -100,7 +98,6 @@ $app->register(App\Providers\AppServiceProvider::class);
 $app->register(App\Providers\AuthServiceProvider::class);
 // $app->register(App\Providers\EventServiceProvider::class);
 $app->register(Tymon\JWTAuth\Providers\LumenServiceProvider::class);
-$app->register(\SwaggerLume\ServiceProvider::class);
 
 /*
 |--------------------------------------------------------------------------

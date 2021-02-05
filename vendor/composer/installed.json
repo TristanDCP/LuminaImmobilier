@@ -47,40 +47,10 @@
                 "brick",
                 "math"
             ],
-<<<<<<< HEAD
-            "support": {
-                "issues": "https://github.com/brick/math/issues",
-                "source": "https://github.com/brick/math/tree/0.9.2"
-            },
-            "funding": [
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/brick/math",
-                    "type": "tidelift"
-                }
-            ],
-=======
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "install-path": "../brick/math"
         },
         {
             "name": "darkaonline/swagger-lume",
-<<<<<<< HEAD
-            "version": "8.0",
-            "version_normalized": "8.0.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/DarkaOnLine/SwaggerLume.git",
-                "reference": "5ee548ccaf487b4561880eb9741975dad3c3dd1a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/DarkaOnLine/SwaggerLume/zipball/5ee548ccaf487b4561880eb9741975dad3c3dd1a",
-                "reference": "5ee548ccaf487b4561880eb9741975dad3c3dd1a",
-                "shasum": ""
-            },
-            "require": {
-                "laravel/lumen-framework": "~6.0|~7.0|^8.0",
-=======
             "version": "7.0",
             "version_normalized": "7.0.0.0",
             "source": {
@@ -96,7 +66,6 @@
             },
             "require": {
                 "laravel/lumen-framework": "~6.0|~7.0",
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
                 "php": ">=7.2",
                 "swagger-api/swagger-ui": "^3.0",
                 "zircote/swagger-php": "~2.0|3.*"
@@ -108,11 +77,7 @@
                 "satooshi/php-coveralls": "^2.0",
                 "vlucas/phpdotenv": "~3.3|~4.0"
             },
-<<<<<<< HEAD
-            "time": "2020-09-25T10:41:43+00:00",
-=======
             "time": "2020-03-26T09:34:03+00:00",
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -141,19 +106,8 @@
             ],
             "support": {
                 "issues": "https://github.com/DarkaOnLine/SwaggerLume/issues",
-<<<<<<< HEAD
-                "source": "https://github.com/DarkaOnLine/SwaggerLume/tree/8.0"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/DarkaOnLine",
-                    "type": "github"
-                }
-            ],
-=======
                 "source": "https://github.com/DarkaOnLine/SwaggerLume/tree/7.0"
             },
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "install-path": "../darkaonline/swagger-lume"
         },
         {
@@ -312,27 +266,6 @@
                 "uppercase",
                 "words"
             ],
-<<<<<<< HEAD
-            "support": {
-                "issues": "https://github.com/doctrine/inflector/issues",
-                "source": "https://github.com/doctrine/inflector/tree/2.0.x"
-            },
-            "funding": [
-                {
-                    "url": "https://www.doctrine-project.org/sponsorship.html",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://www.patreon.com/phpdoctrine",
-                    "type": "patreon"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/doctrine%2Finflector",
-                    "type": "tidelift"
-                }
-            ],
-=======
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "install-path": "../doctrine/inflector"
         },
         {
@@ -387,27 +320,6 @@
                 "constructor",
                 "instantiate"
             ],
-<<<<<<< HEAD
-            "support": {
-                "issues": "https://github.com/doctrine/instantiator/issues",
-                "source": "https://github.com/doctrine/instantiator/tree/1.4.0"
-            },
-            "funding": [
-                {
-                    "url": "https://www.doctrine-project.org/sponsorship.html",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://www.patreon.com/phpdoctrine",
-                    "type": "patreon"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/doctrine%2Finstantiator",
-                    "type": "tidelift"
-                }
-            ],
-=======
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "install-path": "../doctrine/instantiator"
         },
         {
@@ -473,27 +385,6 @@
                 "parser",
                 "php"
             ],
-<<<<<<< HEAD
-            "support": {
-                "issues": "https://github.com/doctrine/lexer/issues",
-                "source": "https://github.com/doctrine/lexer/tree/1.2.1"
-            },
-            "funding": [
-                {
-                    "url": "https://www.doctrine-project.org/sponsorship.html",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://www.patreon.com/phpdoctrine",
-                    "type": "patreon"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/doctrine%2Flexer",
-                    "type": "tidelift"
-                }
-            ],
-=======
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "install-path": "../doctrine/lexer"
         },
         {
@@ -551,19 +442,6 @@
                 "cron",
                 "schedule"
             ],
-<<<<<<< HEAD
-            "support": {
-                "issues": "https://github.com/dragonmantank/cron-expression/issues",
-                "source": "https://github.com/dragonmantank/cron-expression/tree/v2.3.1"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/dragonmantank",
-                    "type": "github"
-                }
-            ],
-=======
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "install-path": "../dragonmantank/cron-expression"
         },
         {
@@ -625,19 +503,6 @@
                 "validation",
                 "validator"
             ],
-<<<<<<< HEAD
-            "support": {
-                "issues": "https://github.com/egulias/EmailValidator/issues",
-                "source": "https://github.com/egulias/EmailValidator/tree/2.1.25"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/egulias",
-                    "type": "github"
-                }
-            ],
-=======
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "install-path": "../egulias/email-validator"
         },
         {
@@ -691,13 +556,6 @@
                 "faker",
                 "fixtures"
             ],
-<<<<<<< HEAD
-            "support": {
-                "issues": "https://github.com/fzaninotto/Faker/issues",
-                "source": "https://github.com/fzaninotto/Faker/tree/v1.9.2"
-            },
-=======
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "abandoned": true,
             "install-path": "../fzaninotto/faker"
         },
@@ -749,49 +607,14 @@
             "keywords": [
                 "test"
             ],
-<<<<<<< HEAD
-            "support": {
-                "issues": "https://github.com/hamcrest/hamcrest-php/issues",
-                "source": "https://github.com/hamcrest/hamcrest-php/tree/v2.0.1"
-            },
-            "install-path": "../hamcrest/hamcrest-php"
-        },
-        {
-            "name": "illuminate/auth",
-=======
             "install-path": "../hamcrest/hamcrest-php"
         },
         {
             "name": "laravel/framework",
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "version": "v7.30.4",
             "version_normalized": "7.30.4.0",
             "source": {
                 "type": "git",
-<<<<<<< HEAD
-                "url": "https://github.com/illuminate/auth.git",
-                "reference": "d523b7b96cd1afc55d24afba8fc3176e84eb8154"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/auth/zipball/d523b7b96cd1afc55d24afba8fc3176e84eb8154",
-                "reference": "d523b7b96cd1afc55d24afba8fc3176e84eb8154",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/contracts": "^7.0",
-                "illuminate/http": "^7.0",
-                "illuminate/queue": "^7.0",
-                "illuminate/support": "^7.0",
-                "php": "^7.2.5|^8.0"
-            },
-            "suggest": {
-                "illuminate/console": "Required to use the auth:clear-resets command (^7.0).",
-                "illuminate/queue": "Required to fire login / logout events (^7.0).",
-                "illuminate/session": "Required to use the session based guard (^7.0)."
-            },
-            "time": "2020-10-27T15:11:37+00:00",
-=======
                 "url": "https://github.com/laravel/framework.git",
                 "reference": "9dd38140dc2924daa1a020a3d7a45f9ceff03df3"
             },
@@ -913,7 +736,6 @@
                 "wildbit/swiftmailer-postmark": "Required to use Postmark mail driver (^3.0)."
             },
             "time": "2021-01-21T14:10:48+00:00",
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -922,17 +744,12 @@
             },
             "installation-source": "dist",
             "autoload": {
-<<<<<<< HEAD
-                "psr-4": {
-                    "Illuminate\\Auth\\": ""
-=======
                 "files": [
                     "src/Illuminate/Foundation/helpers.php",
                     "src/Illuminate/Support/helpers.php"
                 ],
                 "psr-4": {
                     "Illuminate\\": "src/Illuminate/"
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -945,53 +762,16 @@
                     "email": "taylor@laravel.com"
                 }
             ],
-<<<<<<< HEAD
-            "description": "The Illuminate Auth package.",
-            "homepage": "https://laravel.com",
-=======
             "description": "The Laravel Framework.",
             "homepage": "https://laravel.com",
             "keywords": [
                 "framework",
                 "laravel"
             ],
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "support": {
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-<<<<<<< HEAD
-            "install-path": "../illuminate/auth"
-        },
-        {
-            "name": "illuminate/broadcasting",
-            "version": "v7.30.4",
-            "version_normalized": "7.30.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/illuminate/broadcasting.git",
-                "reference": "b30bf4ff2b020a98aca537877a68fabecfa3a8ab"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/broadcasting/zipball/b30bf4ff2b020a98aca537877a68fabecfa3a8ab",
-                "reference": "b30bf4ff2b020a98aca537877a68fabecfa3a8ab",
-                "shasum": ""
-            },
-            "require": {
-                "ext-json": "*",
-                "illuminate/bus": "^7.0",
-                "illuminate/contracts": "^7.0",
-                "illuminate/queue": "^7.0",
-                "illuminate/support": "^7.0",
-                "php": "^7.2.5|^8.0",
-                "psr/log": "^1.0"
-            },
-            "suggest": {
-                "pusher/pusher-php-server": "Required to use the Pusher broadcast driver (^4.0)."
-            },
-            "time": "2020-11-21T14:36:22+00:00",
-=======
             "install-path": "../laravel/framework"
         },
         {
@@ -1054,7 +834,6 @@
                 "symfony/psr-http-message-bridge": "Required to use PSR-7 bridging features (^2.0)."
             },
             "time": "2020-09-15T14:53:08+00:00",
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -1064,16 +843,11 @@
             "installation-source": "dist",
             "autoload": {
                 "psr-4": {
-<<<<<<< HEAD
-                    "Illuminate\\Broadcasting\\": ""
-                }
-=======
                     "Laravel\\Lumen\\": "src/"
                 },
                 "files": [
                     "src/helpers.php"
                 ]
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -1082,48 +856,6 @@
             "authors": [
                 {
                     "name": "Taylor Otwell",
-<<<<<<< HEAD
-                    "email": "taylor@laravel.com"
-                }
-            ],
-            "description": "The Illuminate Broadcasting package.",
-            "homepage": "https://laravel.com",
-            "support": {
-                "issues": "https://github.com/laravel/framework/issues",
-                "source": "https://github.com/laravel/framework"
-            },
-            "install-path": "../illuminate/broadcasting"
-        },
-        {
-            "name": "illuminate/bus",
-            "version": "v7.30.4",
-            "version_normalized": "7.30.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/illuminate/bus.git",
-                "reference": "78d8013a700eef9fbece09094d422d73fa9a493a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/bus/zipball/78d8013a700eef9fbece09094d422d73fa9a493a",
-                "reference": "78d8013a700eef9fbece09094d422d73fa9a493a",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/contracts": "^7.0",
-                "illuminate/pipeline": "^7.0",
-                "illuminate/support": "^7.0",
-                "php": "^7.2.5|^8.0"
-            },
-            "suggest": {
-                "illuminate/queue": "Required to use closures when chaining jobs (^7.0)."
-            },
-            "time": "2020-10-27T15:11:37+00:00",
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "7.x-dev"
-=======
                     "email": "taylorotwell@gmail.com"
                 }
             ],
@@ -1168,77 +900,16 @@
             "extra": {
                 "branch-alias": {
                     "dev-master": "3.1-dev"
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
                 }
             },
             "installation-source": "dist",
             "autoload": {
                 "psr-4": {
-<<<<<<< HEAD
-                    "Illuminate\\Bus\\": ""
-=======
                     "Lcobucci\\JWT\\": "src"
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-<<<<<<< HEAD
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Taylor Otwell",
-                    "email": "taylor@laravel.com"
-                }
-            ],
-            "description": "The Illuminate Bus package.",
-            "homepage": "https://laravel.com",
-            "support": {
-                "issues": "https://github.com/laravel/framework/issues",
-                "source": "https://github.com/laravel/framework"
-            },
-            "install-path": "../illuminate/bus"
-        },
-        {
-            "name": "illuminate/cache",
-            "version": "v7.30.4",
-            "version_normalized": "7.30.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/illuminate/cache.git",
-                "reference": "f9155c4827600ea3e0743eb03402f8048c04455c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/cache/zipball/f9155c4827600ea3e0743eb03402f8048c04455c",
-                "reference": "f9155c4827600ea3e0743eb03402f8048c04455c",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/contracts": "^7.0",
-                "illuminate/support": "^7.0",
-                "php": "^7.2.5|^8.0"
-            },
-            "suggest": {
-                "ext-memcached": "Required to use the memcache cache driver.",
-                "illuminate/database": "Required to use the database cache driver (^7.0).",
-                "illuminate/filesystem": "Required to use the file cache driver (^7.0).",
-                "illuminate/redis": "Required to use the redis cache driver (^7.0).",
-                "symfony/cache": "Required to PSR-6 cache bridge (^5.0)."
-            },
-            "time": "2020-10-27T15:11:37+00:00",
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "7.x-dev"
-                }
-            },
-            "installation-source": "dist",
-            "autoload": {
-                "psr-4": {
-                    "Illuminate\\Cache\\": ""
-=======
                 "BSD-3-Clause"
             ],
             "authors": [
@@ -1299,1233 +970,10 @@
             "autoload": {
                 "psr-4": {
                     "League\\CommonMark\\": "src"
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-<<<<<<< HEAD
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Taylor Otwell",
-                    "email": "taylor@laravel.com"
-                }
-            ],
-            "description": "The Illuminate Cache package.",
-            "homepage": "https://laravel.com",
-            "support": {
-                "issues": "https://github.com/laravel/framework/issues",
-                "source": "https://github.com/laravel/framework"
-            },
-            "install-path": "../illuminate/cache"
-        },
-        {
-            "name": "illuminate/config",
-            "version": "v7.30.4",
-            "version_normalized": "7.30.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/illuminate/config.git",
-                "reference": "9d908793eceb04a8c8f74cfc6af3429ce140d2e2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/config/zipball/9d908793eceb04a8c8f74cfc6af3429ce140d2e2",
-                "reference": "9d908793eceb04a8c8f74cfc6af3429ce140d2e2",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/contracts": "^7.0",
-                "illuminate/support": "^7.0",
-                "php": "^7.2.5|^8.0"
-            },
-            "time": "2020-10-27T15:11:37+00:00",
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "7.x-dev"
-                }
-            },
-            "installation-source": "dist",
-            "autoload": {
-                "psr-4": {
-                    "Illuminate\\Config\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Taylor Otwell",
-                    "email": "taylor@laravel.com"
-                }
-            ],
-            "description": "The Illuminate Config package.",
-            "homepage": "https://laravel.com",
-            "support": {
-                "issues": "https://github.com/laravel/framework/issues",
-                "source": "https://github.com/laravel/framework"
-            },
-            "install-path": "../illuminate/config"
-        },
-        {
-            "name": "illuminate/console",
-            "version": "v7.30.4",
-            "version_normalized": "7.30.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/illuminate/console.git",
-                "reference": "7dd038f1729af6390654f065c3ada5dc275fb01a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/console/zipball/7dd038f1729af6390654f065c3ada5dc275fb01a",
-                "reference": "7dd038f1729af6390654f065c3ada5dc275fb01a",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/contracts": "^7.0",
-                "illuminate/support": "^7.0",
-                "php": "^7.2.5|^8.0",
-                "symfony/console": "^5.0",
-                "symfony/process": "^5.0"
-            },
-            "suggest": {
-                "dragonmantank/cron-expression": "Required to use scheduler (^2.3.1).",
-                "guzzlehttp/guzzle": "Required to use the ping methods on schedules (^6.3.1|^7.0.1).",
-                "illuminate/bus": "Required to use the scheduled job dispatcher (^7.0).",
-                "illuminate/container": "Required to use the scheduler (^7.0).",
-                "illuminate/filesystem": "Required to use the generator command (^7.0).",
-                "illuminate/queue": "Required to use closures for scheduled jobs (^7.0)."
-            },
-            "time": "2020-10-27T19:51:21+00:00",
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "7.x-dev"
-                }
-            },
-            "installation-source": "dist",
-            "autoload": {
-                "psr-4": {
-                    "Illuminate\\Console\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Taylor Otwell",
-                    "email": "taylor@laravel.com"
-                }
-            ],
-            "description": "The Illuminate Console package.",
-            "homepage": "https://laravel.com",
-            "support": {
-                "issues": "https://github.com/laravel/framework/issues",
-                "source": "https://github.com/laravel/framework"
-            },
-            "install-path": "../illuminate/console"
-        },
-        {
-            "name": "illuminate/container",
-            "version": "v7.30.4",
-            "version_normalized": "7.30.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/illuminate/container.git",
-                "reference": "cf94ed8fbaeb26906bb42b24377dbb061b97a096"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/container/zipball/cf94ed8fbaeb26906bb42b24377dbb061b97a096",
-                "reference": "cf94ed8fbaeb26906bb42b24377dbb061b97a096",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/contracts": "^7.0",
-                "php": "^7.2.5|^8.0",
-                "psr/container": "^1.0"
-            },
-            "provide": {
-                "psr/container-implementation": "1.0"
-            },
-            "time": "2020-10-27T16:17:28+00:00",
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "7.x-dev"
-                }
-            },
-            "installation-source": "dist",
-            "autoload": {
-                "psr-4": {
-                    "Illuminate\\Container\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Taylor Otwell",
-                    "email": "taylor@laravel.com"
-                }
-            ],
-            "description": "The Illuminate Container package.",
-            "homepage": "https://laravel.com",
-            "support": {
-                "issues": "https://github.com/laravel/framework/issues",
-                "source": "https://github.com/laravel/framework"
-            },
-            "install-path": "../illuminate/container"
-        },
-        {
-            "name": "illuminate/contracts",
-            "version": "v7.30.4",
-            "version_normalized": "7.30.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/illuminate/contracts.git",
-                "reference": "7d964384f0283bd7525ae7b5baa7ad32e5503b8e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/contracts/zipball/7d964384f0283bd7525ae7b5baa7ad32e5503b8e",
-                "reference": "7d964384f0283bd7525ae7b5baa7ad32e5503b8e",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.2.5|^8.0",
-                "psr/container": "^1.0",
-                "psr/simple-cache": "^1.0"
-            },
-            "time": "2020-12-18T14:19:44+00:00",
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "7.x-dev"
-                }
-            },
-            "installation-source": "dist",
-            "autoload": {
-                "psr-4": {
-                    "Illuminate\\Contracts\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Taylor Otwell",
-                    "email": "taylor@laravel.com"
-                }
-            ],
-            "description": "The Illuminate Contracts package.",
-            "homepage": "https://laravel.com",
-            "support": {
-                "issues": "https://github.com/laravel/framework/issues",
-                "source": "https://github.com/laravel/framework"
-            },
-            "install-path": "../illuminate/contracts"
-        },
-        {
-            "name": "illuminate/database",
-            "version": "v7.30.4",
-            "version_normalized": "7.30.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/illuminate/database.git",
-                "reference": "c7a35698106b1ed6b50f7fd4c30ec8e9fc900e41"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/database/zipball/c7a35698106b1ed6b50f7fd4c30ec8e9fc900e41",
-                "reference": "c7a35698106b1ed6b50f7fd4c30ec8e9fc900e41",
-                "shasum": ""
-            },
-            "require": {
-                "ext-json": "*",
-                "illuminate/container": "^7.0",
-                "illuminate/contracts": "^7.0",
-                "illuminate/support": "^7.0",
-                "php": "^7.2.5|^8.0",
-                "symfony/console": "^5.0"
-            },
-            "suggest": {
-                "doctrine/dbal": "Required to rename columns and drop SQLite columns (^2.6).",
-                "fakerphp/faker": "Required to use the eloquent factory builder (^1.9.1).",
-                "illuminate/console": "Required to use the database commands (^7.0).",
-                "illuminate/events": "Required to use the observers with Eloquent (^7.0).",
-                "illuminate/filesystem": "Required to use the migrations (^7.0).",
-                "illuminate/pagination": "Required to paginate the result set (^7.0).",
-                "symfony/finder": "Required to use Eloquent model factories (^5.0)."
-            },
-            "time": "2021-01-21T14:08:35+00:00",
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "7.x-dev"
-                }
-            },
-            "installation-source": "dist",
-            "autoload": {
-                "psr-4": {
-                    "Illuminate\\Database\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Taylor Otwell",
-                    "email": "taylor@laravel.com"
-                }
-            ],
-            "description": "The Illuminate Database package.",
-            "homepage": "https://laravel.com",
-            "keywords": [
-                "database",
-                "laravel",
-                "orm",
-                "sql"
-            ],
-            "support": {
-                "issues": "https://github.com/laravel/framework/issues",
-                "source": "https://github.com/laravel/framework"
-            },
-            "install-path": "../illuminate/database"
-        },
-        {
-            "name": "illuminate/encryption",
-            "version": "v7.30.4",
-            "version_normalized": "7.30.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/illuminate/encryption.git",
-                "reference": "2b58e3a5175003f8a2272691a8b5c6c8e059c97d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/encryption/zipball/2b58e3a5175003f8a2272691a8b5c6c8e059c97d",
-                "reference": "2b58e3a5175003f8a2272691a8b5c6c8e059c97d",
-                "shasum": ""
-            },
-            "require": {
-                "ext-json": "*",
-                "ext-mbstring": "*",
-                "ext-openssl": "*",
-                "illuminate/contracts": "^7.0",
-                "illuminate/support": "^7.0",
-                "php": "^7.2.5|^8.0"
-            },
-            "time": "2020-10-27T15:11:37+00:00",
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "7.x-dev"
-                }
-            },
-            "installation-source": "dist",
-            "autoload": {
-                "psr-4": {
-                    "Illuminate\\Encryption\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Taylor Otwell",
-                    "email": "taylor@laravel.com"
-                }
-            ],
-            "description": "The Illuminate Encryption package.",
-            "homepage": "https://laravel.com",
-            "support": {
-                "issues": "https://github.com/laravel/framework/issues",
-                "source": "https://github.com/laravel/framework"
-            },
-            "install-path": "../illuminate/encryption"
-        },
-        {
-            "name": "illuminate/events",
-            "version": "v7.30.4",
-            "version_normalized": "7.30.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/illuminate/events.git",
-                "reference": "6f64db49dbfd490c6e30c983964543a054882faf"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/events/zipball/6f64db49dbfd490c6e30c983964543a054882faf",
-                "reference": "6f64db49dbfd490c6e30c983964543a054882faf",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/container": "^7.0",
-                "illuminate/contracts": "^7.0",
-                "illuminate/support": "^7.0",
-                "php": "^7.2.5|^8.0"
-            },
-            "time": "2020-10-27T15:11:37+00:00",
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "7.x-dev"
-                }
-            },
-            "installation-source": "dist",
-            "autoload": {
-                "psr-4": {
-                    "Illuminate\\Events\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Taylor Otwell",
-                    "email": "taylor@laravel.com"
-                }
-            ],
-            "description": "The Illuminate Events package.",
-            "homepage": "https://laravel.com",
-            "support": {
-                "issues": "https://github.com/laravel/framework/issues",
-                "source": "https://github.com/laravel/framework"
-            },
-            "install-path": "../illuminate/events"
-        },
-        {
-            "name": "illuminate/filesystem",
-            "version": "v7.30.4",
-            "version_normalized": "7.30.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/illuminate/filesystem.git",
-                "reference": "2013f94a3a7dff008be54884774548e3c222c3e8"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/filesystem/zipball/2013f94a3a7dff008be54884774548e3c222c3e8",
-                "reference": "2013f94a3a7dff008be54884774548e3c222c3e8",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/contracts": "^7.0",
-                "illuminate/support": "^7.0",
-                "php": "^7.2.5|^8.0",
-                "symfony/finder": "^5.0"
-            },
-            "suggest": {
-                "ext-ftp": "Required to use the Flysystem FTP driver.",
-                "illuminate/http": "Required for handling uploaded files (^7.0).",
-                "league/flysystem": "Required to use the Flysystem local and FTP drivers (^1.1).",
-                "league/flysystem-aws-s3-v3": "Required to use the Flysystem S3 driver (^1.0).",
-                "league/flysystem-cached-adapter": "Required to use the Flysystem cache (^1.0).",
-                "league/flysystem-sftp": "Required to use the Flysystem SFTP driver (^1.0).",
-                "psr/http-message": "Required to allow Storage::put to accept a StreamInterface (^1.0).",
-                "symfony/mime": "Required to enable support for guessing extensions (^5.0)."
-            },
-            "time": "2020-10-27T15:11:37+00:00",
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "7.x-dev"
-                }
-            },
-            "installation-source": "dist",
-            "autoload": {
-                "psr-4": {
-                    "Illuminate\\Filesystem\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Taylor Otwell",
-                    "email": "taylor@laravel.com"
-                }
-            ],
-            "description": "The Illuminate Filesystem package.",
-            "homepage": "https://laravel.com",
-            "support": {
-                "issues": "https://github.com/laravel/framework/issues",
-                "source": "https://github.com/laravel/framework"
-            },
-            "install-path": "../illuminate/filesystem"
-        },
-        {
-            "name": "illuminate/hashing",
-            "version": "v7.30.4",
-            "version_normalized": "7.30.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/illuminate/hashing.git",
-                "reference": "021a2a74f77f2b7bab4ef19b32bb9326c7cefacd"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/hashing/zipball/021a2a74f77f2b7bab4ef19b32bb9326c7cefacd",
-                "reference": "021a2a74f77f2b7bab4ef19b32bb9326c7cefacd",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/contracts": "^7.0",
-                "illuminate/support": "^7.0",
-                "php": "^7.2.5|^8.0"
-            },
-            "time": "2020-10-27T15:11:37+00:00",
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "7.x-dev"
-                }
-            },
-            "installation-source": "dist",
-            "autoload": {
-                "psr-4": {
-                    "Illuminate\\Hashing\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Taylor Otwell",
-                    "email": "taylor@laravel.com"
-                }
-            ],
-            "description": "The Illuminate Hashing package.",
-            "homepage": "https://laravel.com",
-            "support": {
-                "issues": "https://github.com/laravel/framework/issues",
-                "source": "https://github.com/laravel/framework"
-            },
-            "install-path": "../illuminate/hashing"
-        },
-        {
-            "name": "illuminate/http",
-            "version": "v7.30.4",
-            "version_normalized": "7.30.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/illuminate/http.git",
-                "reference": "39d6e9eca58b575016be5d85cc1f223f632c0e95"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/http/zipball/39d6e9eca58b575016be5d85cc1f223f632c0e95",
-                "reference": "39d6e9eca58b575016be5d85cc1f223f632c0e95",
-                "shasum": ""
-            },
-            "require": {
-                "ext-json": "*",
-                "illuminate/session": "^7.0",
-                "illuminate/support": "^7.0",
-                "php": "^7.2.5|^8.0",
-                "symfony/http-foundation": "^5.0",
-                "symfony/http-kernel": "^5.0",
-                "symfony/mime": "^5.0"
-            },
-            "suggest": {
-                "ext-gd": "Required to use Illuminate\\Http\\Testing\\FileFactory::image().",
-                "guzzlehttp/guzzle": "Required to use the HTTP Client (^6.3.1|^7.0.1)."
-            },
-            "time": "2021-01-21T14:08:35+00:00",
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "7.x-dev"
-                }
-            },
-            "installation-source": "dist",
-            "autoload": {
-                "psr-4": {
-                    "Illuminate\\Http\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Taylor Otwell",
-                    "email": "taylor@laravel.com"
-                }
-            ],
-            "description": "The Illuminate Http package.",
-            "homepage": "https://laravel.com",
-            "support": {
-                "issues": "https://github.com/laravel/framework/issues",
-                "source": "https://github.com/laravel/framework"
-            },
-            "install-path": "../illuminate/http"
-        },
-        {
-            "name": "illuminate/log",
-            "version": "v7.30.4",
-            "version_normalized": "7.30.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/illuminate/log.git",
-                "reference": "5c3ef2f534b82a5a4a1e2739ec8a70851b51ff77"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/log/zipball/5c3ef2f534b82a5a4a1e2739ec8a70851b51ff77",
-                "reference": "5c3ef2f534b82a5a4a1e2739ec8a70851b51ff77",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/contracts": "^7.0",
-                "illuminate/support": "^7.0",
-                "monolog/monolog": "^2.0",
-                "php": "^7.2.5|^8.0"
-            },
-            "time": "2020-10-27T15:11:37+00:00",
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "7.x-dev"
-                }
-            },
-            "installation-source": "dist",
-            "autoload": {
-                "psr-4": {
-                    "Illuminate\\Log\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Taylor Otwell",
-                    "email": "taylor@laravel.com"
-                }
-            ],
-            "description": "The Illuminate Log package.",
-            "homepage": "https://laravel.com",
-            "support": {
-                "issues": "https://github.com/laravel/framework/issues",
-                "source": "https://github.com/laravel/framework"
-            },
-            "install-path": "../illuminate/log"
-        },
-        {
-            "name": "illuminate/pagination",
-            "version": "v7.30.4",
-            "version_normalized": "7.30.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/illuminate/pagination.git",
-                "reference": "ba0940dc07dde18249f4f46573969f8d87197a3e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/pagination/zipball/ba0940dc07dde18249f4f46573969f8d87197a3e",
-                "reference": "ba0940dc07dde18249f4f46573969f8d87197a3e",
-                "shasum": ""
-            },
-            "require": {
-                "ext-json": "*",
-                "illuminate/contracts": "^7.0",
-                "illuminate/support": "^7.0",
-                "php": "^7.2.5|^8.0"
-            },
-            "time": "2020-10-27T15:11:37+00:00",
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "7.x-dev"
-                }
-            },
-            "installation-source": "dist",
-            "autoload": {
-                "psr-4": {
-                    "Illuminate\\Pagination\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Taylor Otwell",
-                    "email": "taylor@laravel.com"
-                }
-            ],
-            "description": "The Illuminate Pagination package.",
-            "homepage": "https://laravel.com",
-            "support": {
-                "issues": "https://github.com/laravel/framework/issues",
-                "source": "https://github.com/laravel/framework"
-            },
-            "install-path": "../illuminate/pagination"
-        },
-        {
-            "name": "illuminate/pipeline",
-            "version": "v7.30.4",
-            "version_normalized": "7.30.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/illuminate/pipeline.git",
-                "reference": "68434133b675a9914868fb2d8f665ec2157d9faa"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/pipeline/zipball/68434133b675a9914868fb2d8f665ec2157d9faa",
-                "reference": "68434133b675a9914868fb2d8f665ec2157d9faa",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/contracts": "^7.0",
-                "illuminate/support": "^7.0",
-                "php": "^7.2.5|^8.0"
-            },
-            "time": "2020-10-27T15:11:37+00:00",
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "7.x-dev"
-                }
-            },
-            "installation-source": "dist",
-            "autoload": {
-                "psr-4": {
-                    "Illuminate\\Pipeline\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Taylor Otwell",
-                    "email": "taylor@laravel.com"
-                }
-            ],
-            "description": "The Illuminate Pipeline package.",
-            "homepage": "https://laravel.com",
-            "support": {
-                "issues": "https://github.com/laravel/framework/issues",
-                "source": "https://github.com/laravel/framework"
-            },
-            "install-path": "../illuminate/pipeline"
-        },
-        {
-            "name": "illuminate/queue",
-            "version": "v7.30.4",
-            "version_normalized": "7.30.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/illuminate/queue.git",
-                "reference": "daf415d911c0f2651a43f83f04e6e4855c919328"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/queue/zipball/daf415d911c0f2651a43f83f04e6e4855c919328",
-                "reference": "daf415d911c0f2651a43f83f04e6e4855c919328",
-                "shasum": ""
-            },
-            "require": {
-                "ext-json": "*",
-                "illuminate/console": "^7.0",
-                "illuminate/container": "^7.0",
-                "illuminate/contracts": "^7.0",
-                "illuminate/database": "^7.0",
-                "illuminate/filesystem": "^7.0",
-                "illuminate/pipeline": "^7.0",
-                "illuminate/support": "^7.0",
-                "opis/closure": "^3.6",
-                "php": "^7.2.5|^8.0",
-                "ramsey/uuid": "^3.7|^4.0",
-                "symfony/process": "^5.0"
-            },
-            "suggest": {
-                "aws/aws-sdk-php": "Required to use the SQS queue driver and DynamoDb failed job storage (^3.155).",
-                "ext-pcntl": "Required to use all features of the queue worker.",
-                "ext-posix": "Required to use all features of the queue worker.",
-                "illuminate/redis": "Required to use the Redis queue driver (^7.0).",
-                "pda/pheanstalk": "Required to use the Beanstalk queue driver (^4.0)."
-            },
-            "time": "2020-11-18T14:37:23+00:00",
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "7.x-dev"
-                }
-            },
-            "installation-source": "dist",
-            "autoload": {
-                "psr-4": {
-                    "Illuminate\\Queue\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Taylor Otwell",
-                    "email": "taylor@laravel.com"
-                }
-            ],
-            "description": "The Illuminate Queue package.",
-            "homepage": "https://laravel.com",
-            "support": {
-                "issues": "https://github.com/laravel/framework/issues",
-                "source": "https://github.com/laravel/framework"
-            },
-            "install-path": "../illuminate/queue"
-        },
-        {
-            "name": "illuminate/session",
-            "version": "v7.30.4",
-            "version_normalized": "7.30.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/illuminate/session.git",
-                "reference": "b18bc348f4af2afae78e72ea332a4390c5c01a72"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/session/zipball/b18bc348f4af2afae78e72ea332a4390c5c01a72",
-                "reference": "b18bc348f4af2afae78e72ea332a4390c5c01a72",
-                "shasum": ""
-            },
-            "require": {
-                "ext-json": "*",
-                "illuminate/contracts": "^7.0",
-                "illuminate/filesystem": "^7.0",
-                "illuminate/support": "^7.0",
-                "php": "^7.2.5|^8.0",
-                "symfony/finder": "^5.0",
-                "symfony/http-foundation": "^5.0"
-            },
-            "suggest": {
-                "illuminate/console": "Required to use the session:table command (^7.0)."
-            },
-            "time": "2020-10-27T15:11:37+00:00",
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "7.x-dev"
-                }
-            },
-            "installation-source": "dist",
-            "autoload": {
-                "psr-4": {
-                    "Illuminate\\Session\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Taylor Otwell",
-                    "email": "taylor@laravel.com"
-                }
-            ],
-            "description": "The Illuminate Session package.",
-            "homepage": "https://laravel.com",
-            "support": {
-                "issues": "https://github.com/laravel/framework/issues",
-                "source": "https://github.com/laravel/framework"
-            },
-            "install-path": "../illuminate/session"
-        },
-        {
-            "name": "illuminate/support",
-            "version": "v7.30.4",
-            "version_normalized": "7.30.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/illuminate/support.git",
-                "reference": "1c95b8f842308ff15a56d29d897d3bda29001f1c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/support/zipball/1c95b8f842308ff15a56d29d897d3bda29001f1c",
-                "reference": "1c95b8f842308ff15a56d29d897d3bda29001f1c",
-                "shasum": ""
-            },
-            "require": {
-                "doctrine/inflector": "^1.4|^2.0",
-                "ext-json": "*",
-                "ext-mbstring": "*",
-                "illuminate/contracts": "^7.0",
-                "nesbot/carbon": "^2.31",
-                "php": "^7.2.5|^8.0",
-                "voku/portable-ascii": "^1.4.8"
-            },
-            "conflict": {
-                "tightenco/collect": "<5.5.33"
-            },
-            "suggest": {
-                "illuminate/filesystem": "Required to use the composer class (^7.0).",
-                "moontoast/math": "Required to use ordered UUIDs (^1.1).",
-                "ramsey/uuid": "Required to use Str::uuid() (^3.7|^4.0).",
-                "symfony/process": "Required to use the composer class (^5.0).",
-                "symfony/var-dumper": "Required to use the dd function (^5.0).",
-                "vlucas/phpdotenv": "Required to use the Env class and env helper (^4.0)."
-            },
-            "time": "2020-12-22T16:12:23+00:00",
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "7.x-dev"
-                }
-            },
-            "installation-source": "dist",
-            "autoload": {
-                "psr-4": {
-                    "Illuminate\\Support\\": ""
-                },
-                "files": [
-                    "helpers.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Taylor Otwell",
-                    "email": "taylor@laravel.com"
-                }
-            ],
-            "description": "The Illuminate Support package.",
-            "homepage": "https://laravel.com",
-            "support": {
-                "issues": "https://github.com/laravel/framework/issues",
-                "source": "https://github.com/laravel/framework"
-            },
-            "install-path": "../illuminate/support"
-        },
-        {
-            "name": "illuminate/testing",
-            "version": "v7.30.4",
-            "version_normalized": "7.30.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/illuminate/testing.git",
-                "reference": "d7e365ded1a73298ec068dae2e9958378f71630d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/testing/zipball/d7e365ded1a73298ec068dae2e9958378f71630d",
-                "reference": "d7e365ded1a73298ec068dae2e9958378f71630d",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/contracts": "^7.0",
-                "illuminate/support": "^7.0",
-                "php": "^7.2.5|^8.0",
-                "symfony/polyfill-php73": "^1.17"
-            },
-            "suggest": {
-                "illuminate/console": "Required to assert console commands (^7.0).",
-                "illuminate/database": "Required to assert databases (^7.0).",
-                "illuminate/http": "Required to assert responses (^7.0).",
-                "mockery/mockery": "Required to use mocking (~1.3.3|^1.4.2).",
-                "phpunit/phpunit": "Required to use assertions and run tests (^8.4|^9.3.3)."
-            },
-            "time": "2020-10-31T18:35:25+00:00",
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "7.x-dev"
-                }
-            },
-            "installation-source": "dist",
-            "autoload": {
-                "psr-4": {
-                    "Illuminate\\Testing\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Taylor Otwell",
-                    "email": "taylor@laravel.com"
-                }
-            ],
-            "description": "The Illuminate Testing package.",
-            "homepage": "https://laravel.com",
-            "support": {
-                "issues": "https://github.com/laravel/framework/issues",
-                "source": "https://github.com/laravel/framework"
-            },
-            "install-path": "../illuminate/testing"
-        },
-        {
-            "name": "illuminate/translation",
-            "version": "v7.30.4",
-            "version_normalized": "7.30.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/illuminate/translation.git",
-                "reference": "3fa058d9fbac56fd53d211e43acdb107fb1d2a77"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/translation/zipball/3fa058d9fbac56fd53d211e43acdb107fb1d2a77",
-                "reference": "3fa058d9fbac56fd53d211e43acdb107fb1d2a77",
-                "shasum": ""
-            },
-            "require": {
-                "ext-json": "*",
-                "illuminate/contracts": "^7.0",
-                "illuminate/filesystem": "^7.0",
-                "illuminate/support": "^7.0",
-                "php": "^7.2.5|^8.0"
-            },
-            "time": "2020-10-27T15:11:37+00:00",
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "7.x-dev"
-                }
-            },
-            "installation-source": "dist",
-            "autoload": {
-                "psr-4": {
-                    "Illuminate\\Translation\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Taylor Otwell",
-                    "email": "taylor@laravel.com"
-                }
-            ],
-            "description": "The Illuminate Translation package.",
-            "homepage": "https://laravel.com",
-            "support": {
-                "issues": "https://github.com/laravel/framework/issues",
-                "source": "https://github.com/laravel/framework"
-            },
-            "install-path": "../illuminate/translation"
-        },
-        {
-            "name": "illuminate/validation",
-            "version": "v7.30.4",
-            "version_normalized": "7.30.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/illuminate/validation.git",
-                "reference": "ef77d7d509e1f3d98279045bd7ed397bccf0d1fc"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/validation/zipball/ef77d7d509e1f3d98279045bd7ed397bccf0d1fc",
-                "reference": "ef77d7d509e1f3d98279045bd7ed397bccf0d1fc",
-                "shasum": ""
-            },
-            "require": {
-                "egulias/email-validator": "^2.1.10",
-                "ext-json": "*",
-                "illuminate/container": "^7.0",
-                "illuminate/contracts": "^7.0",
-                "illuminate/support": "^7.0",
-                "illuminate/translation": "^7.0",
-                "php": "^7.2.5|^8.0",
-                "symfony/http-foundation": "^5.0",
-                "symfony/mime": "^5.0"
-            },
-            "suggest": {
-                "illuminate/database": "Required to use the database presence verifier (^7.0)."
-            },
-            "time": "2021-01-13T13:37:00+00:00",
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "7.x-dev"
-                }
-            },
-            "installation-source": "dist",
-            "autoload": {
-                "psr-4": {
-                    "Illuminate\\Validation\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Taylor Otwell",
-                    "email": "taylor@laravel.com"
-                }
-            ],
-            "description": "The Illuminate Validation package.",
-            "homepage": "https://laravel.com",
-            "support": {
-                "issues": "https://github.com/laravel/framework/issues",
-                "source": "https://github.com/laravel/framework"
-            },
-            "install-path": "../illuminate/validation"
-        },
-        {
-            "name": "illuminate/view",
-            "version": "v7.30.4",
-            "version_normalized": "7.30.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/illuminate/view.git",
-                "reference": "5c2279062da803f36093108d09f4db1d54b302d5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/view/zipball/5c2279062da803f36093108d09f4db1d54b302d5",
-                "reference": "5c2279062da803f36093108d09f4db1d54b302d5",
-                "shasum": ""
-            },
-            "require": {
-                "ext-json": "*",
-                "illuminate/container": "^7.0",
-                "illuminate/contracts": "^7.0",
-                "illuminate/events": "^7.0",
-                "illuminate/filesystem": "^7.0",
-                "illuminate/support": "^7.0",
-                "php": "^7.2.5|^8.0"
-            },
-            "time": "2020-10-27T15:11:37+00:00",
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "7.x-dev"
-                }
-            },
-            "installation-source": "dist",
-            "autoload": {
-                "psr-4": {
-                    "Illuminate\\View\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Taylor Otwell",
-                    "email": "taylor@laravel.com"
-                }
-            ],
-            "description": "The Illuminate View package.",
-            "homepage": "https://laravel.com",
-            "support": {
-                "issues": "https://github.com/laravel/framework/issues",
-                "source": "https://github.com/laravel/framework"
-            },
-            "install-path": "../illuminate/view"
-        },
-        {
-            "name": "laravel/lumen-framework",
-            "version": "v7.2.2",
-            "version_normalized": "7.2.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/laravel/lumen-framework.git",
-                "reference": "613c9c02dd9632f18c6e2542a289cb37a98c939f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/laravel/lumen-framework/zipball/613c9c02dd9632f18c6e2542a289cb37a98c939f",
-                "reference": "613c9c02dd9632f18c6e2542a289cb37a98c939f",
-                "shasum": ""
-            },
-            "require": {
-                "dragonmantank/cron-expression": "^2.0",
-                "illuminate/auth": "^7.0",
-                "illuminate/broadcasting": "^7.0",
-                "illuminate/bus": "^7.0",
-                "illuminate/cache": "^7.0",
-                "illuminate/config": "^7.0",
-                "illuminate/console": "^7.0",
-                "illuminate/container": "^7.0",
-                "illuminate/contracts": "^7.0",
-                "illuminate/database": "^7.0",
-                "illuminate/encryption": "^7.0",
-                "illuminate/events": "^7.0",
-                "illuminate/filesystem": "^7.0",
-                "illuminate/hashing": "^7.0",
-                "illuminate/http": "^7.0",
-                "illuminate/log": "^7.0",
-                "illuminate/pagination": "^7.0",
-                "illuminate/pipeline": "^7.0",
-                "illuminate/queue": "^7.0",
-                "illuminate/support": "^7.0",
-                "illuminate/testing": "^7.0",
-                "illuminate/translation": "^7.0",
-                "illuminate/validation": "^7.0",
-                "illuminate/view": "^7.0",
-                "nikic/fast-route": "^1.3",
-                "php": "^7.2.5",
-                "symfony/console": "^5.0",
-                "symfony/error-handler": "^5.0",
-                "symfony/http-foundation": "^5.0",
-                "symfony/http-kernel": "^5.0",
-                "symfony/mime": "^5.0",
-                "symfony/var-dumper": "^5.0",
-                "vlucas/phpdotenv": "^4.0"
-            },
-            "require-dev": {
-                "mockery/mockery": "^1.0",
-                "phpunit/phpunit": "^8.4|^9.0"
-            },
-            "suggest": {
-                "laravel/tinker": "Required to use the tinker console command (^2.0).",
-                "nyholm/psr7": "Required to use PSR-7 bridging features (^1.2).",
-                "symfony/psr-http-message-bridge": "Required to use PSR-7 bridging features (^2.0)."
-            },
-            "time": "2020-09-15T14:53:08+00:00",
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "7.x-dev"
-=======
                 "BSD-3-Clause"
             ],
             "authors": [
@@ -2630,22 +1078,13 @@
             "extra": {
                 "branch-alias": {
                     "dev-master": "1.1-dev"
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
                 }
             },
             "installation-source": "dist",
             "autoload": {
                 "psr-4": {
-<<<<<<< HEAD
-                    "Laravel\\Lumen\\": "src/"
-                },
-                "files": [
-                    "src/helpers.php"
-                ]
-=======
                     "League\\Flysystem\\": "src/"
                 }
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -2653,63 +1092,6 @@
             ],
             "authors": [
                 {
-<<<<<<< HEAD
-                    "name": "Taylor Otwell",
-                    "email": "taylorotwell@gmail.com"
-                }
-            ],
-            "description": "The Laravel Lumen Framework.",
-            "homepage": "https://lumen.laravel.com",
-            "keywords": [
-                "framework",
-                "laravel",
-                "lumen"
-            ],
-            "support": {
-                "issues": "https://github.com/laravel/lumen-framework/issues",
-                "source": "https://github.com/laravel/lumen-framework"
-            },
-            "install-path": "../laravel/lumen-framework"
-        },
-        {
-            "name": "lcobucci/jwt",
-            "version": "3.3.3",
-            "version_normalized": "3.3.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/lcobucci/jwt.git",
-                "reference": "c1123697f6a2ec29162b82f170dd4a491f524773"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/lcobucci/jwt/zipball/c1123697f6a2ec29162b82f170dd4a491f524773",
-                "reference": "c1123697f6a2ec29162b82f170dd4a491f524773",
-                "shasum": ""
-            },
-            "require": {
-                "ext-mbstring": "*",
-                "ext-openssl": "*",
-                "php": "^5.6 || ^7.0"
-            },
-            "require-dev": {
-                "mikey179/vfsstream": "~1.5",
-                "phpmd/phpmd": "~2.2",
-                "phpunit/php-invoker": "~1.1",
-                "phpunit/phpunit": "^5.7 || ^7.3",
-                "squizlabs/php_codesniffer": "~2.3"
-            },
-            "time": "2020-08-20T13:22:28+00:00",
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.1-dev"
-                }
-            },
-            "installation-source": "dist",
-            "autoload": {
-                "psr-4": {
-                    "Lcobucci\\JWT\\": "src"
-=======
                     "name": "Frank de Jonge",
                     "email": "info@frenky.net"
                 }
@@ -2776,42 +1158,10 @@
             "autoload": {
                 "psr-4": {
                     "League\\MimeTypeDetection\\": "src"
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-<<<<<<< HEAD
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Luís Otávio Cobucci Oblonczyk",
-                    "email": "lcobucci@gmail.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "A simple library to work with JSON Web Token and JSON Web Signature",
-            "keywords": [
-                "JWS",
-                "jwt"
-            ],
-            "support": {
-                "issues": "https://github.com/lcobucci/jwt/issues",
-                "source": "https://github.com/lcobucci/jwt/tree/3.3.3"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/lcobucci",
-                    "type": "github"
-                },
-                {
-                    "url": "https://www.patreon.com/lcobucci",
-                    "type": "patreon"
-                }
-            ],
-            "install-path": "../lcobucci/jwt"
-=======
                 "MIT"
             ],
             "authors": [
@@ -2836,7 +1186,6 @@
                 }
             ],
             "install-path": "../league/mime-type-detection"
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
         },
         {
             "name": "mockery/mockery",
@@ -2907,13 +1256,6 @@
                 "test double",
                 "testing"
             ],
-<<<<<<< HEAD
-            "support": {
-                "issues": "https://github.com/mockery/mockery/issues",
-                "source": "https://github.com/mockery/mockery/tree/master"
-            },
-=======
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "install-path": "../mockery/mockery"
         },
         {
@@ -2999,23 +1341,6 @@
                 "logging",
                 "psr-3"
             ],
-<<<<<<< HEAD
-            "support": {
-                "issues": "https://github.com/Seldaek/monolog/issues",
-                "source": "https://github.com/Seldaek/monolog/tree/2.2.0"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/Seldaek",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/monolog/monolog",
-                    "type": "tidelift"
-                }
-            ],
-=======
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "install-path": "../monolog/monolog"
         },
         {
@@ -3067,19 +1392,6 @@
                 "object",
                 "object graph"
             ],
-<<<<<<< HEAD
-            "support": {
-                "issues": "https://github.com/myclabs/DeepCopy/issues",
-                "source": "https://github.com/myclabs/DeepCopy/tree/1.10.2"
-            },
-            "funding": [
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/myclabs/deep-copy",
-                    "type": "tidelift"
-                }
-            ],
-=======
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "install-path": "../myclabs/deep-copy"
         },
         {
@@ -3146,13 +1458,6 @@
                 "jwt",
                 "token"
             ],
-<<<<<<< HEAD
-            "support": {
-                "issues": "https://github.com/namshi/jose/issues",
-                "source": "https://github.com/namshi/jose/tree/master"
-            },
-=======
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "install-path": "../namshi/jose"
         },
         {
@@ -3235,23 +1540,6 @@
                 "datetime",
                 "time"
             ],
-<<<<<<< HEAD
-            "support": {
-                "issues": "https://github.com/briannesbitt/Carbon/issues",
-                "source": "https://github.com/briannesbitt/Carbon"
-            },
-            "funding": [
-                {
-                    "url": "https://opencollective.com/Carbon",
-                    "type": "open_collective"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/nesbot/carbon",
-                    "type": "tidelift"
-                }
-            ],
-=======
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "install-path": "../nesbot/carbon"
         },
         {
@@ -3301,13 +1589,6 @@
                 "router",
                 "routing"
             ],
-<<<<<<< HEAD
-            "support": {
-                "issues": "https://github.com/nikic/FastRoute/issues",
-                "source": "https://github.com/nikic/FastRoute/tree/master"
-            },
-=======
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "install-path": "../nikic/fast-route"
         },
         {
@@ -3372,13 +1653,6 @@
                 "serialization",
                 "serialize"
             ],
-<<<<<<< HEAD
-            "support": {
-                "issues": "https://github.com/opis/closure/issues",
-                "source": "https://github.com/opis/closure/tree/3.6.1"
-            },
-=======
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "install-path": "../opis/closure"
         },
         {
@@ -3438,13 +1712,6 @@
                 }
             ],
             "description": "Component for reading phar.io manifest information from a PHP Archive (PHAR)",
-<<<<<<< HEAD
-            "support": {
-                "issues": "https://github.com/phar-io/manifest/issues",
-                "source": "https://github.com/phar-io/manifest/tree/master"
-            },
-=======
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "install-path": "../phar-io/manifest"
         },
         {
@@ -3495,13 +1762,6 @@
                 }
             ],
             "description": "Library for handling version information and constraints",
-<<<<<<< HEAD
-            "support": {
-                "issues": "https://github.com/phar-io/version/issues",
-                "source": "https://github.com/phar-io/version/tree/3.0.4"
-            },
-=======
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "install-path": "../phar-io/version"
         },
         {
@@ -3554,13 +1814,6 @@
                 "reflection",
                 "static analysis"
             ],
-<<<<<<< HEAD
-            "support": {
-                "issues": "https://github.com/phpDocumentor/ReflectionCommon/issues",
-                "source": "https://github.com/phpDocumentor/ReflectionCommon/tree/2.x"
-            },
-=======
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "install-path": "../phpdocumentor/reflection-common"
         },
         {
@@ -3616,13 +1869,6 @@
                 }
             ],
             "description": "With this component, a library can provide support for annotations via DocBlocks or otherwise retrieve information that is embedded in a DocBlock.",
-<<<<<<< HEAD
-            "support": {
-                "issues": "https://github.com/phpDocumentor/ReflectionDocBlock/issues",
-                "source": "https://github.com/phpDocumentor/ReflectionDocBlock/tree/master"
-            },
-=======
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "install-path": "../phpdocumentor/reflection-docblock"
         },
         {
@@ -3671,13 +1917,6 @@
                 }
             ],
             "description": "A PSR-5 based resolver of Class names, Types and Structural Element Names",
-<<<<<<< HEAD
-            "support": {
-                "issues": "https://github.com/phpDocumentor/TypeResolver/issues",
-                "source": "https://github.com/phpDocumentor/TypeResolver/tree/1.4.0"
-            },
-=======
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "install-path": "../phpdocumentor/type-resolver"
         },
         {
@@ -3736,23 +1975,6 @@
                 "php",
                 "type"
             ],
-<<<<<<< HEAD
-            "support": {
-                "issues": "https://github.com/schmittjoh/php-option/issues",
-                "source": "https://github.com/schmittjoh/php-option/tree/1.7.5"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/GrahamCampbell",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/phpoption/phpoption",
-                    "type": "tidelift"
-                }
-            ],
-=======
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "install-path": "../phpoption/phpoption"
         },
         {
@@ -3819,13 +2041,6 @@
                 "spy",
                 "stub"
             ],
-<<<<<<< HEAD
-            "support": {
-                "issues": "https://github.com/phpspec/prophecy/issues",
-                "source": "https://github.com/phpspec/prophecy/tree/1.12.2"
-            },
-=======
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "install-path": "../phpspec/prophecy"
         },
         {
@@ -3892,19 +2107,6 @@
                 "testing",
                 "xunit"
             ],
-<<<<<<< HEAD
-            "support": {
-                "issues": "https://github.com/sebastianbergmann/php-code-coverage/issues",
-                "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/7.0.14"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/sebastianbergmann",
-                    "type": "github"
-                }
-            ],
-=======
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "install-path": "../phpunit/php-code-coverage"
         },
         {
@@ -3958,19 +2160,6 @@
                 "filesystem",
                 "iterator"
             ],
-<<<<<<< HEAD
-            "support": {
-                "issues": "https://github.com/sebastianbergmann/php-file-iterator/issues",
-                "source": "https://github.com/sebastianbergmann/php-file-iterator/tree/2.0.3"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/sebastianbergmann",
-                    "type": "github"
-                }
-            ],
-=======
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "install-path": "../phpunit/php-file-iterator"
         },
         {
@@ -4015,13 +2204,6 @@
             "keywords": [
                 "template"
             ],
-<<<<<<< HEAD
-            "support": {
-                "issues": "https://github.com/sebastianbergmann/php-text-template/issues",
-                "source": "https://github.com/sebastianbergmann/php-text-template/tree/1.2.1"
-            },
-=======
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "install-path": "../phpunit/php-text-template"
         },
         {
@@ -4074,19 +2256,6 @@
             "keywords": [
                 "timer"
             ],
-<<<<<<< HEAD
-            "support": {
-                "issues": "https://github.com/sebastianbergmann/php-timer/issues",
-                "source": "https://github.com/sebastianbergmann/php-timer/tree/2.1.3"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/sebastianbergmann",
-                    "type": "github"
-                }
-            ],
-=======
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "install-path": "../phpunit/php-timer"
         },
         {
@@ -4139,19 +2308,6 @@
             "keywords": [
                 "tokenizer"
             ],
-<<<<<<< HEAD
-            "support": {
-                "issues": "https://github.com/sebastianbergmann/php-token-stream/issues",
-                "source": "https://github.com/sebastianbergmann/php-token-stream/tree/master"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/sebastianbergmann",
-                    "type": "github"
-                }
-            ],
-=======
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "abandoned": true,
             "install-path": "../phpunit/php-token-stream"
         },
@@ -4239,23 +2395,6 @@
                 "testing",
                 "xunit"
             ],
-<<<<<<< HEAD
-            "support": {
-                "issues": "https://github.com/sebastianbergmann/phpunit/issues",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/8.5.14"
-            },
-            "funding": [
-                {
-                    "url": "https://phpunit.de/donate.html",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/sebastianbergmann",
-                    "type": "github"
-                }
-            ],
-=======
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "install-path": "../phpunit/phpunit"
         },
         {
@@ -4308,13 +2447,6 @@
                 "container-interop",
                 "psr"
             ],
-<<<<<<< HEAD
-            "support": {
-                "issues": "https://github.com/php-fig/container/issues",
-                "source": "https://github.com/php-fig/container/tree/master"
-            },
-=======
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "install-path": "../psr/container"
         },
         {
@@ -4364,13 +2496,6 @@
                 "psr",
                 "psr-14"
             ],
-<<<<<<< HEAD
-            "support": {
-                "issues": "https://github.com/php-fig/event-dispatcher/issues",
-                "source": "https://github.com/php-fig/event-dispatcher/tree/1.0.0"
-            },
-=======
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "install-path": "../psr/event-dispatcher"
         },
         {
@@ -4421,12 +2546,6 @@
                 "psr",
                 "psr-3"
             ],
-<<<<<<< HEAD
-            "support": {
-                "source": "https://github.com/php-fig/log/tree/1.1.3"
-            },
-=======
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "install-path": "../psr/log"
         },
         {
@@ -4478,12 +2597,6 @@
                 "psr-16",
                 "simple-cache"
             ],
-<<<<<<< HEAD
-            "support": {
-                "source": "https://github.com/php-fig/simple-cache/tree/master"
-            },
-=======
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "install-path": "../psr/simple-cache"
         },
         {
@@ -4550,23 +2663,6 @@
                 "queue",
                 "set"
             ],
-<<<<<<< HEAD
-            "support": {
-                "issues": "https://github.com/ramsey/collection/issues",
-                "source": "https://github.com/ramsey/collection/tree/1.1.3"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/ramsey",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/ramsey/collection",
-                    "type": "tidelift"
-                }
-            ],
-=======
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "install-path": "../ramsey/collection"
         },
         {
@@ -4651,20 +2747,6 @@
                 "identifier",
                 "uuid"
             ],
-<<<<<<< HEAD
-            "support": {
-                "issues": "https://github.com/ramsey/uuid/issues",
-                "rss": "https://github.com/ramsey/uuid/releases.atom",
-                "source": "https://github.com/ramsey/uuid"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/ramsey",
-                    "type": "github"
-                }
-            ],
-=======
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "install-path": "../ramsey/uuid"
         },
         {
@@ -4713,19 +2795,6 @@
             ],
             "description": "Looks up which function or method a line of code belongs to",
             "homepage": "https://github.com/sebastianbergmann/code-unit-reverse-lookup/",
-<<<<<<< HEAD
-            "support": {
-                "issues": "https://github.com/sebastianbergmann/code-unit-reverse-lookup/issues",
-                "source": "https://github.com/sebastianbergmann/code-unit-reverse-lookup/tree/1.0.2"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/sebastianbergmann",
-                    "type": "github"
-                }
-            ],
-=======
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "install-path": "../sebastian/code-unit-reverse-lookup"
         },
         {
@@ -4793,19 +2862,6 @@
                 "compare",
                 "equality"
             ],
-<<<<<<< HEAD
-            "support": {
-                "issues": "https://github.com/sebastianbergmann/comparator/issues",
-                "source": "https://github.com/sebastianbergmann/comparator/tree/3.0.3"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/sebastianbergmann",
-                    "type": "github"
-                }
-            ],
-=======
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "install-path": "../sebastian/comparator"
         },
         {
@@ -4865,19 +2921,6 @@
                 "unidiff",
                 "unified diff"
             ],
-<<<<<<< HEAD
-            "support": {
-                "issues": "https://github.com/sebastianbergmann/diff/issues",
-                "source": "https://github.com/sebastianbergmann/diff/tree/3.0.3"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/sebastianbergmann",
-                    "type": "github"
-                }
-            ],
-=======
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "install-path": "../sebastian/diff"
         },
         {
@@ -4934,19 +2977,6 @@
                 "environment",
                 "hhvm"
             ],
-<<<<<<< HEAD
-            "support": {
-                "issues": "https://github.com/sebastianbergmann/environment/issues",
-                "source": "https://github.com/sebastianbergmann/environment/tree/4.2.4"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/sebastianbergmann",
-                    "type": "github"
-                }
-            ],
-=======
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "install-path": "../sebastian/environment"
         },
         {
@@ -5017,19 +3047,6 @@
                 "export",
                 "exporter"
             ],
-<<<<<<< HEAD
-            "support": {
-                "issues": "https://github.com/sebastianbergmann/exporter/issues",
-                "source": "https://github.com/sebastianbergmann/exporter/tree/3.1.3"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/sebastianbergmann",
-                    "type": "github"
-                }
-            ],
-=======
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "install-path": "../sebastian/exporter"
         },
         {
@@ -5087,19 +3104,6 @@
             "keywords": [
                 "global state"
             ],
-<<<<<<< HEAD
-            "support": {
-                "issues": "https://github.com/sebastianbergmann/global-state/issues",
-                "source": "https://github.com/sebastianbergmann/global-state/tree/3.0.1"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/sebastianbergmann",
-                    "type": "github"
-                }
-            ],
-=======
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "install-path": "../sebastian/global-state"
         },
         {
@@ -5150,19 +3154,6 @@
             ],
             "description": "Traverses array structures and object graphs to enumerate all referenced objects",
             "homepage": "https://github.com/sebastianbergmann/object-enumerator/",
-<<<<<<< HEAD
-            "support": {
-                "issues": "https://github.com/sebastianbergmann/object-enumerator/issues",
-                "source": "https://github.com/sebastianbergmann/object-enumerator/tree/3.0.4"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/sebastianbergmann",
-                    "type": "github"
-                }
-            ],
-=======
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "install-path": "../sebastian/object-enumerator"
         },
         {
@@ -5211,19 +3202,6 @@
             ],
             "description": "Allows reflection of object attributes, including inherited and non-public ones",
             "homepage": "https://github.com/sebastianbergmann/object-reflector/",
-<<<<<<< HEAD
-            "support": {
-                "issues": "https://github.com/sebastianbergmann/object-reflector/issues",
-                "source": "https://github.com/sebastianbergmann/object-reflector/tree/1.1.2"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/sebastianbergmann",
-                    "type": "github"
-                }
-            ],
-=======
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "install-path": "../sebastian/object-reflector"
         },
         {
@@ -5280,19 +3258,6 @@
             ],
             "description": "Provides functionality to recursively process PHP variables",
             "homepage": "http://www.github.com/sebastianbergmann/recursion-context",
-<<<<<<< HEAD
-            "support": {
-                "issues": "https://github.com/sebastianbergmann/recursion-context/issues",
-                "source": "https://github.com/sebastianbergmann/recursion-context/tree/3.0.1"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/sebastianbergmann",
-                    "type": "github"
-                }
-            ],
-=======
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "install-path": "../sebastian/recursion-context"
         },
         {
@@ -5338,19 +3303,6 @@
             ],
             "description": "Provides a list of PHP built-in functions that operate on resources",
             "homepage": "https://www.github.com/sebastianbergmann/resource-operations",
-<<<<<<< HEAD
-            "support": {
-                "issues": "https://github.com/sebastianbergmann/resource-operations/issues",
-                "source": "https://github.com/sebastianbergmann/resource-operations/tree/2.0.2"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/sebastianbergmann",
-                    "type": "github"
-                }
-            ],
-=======
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "install-path": "../sebastian/resource-operations"
         },
         {
@@ -5400,19 +3352,6 @@
             ],
             "description": "Collection of value objects that represent the types of the PHP type system",
             "homepage": "https://github.com/sebastianbergmann/type",
-<<<<<<< HEAD
-            "support": {
-                "issues": "https://github.com/sebastianbergmann/type/issues",
-                "source": "https://github.com/sebastianbergmann/type/tree/1.1.4"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/sebastianbergmann",
-                    "type": "github"
-                }
-            ],
-=======
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "install-path": "../sebastian/type"
         },
         {
@@ -5459,13 +3398,6 @@
             ],
             "description": "Library that helps with managing the version number of Git-hosted PHP projects",
             "homepage": "https://github.com/sebastianbergmann/version",
-<<<<<<< HEAD
-            "support": {
-                "issues": "https://github.com/sebastianbergmann/version/issues",
-                "source": "https://github.com/sebastianbergmann/version/tree/master"
-            },
-=======
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "install-path": "../sebastian/version"
         },
         {
@@ -5526,27 +3458,6 @@
                 "swagger",
                 "ui"
             ],
-<<<<<<< HEAD
-            "support": {
-                "issues": "https://github.com/swagger-api/swagger-ui/issues",
-                "source": "https://github.com/swagger-api/swagger-ui/tree/v3.41.1"
-            },
-            "install-path": "../swagger-api/swagger-ui"
-        },
-        {
-            "name": "symfony/console",
-            "version": "v5.2.3",
-            "version_normalized": "5.2.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/console.git",
-                "reference": "89d4b176d12a2946a1ae4e34906a025b7b6b135a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/89d4b176d12a2946a1ae4e34906a025b7b6b135a",
-                "reference": "89d4b176d12a2946a1ae4e34906a025b7b6b135a",
-=======
             "support": {
                 "issues": "https://github.com/swagger-api/swagger-ui/issues",
                 "source": "https://github.com/swagger-api/swagger-ui/tree/v3.41.1"
@@ -5644,7 +3555,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/console/zipball/d62ec79478b55036f65e2602e282822b8eaaff0a",
                 "reference": "d62ec79478b55036f65e2602e282822b8eaaff0a",
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
                 "shasum": ""
             },
             "require": {
@@ -5680,11 +3590,7 @@
                 "symfony/lock": "",
                 "symfony/process": ""
             },
-<<<<<<< HEAD
-            "time": "2021-01-28T22:06:19+00:00",
-=======
             "time": "2021-01-27T10:15:41+00:00",
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -5717,10 +3623,6 @@
                 "console",
                 "terminal"
             ],
-<<<<<<< HEAD
-            "support": {
-                "source": "https://github.com/symfony/console/tree/v5.2.3"
-=======
             "install-path": "../symfony/console"
         },
         {
@@ -5774,7 +3676,6 @@
             "homepage": "https://symfony.com",
             "support": {
                 "source": "https://github.com/symfony/css-selector/tree/v5.2.3"
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             },
             "funding": [
                 {
@@ -5790,11 +3691,7 @@
                     "type": "tidelift"
                 }
             ],
-<<<<<<< HEAD
-            "install-path": "../symfony/console"
-=======
             "install-path": "../symfony/css-selector"
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
         },
         {
             "name": "symfony/deprecation-contracts",
@@ -5847,43 +3744,10 @@
             ],
             "description": "A generic function and convention to trigger deprecation notices",
             "homepage": "https://symfony.com",
-<<<<<<< HEAD
-            "support": {
-                "source": "https://github.com/symfony/deprecation-contracts/tree/master"
-            },
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
-=======
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "install-path": "../symfony/deprecation-contracts"
         },
         {
             "name": "symfony/error-handler",
-<<<<<<< HEAD
-            "version": "v5.2.3",
-            "version_normalized": "5.2.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/error-handler.git",
-                "reference": "48f18b3609e120ea66d59142c23dc53e9562c26d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/error-handler/zipball/48f18b3609e120ea66d59142c23dc53e9562c26d",
-                "reference": "48f18b3609e120ea66d59142c23dc53e9562c26d",
-=======
             "version": "v5.2.2",
             "version_normalized": "5.2.2.0",
             "source": {
@@ -5895,7 +3759,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/error-handler/zipball/4fd4a377f7b7ec7c3f3b40346a1411e0a83f9d40",
                 "reference": "4fd4a377f7b7ec7c3f3b40346a1411e0a83f9d40",
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
                 "shasum": ""
             },
             "require": {
@@ -5909,11 +3772,7 @@
                 "symfony/http-kernel": "^4.4|^5.0",
                 "symfony/serializer": "^4.4|^5.0"
             },
-<<<<<<< HEAD
-            "time": "2021-01-28T22:06:19+00:00",
-=======
             "time": "2021-01-27T10:15:41+00:00",
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -5940,37 +3799,12 @@
             ],
             "description": "Provides tools to manage errors and ease debugging PHP code",
             "homepage": "https://symfony.com",
-<<<<<<< HEAD
-            "support": {
-                "source": "https://github.com/symfony/error-handler/tree/v5.2.3"
-            },
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
-=======
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "install-path": "../symfony/error-handler"
         },
         {
             "name": "symfony/event-dispatcher",
-<<<<<<< HEAD
-            "version": "v5.2.3",
-            "version_normalized": "5.2.3.0",
-=======
             "version": "v5.2.2",
             "version_normalized": "5.2.2.0",
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/event-dispatcher.git",
@@ -6036,26 +3870,6 @@
             ],
             "description": "Provides tools that allow your application components to communicate with each other by dispatching events and listening to them",
             "homepage": "https://symfony.com",
-<<<<<<< HEAD
-            "support": {
-                "source": "https://github.com/symfony/event-dispatcher/tree/v5.2.3"
-            },
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
-=======
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "install-path": "../symfony/event-dispatcher"
         },
         {
@@ -6121,43 +3935,10 @@
                 "interoperability",
                 "standards"
             ],
-<<<<<<< HEAD
-            "support": {
-                "source": "https://github.com/symfony/event-dispatcher-contracts/tree/v2.2.0"
-            },
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
-=======
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "install-path": "../symfony/event-dispatcher-contracts"
         },
         {
             "name": "symfony/finder",
-<<<<<<< HEAD
-            "version": "v5.2.3",
-            "version_normalized": "5.2.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/finder.git",
-                "reference": "4adc8d172d602008c204c2e16956f99257248e03"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/4adc8d172d602008c204c2e16956f99257248e03",
-                "reference": "4adc8d172d602008c204c2e16956f99257248e03",
-=======
             "version": "v5.2.2",
             "version_normalized": "5.2.2.0",
             "source": {
@@ -6169,17 +3950,12 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/finder/zipball/196f45723b5e618bf0e23b97e96d11652696ea9e",
                 "reference": "196f45723b5e618bf0e23b97e96d11652696ea9e",
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.2.5"
             },
-<<<<<<< HEAD
-            "time": "2021-01-28T22:06:19+00:00",
-=======
             "time": "2021-01-27T10:01:46+00:00",
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -6206,26 +3982,6 @@
             ],
             "description": "Finds files and directories via an intuitive fluent interface",
             "homepage": "https://symfony.com",
-<<<<<<< HEAD
-            "support": {
-                "source": "https://github.com/symfony/finder/tree/v5.2.3"
-            },
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
-=======
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "install-path": "../symfony/finder"
         },
         {
@@ -6291,43 +4047,10 @@
                 "interoperability",
                 "standards"
             ],
-<<<<<<< HEAD
-            "support": {
-                "source": "https://github.com/symfony/http-client-contracts/tree/v2.3.1"
-            },
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
-=======
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "install-path": "../symfony/http-client-contracts"
         },
         {
             "name": "symfony/http-foundation",
-<<<<<<< HEAD
-            "version": "v5.2.3",
-            "version_normalized": "5.2.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/http-foundation.git",
-                "reference": "20c554c0f03f7cde5ce230ed248470cccbc34c36"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/20c554c0f03f7cde5ce230ed248470cccbc34c36",
-                "reference": "20c554c0f03f7cde5ce230ed248470cccbc34c36",
-=======
             "version": "v5.2.2",
             "version_normalized": "5.2.2.0",
             "source": {
@@ -6339,7 +4062,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/http-foundation/zipball/16dfa5acf8103f0394d447f8eea3ea49f9e50855",
                 "reference": "16dfa5acf8103f0394d447f8eea3ea49f9e50855",
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
                 "shasum": ""
             },
             "require": {
@@ -6357,11 +4079,7 @@
             "suggest": {
                 "symfony/mime": "To use the file extension guesser"
             },
-<<<<<<< HEAD
-            "time": "2021-02-03T04:42:09+00:00",
-=======
             "time": "2021-01-27T11:19:04+00:00",
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -6388,43 +4106,10 @@
             ],
             "description": "Defines an object-oriented layer for the HTTP specification",
             "homepage": "https://symfony.com",
-<<<<<<< HEAD
-            "support": {
-                "source": "https://github.com/symfony/http-foundation/tree/v5.2.3"
-            },
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
-=======
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "install-path": "../symfony/http-foundation"
         },
         {
             "name": "symfony/http-kernel",
-<<<<<<< HEAD
-            "version": "v5.2.3",
-            "version_normalized": "5.2.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/http-kernel.git",
-                "reference": "89bac04f29e7b0b52f9fa6a4288ca7a8f90a1a05"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-kernel/zipball/89bac04f29e7b0b52f9fa6a4288ca7a8f90a1a05",
-                "reference": "89bac04f29e7b0b52f9fa6a4288ca7a8f90a1a05",
-=======
             "version": "v5.2.2",
             "version_normalized": "5.2.2.0",
             "source": {
@@ -6436,7 +4121,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/http-kernel/zipball/831b51e9370ece0febd0950dd819c63f996721c7",
                 "reference": "831b51e9370ece0febd0950dd819c63f996721c7",
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
                 "shasum": ""
             },
             "require": {
@@ -6493,11 +4177,7 @@
                 "symfony/console": "",
                 "symfony/dependency-injection": ""
             },
-<<<<<<< HEAD
-            "time": "2021-02-03T04:51:58+00:00",
-=======
             "time": "2021-01-27T14:45:46+00:00",
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -6524,43 +4204,10 @@
             ],
             "description": "Provides a structured process for converting a Request into a Response",
             "homepage": "https://symfony.com",
-<<<<<<< HEAD
-            "support": {
-                "source": "https://github.com/symfony/http-kernel/tree/v5.2.3"
-            },
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
-=======
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "install-path": "../symfony/http-kernel"
         },
         {
             "name": "symfony/mime",
-<<<<<<< HEAD
-            "version": "v5.2.3",
-            "version_normalized": "5.2.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/mime.git",
-                "reference": "7dee6a43493f39b51ff6c5bb2bd576fe40a76c86"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/mime/zipball/7dee6a43493f39b51ff6c5bb2bd576fe40a76c86",
-                "reference": "7dee6a43493f39b51ff6c5bb2bd576fe40a76c86",
-=======
             "version": "v5.2.2",
             "version_normalized": "5.2.2.0",
             "source": {
@@ -6572,7 +4219,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/mime/zipball/37bade585ea100d235c031b258eff93b5b6bb9a9",
                 "reference": "37bade585ea100d235c031b258eff93b5b6bb9a9",
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
                 "shasum": ""
             },
             "require": {
@@ -6595,17 +4241,6 @@
                 "symfony/property-info": "^4.4|^5.1",
                 "symfony/serializer": "^5.2"
             },
-<<<<<<< HEAD
-            "time": "2021-02-02T06:10:15+00:00",
-            "type": "library",
-            "installation-source": "dist",
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\Mime\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-=======
             "time": "2021-01-25T14:08:25+00:00",
             "type": "library",
             "installation-source": "dist",
@@ -6678,7 +4313,6 @@
                 },
                 "files": [
                     "bootstrap.php"
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -6687,48 +4321,14 @@
             ],
             "authors": [
                 {
-<<<<<<< HEAD
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-=======
                     "name": "Gert de Pagter",
                     "email": "BackEndTea@gmail.com"
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
                 },
                 {
                     "name": "Symfony Community",
                     "homepage": "https://symfony.com/contributors"
                 }
             ],
-<<<<<<< HEAD
-            "description": "Allows manipulating MIME messages",
-            "homepage": "https://symfony.com",
-            "keywords": [
-                "mime",
-                "mime-type"
-            ],
-            "support": {
-                "source": "https://github.com/symfony/mime/tree/v5.2.3"
-            },
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
-            "install-path": "../symfony/mime"
-        },
-        {
-            "name": "symfony/polyfill-ctype",
-=======
             "description": "Symfony polyfill for ctype functions",
             "homepage": "https://symfony.com",
             "keywords": [
@@ -6741,20 +4341,10 @@
         },
         {
             "name": "symfony/polyfill-iconv",
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "version": "v1.22.0",
             "version_normalized": "1.22.0.0",
             "source": {
                 "type": "git",
-<<<<<<< HEAD
-                "url": "https://github.com/symfony/polyfill-ctype.git",
-                "reference": "c6c942b1ac76c82448322025e084cadc56048b4e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/c6c942b1ac76c82448322025e084cadc56048b4e",
-                "reference": "c6c942b1ac76c82448322025e084cadc56048b4e",
-=======
                 "url": "https://github.com/symfony/polyfill-iconv.git",
                 "reference": "b34bfb8c4c22650ac080d2662ae3502e5f2f4ae6"
             },
@@ -6762,18 +4352,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/polyfill-iconv/zipball/b34bfb8c4c22650ac080d2662ae3502e5f2f4ae6",
                 "reference": "b34bfb8c4c22650ac080d2662ae3502e5f2f4ae6",
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.1"
             },
             "suggest": {
-<<<<<<< HEAD
-                "ext-ctype": "For best performance"
-=======
                 "ext-iconv": "For best performance"
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             },
             "time": "2021-01-07T16:49:33+00:00",
             "type": "library",
@@ -6789,11 +4374,7 @@
             "installation-source": "dist",
             "autoload": {
                 "psr-4": {
-<<<<<<< HEAD
-                    "Symfony\\Polyfill\\Ctype\\": ""
-=======
                     "Symfony\\Polyfill\\Iconv\\": ""
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
                 },
                 "files": [
                     "bootstrap.php"
@@ -6805,31 +4386,14 @@
             ],
             "authors": [
                 {
-<<<<<<< HEAD
-                    "name": "Gert de Pagter",
-                    "email": "BackEndTea@gmail.com"
-=======
                     "name": "Nicolas Grekas",
                     "email": "p@tchwork.com"
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
                 },
                 {
                     "name": "Symfony Community",
                     "homepage": "https://symfony.com/contributors"
                 }
             ],
-<<<<<<< HEAD
-            "description": "Symfony polyfill for ctype functions",
-            "homepage": "https://symfony.com",
-            "keywords": [
-                "compatibility",
-                "ctype",
-                "polyfill",
-                "portable"
-            ],
-            "support": {
-                "source": "https://github.com/symfony/polyfill-ctype/tree/v1.22.0"
-=======
             "description": "Symfony polyfill for the Iconv extension",
             "homepage": "https://symfony.com",
             "keywords": [
@@ -6841,7 +4405,6 @@
             ],
             "support": {
                 "source": "https://github.com/symfony/polyfill-iconv/tree/v1.22.0"
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             },
             "funding": [
                 {
@@ -6857,11 +4420,7 @@
                     "type": "tidelift"
                 }
             ],
-<<<<<<< HEAD
-            "install-path": "../symfony/polyfill-ctype"
-=======
             "install-path": "../symfony/polyfill-iconv"
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
         },
         {
             "name": "symfony/polyfill-intl-grapheme",
@@ -6928,26 +4487,6 @@
                 "portable",
                 "shim"
             ],
-<<<<<<< HEAD
-            "support": {
-                "source": "https://github.com/symfony/polyfill-intl-grapheme/tree/v1.22.0"
-            },
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
-=======
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "install-path": "../symfony/polyfill-intl-grapheme"
         },
         {
@@ -7021,26 +4560,6 @@
                 "portable",
                 "shim"
             ],
-<<<<<<< HEAD
-            "support": {
-                "source": "https://github.com/symfony/polyfill-intl-idn/tree/v1.22.0"
-            },
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
-=======
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "install-path": "../symfony/polyfill-intl-idn"
         },
         {
@@ -7111,26 +4630,6 @@
                 "portable",
                 "shim"
             ],
-<<<<<<< HEAD
-            "support": {
-                "source": "https://github.com/symfony/polyfill-intl-normalizer/tree/v1.22.0"
-            },
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
-=======
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "install-path": "../symfony/polyfill-intl-normalizer"
         },
         {
@@ -7197,26 +4696,6 @@
                 "portable",
                 "shim"
             ],
-<<<<<<< HEAD
-            "support": {
-                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.22.0"
-            },
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
-=======
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "install-path": "../symfony/polyfill-mbstring"
         },
         {
@@ -7270,26 +4749,6 @@
                 "portable",
                 "shim"
             ],
-<<<<<<< HEAD
-            "support": {
-                "source": "https://github.com/symfony/polyfill-php56/tree/v1.20.0"
-            },
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
-=======
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "install-path": null
         },
         {
@@ -7352,26 +4811,6 @@
                 "portable",
                 "shim"
             ],
-<<<<<<< HEAD
-            "support": {
-                "source": "https://github.com/symfony/polyfill-php72/tree/v1.22.0"
-            },
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
-=======
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "install-path": "../symfony/polyfill-php72"
         },
         {
@@ -7437,26 +4876,6 @@
                 "portable",
                 "shim"
             ],
-<<<<<<< HEAD
-            "support": {
-                "source": "https://github.com/symfony/polyfill-php73/tree/v1.22.0"
-            },
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
-=======
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "install-path": "../symfony/polyfill-php73"
         },
         {
@@ -7526,42 +4945,16 @@
                 "portable",
                 "shim"
             ],
-<<<<<<< HEAD
-            "support": {
-                "source": "https://github.com/symfony/polyfill-php80/tree/v1.22.0"
-            },
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
-=======
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "install-path": "../symfony/polyfill-php80"
         },
         {
             "name": "symfony/process",
-<<<<<<< HEAD
-            "version": "v5.2.3",
-            "version_normalized": "5.2.3.0",
-=======
             "version": "v5.2.2",
             "version_normalized": "5.2.2.0",
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
                 "reference": "313a38f09c77fbcdc1d223e57d368cea76a2fd2f"
-<<<<<<< HEAD
             },
             "dist": {
                 "type": "zip",
@@ -7598,186 +4991,6 @@
                     "homepage": "https://symfony.com/contributors"
                 }
             ],
-            "description": "Executes commands in sub-processes",
-            "homepage": "https://symfony.com",
-            "support": {
-                "source": "https://github.com/symfony/process/tree/v5.2.3"
-            },
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
-            "install-path": "../symfony/process"
-        },
-        {
-            "name": "symfony/service-contracts",
-            "version": "v2.2.0",
-            "version_normalized": "2.2.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/service-contracts.git",
-                "reference": "d15da7ba4957ffb8f1747218be9e1a121fd298a1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/service-contracts/zipball/d15da7ba4957ffb8f1747218be9e1a121fd298a1",
-                "reference": "d15da7ba4957ffb8f1747218be9e1a121fd298a1",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.2.5",
-                "psr/container": "^1.0"
-            },
-            "suggest": {
-                "symfony/service-implementation": ""
-            },
-            "time": "2020-09-07T11:33:47+00:00",
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.2-dev"
-                },
-                "thanks": {
-                    "name": "symfony/contracts",
-                    "url": "https://github.com/symfony/contracts"
-                }
-            },
-            "installation-source": "dist",
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Contracts\\Service\\": ""
-                }
-=======
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/313a38f09c77fbcdc1d223e57d368cea76a2fd2f",
-                "reference": "313a38f09c77fbcdc1d223e57d368cea76a2fd2f",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.2.5",
-                "symfony/polyfill-php80": "^1.15"
-            },
-            "time": "2021-01-27T10:15:41+00:00",
-            "type": "library",
-            "installation-source": "dist",
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\Process\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-<<<<<<< HEAD
-                    "name": "Nicolas Grekas",
-                    "email": "p@tchwork.com"
-=======
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-<<<<<<< HEAD
-            "description": "Generic abstractions related to writing services",
-            "homepage": "https://symfony.com",
-            "keywords": [
-                "abstractions",
-                "contracts",
-                "decoupling",
-                "interfaces",
-                "interoperability",
-                "standards"
-            ],
-            "support": {
-                "source": "https://github.com/symfony/service-contracts/tree/master"
-            },
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
-            "install-path": "../symfony/service-contracts"
-        },
-        {
-            "name": "symfony/string",
-            "version": "v5.2.3",
-            "version_normalized": "5.2.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/string.git",
-                "reference": "c95468897f408dd0aca2ff582074423dd0455122"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/string/zipball/c95468897f408dd0aca2ff582074423dd0455122",
-                "reference": "c95468897f408dd0aca2ff582074423dd0455122",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.2.5",
-                "symfony/polyfill-ctype": "~1.8",
-                "symfony/polyfill-intl-grapheme": "~1.0",
-                "symfony/polyfill-intl-normalizer": "~1.0",
-                "symfony/polyfill-mbstring": "~1.0",
-                "symfony/polyfill-php80": "~1.15"
-            },
-            "require-dev": {
-                "symfony/error-handler": "^4.4|^5.0",
-                "symfony/http-client": "^4.4|^5.0",
-                "symfony/translation-contracts": "^1.1|^2",
-                "symfony/var-exporter": "^4.4|^5.0"
-            },
-            "time": "2021-01-25T15:14:59+00:00",
-            "type": "library",
-            "installation-source": "dist",
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\String\\": ""
-                },
-                "files": [
-                    "Resources/functions.php"
-                ],
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-=======
             "description": "Executes commands in sub-processes",
             "homepage": "https://symfony.com",
             "install-path": "../symfony/process"
@@ -7918,7 +5131,6 @@
             "license": [
                 "MIT"
             ],
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "authors": [
                 {
                     "name": "Nicolas Grekas",
@@ -7929,50 +5141,6 @@
                     "homepage": "https://symfony.com/contributors"
                 }
             ],
-<<<<<<< HEAD
-            "description": "Provides an object-oriented API to strings and deals with bytes, UTF-8 code points and grapheme clusters in a unified way",
-            "homepage": "https://symfony.com",
-            "keywords": [
-                "grapheme",
-                "i18n",
-                "string",
-                "unicode",
-                "utf-8",
-                "utf8"
-            ],
-            "support": {
-                "source": "https://github.com/symfony/string/tree/v5.2.3"
-            },
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
-            "install-path": "../symfony/string"
-        },
-        {
-            "name": "symfony/translation",
-            "version": "v5.2.3",
-            "version_normalized": "5.2.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/translation.git",
-                "reference": "c021864d4354ee55160ddcfd31dc477a1bc77949"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/translation/zipball/c021864d4354ee55160ddcfd31dc477a1bc77949",
-                "reference": "c021864d4354ee55160ddcfd31dc477a1bc77949",
-=======
             "description": "Generic abstractions related to writing services",
             "homepage": "https://symfony.com",
             "keywords": [
@@ -7998,53 +5166,10 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/string/zipball/c95468897f408dd0aca2ff582074423dd0455122",
                 "reference": "c95468897f408dd0aca2ff582074423dd0455122",
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.2.5",
-<<<<<<< HEAD
-                "symfony/polyfill-mbstring": "~1.0",
-                "symfony/polyfill-php80": "^1.15",
-                "symfony/translation-contracts": "^2.3"
-            },
-            "conflict": {
-                "symfony/config": "<4.4",
-                "symfony/dependency-injection": "<5.0",
-                "symfony/http-kernel": "<5.0",
-                "symfony/twig-bundle": "<5.0",
-                "symfony/yaml": "<4.4"
-            },
-            "provide": {
-                "symfony/translation-implementation": "2.0"
-            },
-            "require-dev": {
-                "psr/log": "~1.0",
-                "symfony/config": "^4.4|^5.0",
-                "symfony/console": "^4.4|^5.0",
-                "symfony/dependency-injection": "^5.0",
-                "symfony/finder": "^4.4|^5.0",
-                "symfony/http-kernel": "^5.0",
-                "symfony/intl": "^4.4|^5.0",
-                "symfony/service-contracts": "^1.1.2|^2",
-                "symfony/yaml": "^4.4|^5.0"
-            },
-            "suggest": {
-                "psr/log-implementation": "To use logging capability in translator",
-                "symfony/config": "",
-                "symfony/yaml": ""
-            },
-            "time": "2021-01-27T10:15:41+00:00",
-            "type": "library",
-            "installation-source": "dist",
-            "autoload": {
-                "files": [
-                    "Resources/functions.php"
-                ],
-                "psr-4": {
-                    "Symfony\\Component\\Translation\\": ""
-                },
-=======
                 "symfony/polyfill-ctype": "~1.8",
                 "symfony/polyfill-intl-grapheme": "~1.0",
                 "symfony/polyfill-intl-normalizer": "~1.0",
@@ -8067,7 +5192,6 @@
                 "files": [
                     "Resources/functions.php"
                 ],
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
                 "exclude-from-classmap": [
                     "/Tests/"
                 ]
@@ -8078,40 +5202,14 @@
             ],
             "authors": [
                 {
-<<<<<<< HEAD
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-=======
                     "name": "Nicolas Grekas",
                     "email": "p@tchwork.com"
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
                 },
                 {
                     "name": "Symfony Community",
                     "homepage": "https://symfony.com/contributors"
                 }
             ],
-<<<<<<< HEAD
-            "description": "Provides tools to internationalize your application",
-            "homepage": "https://symfony.com",
-            "support": {
-                "source": "https://github.com/symfony/translation/tree/v5.2.3"
-            },
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
-=======
             "description": "Provides an object-oriented API to strings and deals with bytes, UTF-8 code points and grapheme clusters in a unified way",
             "homepage": "https://symfony.com",
             "keywords": [
@@ -8201,7 +5299,6 @@
             ],
             "description": "Provides tools to internationalize your application",
             "homepage": "https://symfony.com",
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "install-path": "../symfony/translation"
         },
         {
@@ -8266,37 +5363,12 @@
                 "interoperability",
                 "standards"
             ],
-<<<<<<< HEAD
-            "support": {
-                "source": "https://github.com/symfony/translation-contracts/tree/v2.3.0"
-            },
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
-=======
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "install-path": "../symfony/translation-contracts"
         },
         {
             "name": "symfony/var-dumper",
-<<<<<<< HEAD
-            "version": "v5.2.3",
-            "version_normalized": "5.2.3.0",
-=======
             "version": "v5.2.2",
             "version_normalized": "5.2.2.0",
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
@@ -8365,26 +5437,6 @@
                 "debug",
                 "dump"
             ],
-<<<<<<< HEAD
-            "support": {
-                "source": "https://github.com/symfony/var-dumper/tree/v5.2.3"
-            },
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
-=======
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "install-path": "../symfony/var-dumper"
         },
         {
@@ -8506,19 +5558,6 @@
                 }
             ],
             "description": "A small library for converting tokenized PHP source code into XML and potentially other formats",
-<<<<<<< HEAD
-            "support": {
-                "issues": "https://github.com/theseer/tokenizer/issues",
-                "source": "https://github.com/theseer/tokenizer/tree/master"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/theseer",
-                    "type": "github"
-                }
-            ],
-            "install-path": "../theseer/tokenizer"
-=======
             "install-path": "../theseer/tokenizer"
         },
         {
@@ -8576,7 +5615,6 @@
                 "source": "https://github.com/tijsverkoyen/CssToInlineStyles/tree/2.2.3"
             },
             "install-path": "../tijsverkoyen/css-to-inline-styles"
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
         },
         {
             "name": "tymon/jwt-auth",
@@ -8585,21 +5623,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/tymondesigns/jwt-auth.git",
-<<<<<<< HEAD
-                "reference": "ab00f2d7cce5f043067aef7849cdc792de2df635"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/tymondesigns/jwt-auth/zipball/ab00f2d7cce5f043067aef7849cdc792de2df635",
-                "reference": "ab00f2d7cce5f043067aef7849cdc792de2df635",
-=======
                 "reference": "97002349b8a45995ae4c1bbbf2bd9b88d649cae1"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/tymondesigns/jwt-auth/zipball/97002349b8a45995ae4c1bbbf2bd9b88d649cae1",
                 "reference": "97002349b8a45995ae4c1bbbf2bd9b88d649cae1",
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
                 "shasum": ""
             },
             "require": {
@@ -8620,12 +5649,7 @@
                 "phpunit/phpunit": "^8.5|^9.4",
                 "yoast/phpunit-polyfills": "^0.2.0"
             },
-<<<<<<< HEAD
-            "time": "2021-02-02T14:44:28+00:00",
-            "default-branch": true,
-=======
             "time": "2021-01-13T13:30:58+00:00",
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -8668,19 +5692,6 @@
                 "jwt",
                 "laravel"
             ],
-<<<<<<< HEAD
-            "support": {
-                "issues": "https://github.com/tymondesigns/jwt-auth/issues",
-                "source": "https://github.com/tymondesigns/jwt-auth"
-            },
-            "funding": [
-                {
-                    "url": "https://www.patreon.com/seantymon",
-                    "type": "patreon"
-                }
-            ],
-=======
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "install-path": "../tymon/jwt-auth"
         },
         {
@@ -8748,23 +5759,6 @@
                 "env",
                 "environment"
             ],
-<<<<<<< HEAD
-            "support": {
-                "issues": "https://github.com/vlucas/phpdotenv/issues",
-                "source": "https://github.com/vlucas/phpdotenv/tree/v4.2.0"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/GrahamCampbell",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/vlucas/phpdotenv",
-                    "type": "tidelift"
-                }
-            ],
-=======
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "install-path": "../vlucas/phpdotenv"
         },
         {
@@ -8816,35 +5810,6 @@
                 "clean",
                 "php"
             ],
-<<<<<<< HEAD
-            "support": {
-                "issues": "https://github.com/voku/portable-ascii/issues",
-                "source": "https://github.com/voku/portable-ascii/tree/1.5.6"
-            },
-            "funding": [
-                {
-                    "url": "https://www.paypal.me/moelleken",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/voku",
-                    "type": "github"
-                },
-                {
-                    "url": "https://opencollective.com/portable-ascii",
-                    "type": "open_collective"
-                },
-                {
-                    "url": "https://www.patreon.com/voku",
-                    "type": "patreon"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/voku/portable-ascii",
-                    "type": "tidelift"
-                }
-            ],
-=======
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "install-path": "../voku/portable-ascii"
         },
         {
@@ -8853,20 +5818,12 @@
             "version_normalized": "1.9.1.0",
             "source": {
                 "type": "git",
-<<<<<<< HEAD
-                "url": "https://github.com/webmozarts/assert.git",
-=======
                 "url": "https://github.com/webmozart/assert.git",
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
                 "reference": "bafc69caeb4d49c39fd0779086c03a3738cbb389"
             },
             "dist": {
                 "type": "zip",
-<<<<<<< HEAD
-                "url": "https://api.github.com/repos/webmozarts/assert/zipball/bafc69caeb4d49c39fd0779086c03a3738cbb389",
-=======
                 "url": "https://api.github.com/repos/webmozart/assert/zipball/bafc69caeb4d49c39fd0779086c03a3738cbb389",
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
                 "reference": "bafc69caeb4d49c39fd0779086c03a3738cbb389",
                 "shasum": ""
             },
@@ -8905,13 +5862,6 @@
                 "check",
                 "validate"
             ],
-<<<<<<< HEAD
-            "support": {
-                "issues": "https://github.com/webmozarts/assert/issues",
-                "source": "https://github.com/webmozarts/assert/tree/1.9.1"
-            },
-=======
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
             "install-path": "../webmozart/assert"
         },
         {
@@ -8989,42 +5939,5 @@
             "install-path": "../zircote/swagger-php"
         }
     ],
-<<<<<<< HEAD
-    "dev": true,
-    "dev-package-names": [
-        "doctrine/instantiator",
-        "fzaninotto/faker",
-        "hamcrest/hamcrest-php",
-        "mockery/mockery",
-        "myclabs/deep-copy",
-        "phar-io/manifest",
-        "phar-io/version",
-        "phpdocumentor/reflection-common",
-        "phpdocumentor/reflection-docblock",
-        "phpdocumentor/type-resolver",
-        "phpspec/prophecy",
-        "phpunit/php-code-coverage",
-        "phpunit/php-file-iterator",
-        "phpunit/php-text-template",
-        "phpunit/php-timer",
-        "phpunit/php-token-stream",
-        "phpunit/phpunit",
-        "sebastian/code-unit-reverse-lookup",
-        "sebastian/comparator",
-        "sebastian/diff",
-        "sebastian/environment",
-        "sebastian/exporter",
-        "sebastian/global-state",
-        "sebastian/object-enumerator",
-        "sebastian/object-reflector",
-        "sebastian/recursion-context",
-        "sebastian/resource-operations",
-        "sebastian/type",
-        "sebastian/version",
-        "theseer/tokenizer",
-        "webmozart/assert"
-    ]
-=======
     "dev": true
->>>>>>> 8b0f23659ed5560358b12a79e6652f0704aaf95d
 }

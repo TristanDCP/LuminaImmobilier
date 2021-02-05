@@ -654,8 +654,7 @@ class Finder implements \IteratorAggregate, \Countable
         } elseif ($iterator instanceof \Traversable || \is_array($iterator)) {
             $it = new \ArrayIterator();
             foreach ($iterator as $file) {
-                $file = $file instanceof \SplFileInfo ? $file : new \SplFileInfo($file);
-                $it[$file->getPathname()] = $file;
+                $it->append($file instanceof \SplFileInfo ? $file : new \SplFileInfo($file));
             }
             $this->iterators[] = $it;
         } else {

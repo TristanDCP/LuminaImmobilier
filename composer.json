@@ -6,10 +6,9 @@
     "type": "project",
     "require": {
         "php": "^7.2.5",
-        "darkaonline/swagger-lume": "^8.0",
+        "darkaonline/swagger-lume": "7.*",
         "laravel/lumen-framework": "^7.0",
-        "tymon/jwt-auth": "dev-develop",
-        "zircote/swagger-php": "3.*"
+        "tymon/jwt-auth": "dev-develop"
     },
     "require-dev": {
         "fzaninotto/faker": "^1.9.1",
@@ -43,6 +42,6 @@
         ],
         "post-install-cmd": [
             "cp -a vendor/swagger-api/swagger-ui/dist public/swagger-ui-assets"
-        ]
+          ]
     }
 }
