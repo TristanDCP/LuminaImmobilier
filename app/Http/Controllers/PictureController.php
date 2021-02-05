@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Picture;
+use App\hasPicture;
 
 class PictureController extends Controller
 {
@@ -26,6 +27,11 @@ class PictureController extends Controller
             $picture->pictureURL = $request->input('pictureURL');
 
             $picture->save();
+
+            $hasPicture = new hasPicture;
+            $hasPicture->idPicture = $picture->idPicture;
+            $hasPicture->idProperty = $request->idProperty;
+            $hasPicture->save();
 
             //return successful response
             return response()->json(['picture' => $picture, 'message' => 'CREATED'], 201);
@@ -59,6 +65,21 @@ class PictureController extends Controller
 
             return response()->json(['picture' => $picture], 200);
         } catch (\Exception $e) {
+            return response()->json(['message' => 'Picture not found!'], 404);
+        }
+    }
+
+    /**
+     * Delete one picture.
+     * 
+     * @return Reponse
+     */
+    public function deletePicture($idPicture)
+    {
+        try {
+            Picture::findOrFail($idPicture)->delete();
+            return response()->json(['message' => 'Picture deleted'], 200);
+        } catch(\Exception $e) {
             return response()->json(['message' => 'Picture not found!'], 404);
         }
     }

@@ -38,6 +38,10 @@ $router->group(['prefix' => 'api/v1/'], function () use ($router) {
     // Matches "/api/v1/property/1/1" - Get one piece by id
     $router->get('property/{idProperty}/{idPiece}', 'PieceController@singlePiece');
 
+    // Voir une image
+    // Matches "/api/v1/property/1/1/1" - Get one picture by id
+    $router->get('property/{idProperty}/{idPiece}/{idPicture}', 'PictureController@singlePicture');
+
     // Voir toutes les agences 
     // Matches "/api/v1/agencies" - Get all agencies
     $router->get('agencies', 'AgencyController@allAgency');
@@ -121,12 +125,20 @@ $router->group(['prefix' => 'api/v1/'], function () use ($router) {
                 $router->post('property/{idProperty}', 'PieceController@createPiece');
 
                 // Modifier les informations d'une pièce
-                // Matches "/api/v1/property/1/1" - Update Info on a property
+                // Matches "/api/v1/property/1/1" - Update info on a piece
                 $router->put('property/{idProperty}/{idPiece}', 'PieceController@updatePiece');
 
                 // Supprimer une pièce
-                // Matches "/api/v1/property/1/1" - Update Info on a property
+                // Matches "/api/v1/property/1/1" - Delete a piece
                 $router->delete('property/{idProperty}/{idPiece}', 'PieceController@deletePiece');
+                
+                // Création d'une image
+                // Matches "/api/v1/property/1/1" - Create a picture
+                $router->post('property/{idProperty}/{idPiece}', 'PictureController@createPicture');
+
+                // Supprimer une image
+                // Matches "/api/v1/property/1/1/1" - Update info on a picture
+                $router->delete('property/{idProperty}/{idPiece}/{idPicture}', 'PictureController@deletePicture');
 
                 // Créer un role
                 // Matches "/api/v1/role" - Create a Role
@@ -147,10 +159,6 @@ $router->group(['prefix' => 'api/v1/'], function () use ($router) {
                 // Suppression d'une agence
                 // Matches "/api/v1/agency/1" - Delete an agency
                 $router->delete('agency/{idAgency}', 'AgencyController@deleteAgency');
-
-                // Création d'une image
-                // Matches "/api/v1/picture" - Create a Picture
-                $router->post('picture', 'PictureController@createPicture');
 
                 // Récupérer la liste de tous les rendez vous.
                 // Matches "/ap/v1/appointments" - Get all appointments

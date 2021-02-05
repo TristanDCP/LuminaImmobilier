@@ -6,9 +6,11 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Property;
+use App\Piece;
 use App\hasParameter;
 use App\Parameter;
-use App\Piece;
+use App\Picture;
+use App\hasPicture;
 
 class PropertyController extends Controller
 {
@@ -87,10 +89,10 @@ class PropertyController extends Controller
             $property = Property::findOrFail($idProperty);
             $parameters = $this->getParameters($idProperty);
             $pieces = $this->getPieces($idProperty);
-            return response()->json(['property' => $property, 'parameters' => $parameters, 'pieces' => $pieces], 200);
+            $pictures = $this->getPictures($idProperty);
+            return response()->json(['property' => $property, 'parameters' => $parameters, 'pieces' => $pieces, 'pictures' => $pictures], 200);
         } catch (\Exception $e) {
-            return $e->getMessage();
-            //return response()->json(['message' => 'Property not found!'], 404);
+            return response()->json(['message' => 'Property not found!'], 404);
         }
     }
 
@@ -191,5 +193,20 @@ class PropertyController extends Controller
             ->get();
         
             return $query;
+    }
+
+    /**
+     * Get pictures from a property
+     */
+    public function getPictures($idProperty)
+    {
+        $query = DB::table('property')
+            ->join('hasPicture', 'property.idProperty', '=', 'hasPicture.idProperty')
+            ->join('picture', 'hasPicture.idPicture', '=', 'picture.idPicture')
+            ->select('picture.*')
+            ->where('property.idProperty' , $idProperty)
+            ->get();
+
+        return $query;
     }
 }
