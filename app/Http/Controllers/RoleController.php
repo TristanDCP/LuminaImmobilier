@@ -8,12 +8,24 @@ use App\Role;
 
 class RoleController extends Controller
 {
-    /**
-     * Store a new Role.
-     *
-     * @param  Request  $request
-     * @return Response
-     */
+/**
+  * @OA\Post(
+  *   path="/role",
+  *   summary="Create a role",
+  *   tags={"Role"},
+  *    @OA\Response(
+  *      response=200,
+  *      description="Role created",
+  *      @OA\JsonContent(
+  *        @OA\Property(
+  *          property="data",
+  *          description="Create a role"
+  *          )
+  *        )
+  *      )
+  *    )
+  * )
+  */
     public function createRole(Request $request) {
          //validate incoming request 
          $this->validate($request, [
@@ -36,6 +48,24 @@ class RoleController extends Controller
         }
     }
 
+/**
+  * @OA\Get(
+  *   path="/roles",
+  *   summary="Retrieves list of all roles",
+  *   tags={"Role"},
+  *    @OA\Response(
+  *      response=200,
+  *      description="Role created",
+  *      @OA\JsonContent(
+  *        @OA\Property(
+  *          property="data",
+  *          description="Create a role"
+  *          )
+  *        )
+  *      )
+  *    )
+  * )
+  */
     /**
      * Get all Roles.
      *

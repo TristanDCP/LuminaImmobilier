@@ -12,7 +12,7 @@ use App\Agency;
  *   title="Agency Model",
  *   description="Agencies",
  *   @OA\Property(
- *     property="idAgency", description="ID of the agency",
+ *     property="{idAgency}", description="ID of the agency",
  *     @OA\Schema(type="number", example=1)
  *      ),
  *   @OA\Property(
@@ -32,18 +32,6 @@ use App\Agency;
  *      @OA\Schema(type="string", example="agence-lehavre@lumina.fr")
  *   ),
  * )
- */
-
-/**
- * @OA\Parameter(
- *   parameter="token",
- *   name="Token",
- *   description="Token",
- *   in="query",
- *   @OA\Schema(
- *     type="string",
- *   )
- * ),
  */
 class AgencyController extends Controller
 {
@@ -92,13 +80,13 @@ class AgencyController extends Controller
      *      description="List of agencies",
      *      @OA\JsonContent(
      *        @OA\Property(
-     *          property="data",
-     *          description="List of agencies",
+     *          property="idAgency", 
+     *          description="ID of the agency",
      *          @OA\Schema(
-     *            type="array",
-     *            @OA\Items(ref="#/components/schemas/allAgencies"),
-     *          ),      
-     *        )
+     *             type="array",
+     *             @OA\Items(ref="#/components/schemas/allAgencies"),
+     *          )
+     *        ),
      *      )
      *    )
      *  )
@@ -109,9 +97,35 @@ class AgencyController extends Controller
     }
 
     /**
-     * Get one agency.
-     *
-     * @return Response
+     * @OA\Get(
+     *   path="/api/v1/agency/{idAgency}",
+     *   summary="Return one agency info",
+     *   tags={"Agencies"},
+     *   @OA\Parameter(
+     *      parameter="idAgency",
+     *      name="idAgency",
+     *      description="idAgency",
+     *      in="path",
+     *      required=true,
+     *      @OA\Schema(
+     *          type="integer",
+     *          format="int64",
+     *      )
+     *    ),
+     *    @OA\Response(
+     *         response=200,
+     *         description="successful operation",
+     *         @OA\JsonContent(ref="#/components/schemas/allAgencies")
+     *     ),
+     *     @OA\Response(
+     *         response="400",
+     *         description="Invalid ID supplied"
+     *     ),
+     *     @OA\Response(
+     *         response="404",
+     *         description="Agency not found"
+     *     ),
+     * )
      */
     public function singleAgency($idAgency)
     {
@@ -126,7 +140,36 @@ class AgencyController extends Controller
     }
 
     /**
-     * Remove Agency.
+     * @OA\Delete(
+     *   path="/api/v1/agency/{idAgency}",
+     *   summary="Delete one agency",
+     *   tags={"Agencies"},     
+     *   security={{"bearer_token":{}}}, 
+     *   @OA\Parameter(
+     *      parameter="idAgency",
+     *      name="idAgency",
+     *      description="idAgency",
+     *      in="path",
+     *      required=true,
+     *      @OA\Schema(
+     *          type="integer",
+     *          format="int64",
+     *      )
+     *    ),
+     *    @OA\Response(
+     *         response=200,
+     *         description="successful operation",
+     *         @OA\JsonContent(ref="#/components/schemas/allAgencies")
+     *     ),
+     *     @OA\Response(
+     *         response="400",
+     *         description="Invalid ID supplied"
+     *     ),
+     *     @OA\Response(
+     *         response="404",
+     *         description="Agency not found"
+     *     ),
+     * )
      */
     public function deleteAgency($idAgency)
     {
@@ -138,6 +181,74 @@ class AgencyController extends Controller
         }
     }
 
+    /**
+     * @OA\Put(
+     *   path="/api/v1/agency/{idAgency}",
+     *   summary="Update one Agency",
+     *   tags={"Agencies"},     
+     *   security={{"bearer_token":{}}},
+     *   @OA\Parameter(
+     *      parameter="idAgency",
+     *      name="idAgency",
+     *      description="idAgency",
+     *      in="path",
+     *      required=true,
+     *      @OA\Schema(
+     *          type="integer",
+     *          format="int64",
+     *      )
+     *   ), 
+     *   @OA\Parameter(
+     *      parameter="agencyName",
+     *      name="agencyName",
+     *      description="agencyName",
+     *      in="query",
+     *      @OA\Schema(
+     *          type="string",
+     *      )
+     *   ),
+     *   @OA\Parameter(
+     *      parameter="agencyAdr",
+     *      name="agencyAdr",
+     *      description="agencyAdr",
+     *      in="query",
+     *      @OA\Schema(
+     *          type="string",
+     *      )
+     *   ),
+     *   @OA\Parameter(
+     *      parameter="agencyPhone",
+     *      name="agencyPhone",
+     *      description="agencyPhone",
+     *      in="query",
+     *      @OA\Schema(
+     *          type="integer",
+     *      )
+     *   ),
+     *   @OA\Parameter(
+     *      parameter="agencyContact",
+     *      name="agencyContact",
+     *      description="agencyContact",
+     *      in="query",
+     *      @OA\Schema(
+     *          type="string",
+     *      )
+     *   ),
+     *    @OA\Response(
+     *         response=200,
+     *         description="successful operation",
+     *         @OA\JsonContent(ref="#/components/schemas/allAgencies")
+     *     ),
+     *     @OA\Response(
+     *         response="400",
+     *         description="Invalid ID supplied"
+     *     ),
+     *     @OA\Response(
+     *         response="404",
+     *         description="Agency not found"
+     *     ),
+     * )
+     */
     public function updateAgency($idAgency, Request $request)
     {
         try {

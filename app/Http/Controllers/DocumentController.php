@@ -40,6 +40,7 @@ class DocumentController extends Controller
      *   path="/api/v1/document",
      *   summary="Create a document",
      *   tags={"Documents"},
+     *   security={{"bearer_token":{}}},
      *      @OA\RequestBody(
      *         @OA\JsonContent(
      *           @OA\Property(
@@ -105,6 +106,7 @@ class DocumentController extends Controller
      *   path="/api/v1/documents",
      *   summary="Return the list of documents",
      *   tags={"Documents"},
+     *   security={{"bearer_token":{}}},
      *      @OA\Response(
      *      response=200,
      *      description="List of documents"      
@@ -122,6 +124,7 @@ class DocumentController extends Controller
      *   path="/api/v1/document/{idDocument}",
      *   summary="Return a document",
      *   tags={"Documents"},
+     *   security={{"bearer_token":{}}},
      *   @OA\Parameter(
      *      parameter="idDocument",
      *      name="idDocument",
@@ -160,6 +163,7 @@ class DocumentController extends Controller
      *   path="/api/v1/document/{idDocument}",
      *   summary="Delete a document",
      *   tags={"Documents"},
+     *   security={{"bearer_token":{}}},
      *   @OA\Parameter(
      *      parameter="idDocument",
      *      name="idDocument",
@@ -197,6 +201,7 @@ class DocumentController extends Controller
      *   path="/api/v1/document/{idDocument}",
      *   summary="Update a document",
      *   tags={"Documents"},
+     *   security={{"bearer_token":{}}},
      *   @OA\Parameter(
      *      parameter="idDocument",
      *      name="idDocument",

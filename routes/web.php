@@ -58,7 +58,7 @@ $router->group(['prefix' => 'api/v1/'], function () use ($router) {
 
 
     // Group where it need to be connected to use the routes
-    $router->group(['auth' => App\Http\Middleware\Authenticate::class], function () use ($router) {
+    $router->group(['middleware' => App\Http\Middleware\Authenticate::class], function () use ($router) {
 
         // Accéder à son profil
         // Matches "/api/v1/user/1" - Get info on specific user
