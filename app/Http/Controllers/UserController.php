@@ -16,9 +16,7 @@ use App\User;
      *     type="number", default=10
      *   )
      * ),
-     */
-
-    /**
+     *
      * @OA\Parameter(
      *   parameter="get_user_id",
      *   name="idUser",
@@ -28,6 +26,60 @@ use App\User;
      *     type="integer", default=1
      *   )
      * ),
+     * 
+     * @OA\Schema(
+     *   schema="UserSchema",
+     *   title="User Model",
+     *   description="User controller",
+     *   @OA\Property(
+     *      property="idUser", 
+     *      description="Id of the User",
+     *      type="integer",
+     *      @OA\Schema(type="int", example="1")
+     *   ),
+     *   @OA\Property(
+     *      property="userLastname",
+     *      description="Lastname of User",
+     *      type="string",
+     *      @OA\Schema(type="string", example="Saucisse")
+     *   ),
+     *   @OA\Property(
+     *      property="userFirstname",
+     *      description="Firstname of User",
+     *      type="string",
+     *      @OA\Schema(type="string", example="John")
+     *   ),
+     *   @OA\Property(
+     *      property="userEmail",
+     *      description="Email of User",
+     *      type="string",
+     *      @OA\Schema(type="string", example="client@lumina.fr")
+     *   ),
+     *   @OA\Property(
+     *      property="userDob",
+     *      description="Date of birth of User",
+     *      type="date",
+     *      @OA\Schema(type="date", example="1990-01-01")
+     *   ),
+     *   @OA\Property(
+     *      property="userPassword",
+     *      description="Password of the User",
+     *      type="string",
+     *      @OA\Schema(type="string", example="dflbog")
+     *   ),
+     *   @OA\Property(
+     *      property="userPhone",
+     *      description="Phone of User",
+     *      type="string",
+     *      @OA\Schema(type="string", example="0102030405")
+     *   ),
+     *   @OA\Property(
+     *      property="userAdr",
+     *      description="Adress of User",
+     *      type="string",
+     *      @OA\Schema(type="string", example="1 rue de truc")
+     *   ),
+     * )
      */
 class UserController extends Controller
 {
