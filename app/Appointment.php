@@ -28,7 +28,7 @@ class Appointment extends Model implements AuthenticatableContract, Authorizable
      * @var array
      */
     protected $fillable = [
-        'appointmentDate', 'appointmentAgent', 'idUser'
+        'appointmentDate', 'appointmentAgent', 'appointmentMotif', 'appointmentType', 'idUser'
     ];
 
     /**

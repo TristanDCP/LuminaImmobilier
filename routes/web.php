@@ -27,7 +27,7 @@ $router->group(['prefix' => 'api/v1/'], function () use ($router) {
     $router->post('login', 'AuthController@login');
 
     // Voir tous les biens
-    // Matches "/ap/v1/properties" - Get all properties
+    // Matches "/api/v1/properties" - Get all properties
     $router->get('properties', 'PropertyController@allProperties');
 
     // Voir un bien
@@ -50,7 +50,7 @@ $router->group(['prefix' => 'api/v1/'], function () use ($router) {
     // Matches "/api/v1/agency/1" - Get one agency by id
     $router->get('agency/{idAgency}', 'AgencyController@singleAgency');
 
-    // Matches "/ap/v1/parameters" - Get all parameters
+    // Matches "/api/v1/parameters" - Get all parameters
     $router->get('parameters', 'ParameterController@allParameters');
 
     // Matches "/api/v1/parameter/1" - Get one parameter by id
@@ -58,7 +58,7 @@ $router->group(['prefix' => 'api/v1/'], function () use ($router) {
 
 
     // Group where it need to be connected to use the routes
-    $router->group(['auth' => App\Http\Middleware\Authenticate::class], function () use ($router) {
+    $router->group(['middleware' => App\Http\Middleware\Authenticate::class], function () use ($router) {
 
         // Accéder à son profil
         // Matches "/api/v1/user/1" - Get info on specific user
@@ -73,7 +73,7 @@ $router->group(['prefix' => 'api/v1/'], function () use ($router) {
         $router->put('user/{idUser}', 'UserController@updateUser');
 
         // Créer un RDV
-        // Matches "/ap/v1/appointment/create" - Create an Appointment
+        // Matches "/api/v1/appointment/create" - Create an Appointment
         $router->post('appointment', 'AppointmentController@createAppointment');
 
         // Voir l'information d'un RDV
@@ -161,8 +161,8 @@ $router->group(['prefix' => 'api/v1/'], function () use ($router) {
                 $router->delete('agency/{idAgency}', 'AgencyController@deleteAgency');
 
                 // Récupérer la liste de tous les rendez vous.
-                // Matches "/ap/v1/appointments" - Get all appointments
-                $router->get('appointments/{idUser}', 'AppointmentController@allAppointment');
+                // Matches "/api/v1/appointments" - Get all appointments
+                $router->get('appointments', 'AppointmentController@allAppointment');
 
                 // Modifier le rendez vous
                 // Matches "/api/v1/appointment/1" - Update Info on a Appointment
