@@ -6,6 +6,31 @@ use Illuminate\Http\Request;
 use App\User;
 use Illuminate\Support\Facades\Auth;
 
+/**
+ * @OA\Schema(
+ *      schema="AuthSchema",
+ *      title="Auth Model",
+ *      description="Auth Controller",
+ *      @OA\Property(
+ *          property="idUser",
+ *          description="Id of the User",
+ *          type="integer",
+ *          @OA\Schema(type="int", example="1")
+ *      ),
+ *      @OA\Property(
+ *          property="userEmail",
+ *          description="Email of the User",
+ *          type="string",
+ *          @OA\Schema(type="string", example="client@lumina.fr")
+ *      ),
+ *      @OA\Property(
+ *          property="userPassword",
+ *          description="Password of the User",
+ *          type="string",
+ *          @OA\Schema(type="string", example="dflbog")
+ *      ),
+ * )
+ */
 class AuthController extends Controller
 {
     /**
@@ -53,10 +78,35 @@ class AuthController extends Controller
     }
 
     /**
-     * Get a JWT via given credentials.
-     *
-     * @param  Request  $request
-     * @return Response
+     * @OA\Post(
+     *      path="/api/v1/login",
+     *      summary="Login",
+     *      tags={"Login"},
+     *      @OA\RequestBody(
+     *          @OA\JsonContent(
+     *              @OA\Property(
+     *                  property="userEmail",
+     *                  description="Email of User",
+     *                  type="string",
+     *                  example="client@lumina.fr"
+     *              ),
+     *              @OA\Property(
+     *                  property="userPassword",
+     *                  description="Password of User",
+     *                  type="string",
+     *                  example="dflbog"
+     *              ),
+     *          ),
+     *      ),
+     *      @OA\Response(
+     *          response=200,
+     *          description="Successfully loged in"
+     *      ),
+     *      @OA\Response(
+     *          response=500,
+     *          description="Internal serrver error"
+     *      )
+     * )
      */
     public function login(Request $request)
     {

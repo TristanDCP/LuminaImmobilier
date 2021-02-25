@@ -8,27 +8,37 @@ use App\Agency;
 
 /**
  * @OA\Schema(
- *   schema="allAgencies",
+ *   schema="AgencySchema",
  *   title="Agency Model",
- *   description="Agencies",
+ *   description="Agency Controller",
  *   @OA\Property(
- *     property="{idAgency}", description="ID of the agency",
- *     @OA\Schema(type="number", example=1)
- *      ),
+ *     property="idAgency", 
+ *     description="ID of the agency",
+ *     type="integer",
+ *     @OA\Schema(type="int", example=1)
+ *   ),
  *   @OA\Property(
- *     property="agencyName", description="Name of the agency",
+ *     property="agencyName", 
+ *     description="Name of the agency",
+ *     type="string",
  *     @OA\Schema(type="string", example="Lumina Le Havre")
- *      ),
+ *   ),
  *   @OA\Property(
- *      property="agencyAdr", description="Address of the agency",
+ *      property="agencyAdr", 
+ *      description="Address of the agency",
+ *      type="string",
  *      @OA\Schema(type="string", example="10 Rue de la République")
  *   ),
  *   @OA\Property(
- *      property="agencyPhone", description="Phone Number of the agency",
- *      @OA\Schema(type="number", example=0235125895)
+ *      property="agencyPhone", 
+ *      description="Phone Number of the agency",
+ *      type="integer",
+ *      @OA\Schema(type="int", example="0235125895")
  *   ),
  *   @OA\Property(
- *      property="agencyContact", description="Contact of the agency",
+ *      property="agencyContact", 
+ *      description="Contact of the agency",
+ *      type="string",
  *      @OA\Schema(type="string", example="agence-lehavre@lumina.fr")
  *   ),
  * )
@@ -84,7 +94,7 @@ class AgencyController extends Controller
      *          description="ID of the agency",
      *          @OA\Schema(
      *             type="array",
-     *             @OA\Items(ref="#/components/schemas/allAgencies"),
+     *             @OA\Items(ref="#/components/schemas/AgencySchema"),
      *          )
      *        ),
      *      )
@@ -115,7 +125,7 @@ class AgencyController extends Controller
      *    @OA\Response(
      *         response=200,
      *         description="successful operation",
-     *         @OA\JsonContent(ref="#/components/schemas/allAgencies")
+     *         @OA\JsonContent(ref="#/components/schemas/AgencySchema")
      *     ),
      *     @OA\Response(
      *         response="400",
@@ -159,7 +169,7 @@ class AgencyController extends Controller
      *    @OA\Response(
      *         response=200,
      *         description="successful operation",
-     *         @OA\JsonContent(ref="#/components/schemas/allAgencies")
+     *         @OA\JsonContent(ref="#/components/schemas/AgencySchema")
      *     ),
      *     @OA\Response(
      *         response="400",
@@ -237,7 +247,7 @@ class AgencyController extends Controller
      *    @OA\Response(
      *         response=200,
      *         description="successful operation",
-     *         @OA\JsonContent(ref="#/components/schemas/allAgencies")
+     *         @OA\JsonContent(ref="#/components/schemas/AgencySchema")
      *     ),
      *     @OA\Response(
      *         response="400",

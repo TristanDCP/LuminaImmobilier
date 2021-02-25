@@ -14,7 +14,7 @@ use App\Document;
  *   @OA\Property(
  *     property="idDocument", description="ID of the document",
  *     type="integer",
- *     @OA\Schema(type="number", example=1)
+ *     @OA\Schema(type="number", example="1")
  *   ),
  *   @OA\Property(
  *      property="documentType", description="Type of the document",
