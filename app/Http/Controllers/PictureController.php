@@ -9,53 +9,115 @@ use App\hasPicture;
 
 /**
  * @OA\Schema(
- *   schema="PictureSchema",
- *   title="Picture Model",
- *   description="Picture controller",
- *   @OA\Property(
- *     property="idPicture", description="ID of the document",
- *     type="integer",
- *     @OA\Schema(type="number", example=1)
- *   ),
- *   @OA\Property(
- *      property="pictureURL", description="URL of the document",
- *      type="string",
- *      @OA\Schema(type="string", example="img.png")
- *   ),
+ *      schema="Pictures",
+ *      title="Picture Model",
+ *      description="Pictures",
+ *      @OA\Property(
+ *          property="idPicture", description="ID of the picture",
+ *          type="integer",
+ *          @OA\Schema(type="number", example=1)
+ *      ),
+ *      @OA\Property(
+ *          property="pictureURL", description="URL of the picture",
+ *          type="string",
+ *          @OA\Schema(type="string", example="img.png")
+ *      ),
  * )
  */
 class PictureController extends Controller
 {
     /**
      * @OA\Post(
-     *   path="/api/v1/property/{idProperty}/{idPiece}",
-     *   summary="Create a picture",
-     *   tags={"Pictures"},
-     *      @OA\RequestBody(
-     *         @OA\JsonContent(
-     *          @OA\Property(
-     *             property="pictureURL",
-     *             description="URL of the picture",
-     *             example="img.png",
-     *             type="string"
-     *          ),
-     *          @OA\Property(
-     *             property="idProperty",
-     *             description="Id of the Property",
-     *             example="1",
-     *             type="integer"
+     *      path="/api/v1/property/{idProperty}/{idPiece}",
+     *      summary="Create a picture",
+     *      tags={"Pictures"},
+     *      security={{"bearer_token":{}}},
+     *      @OA\Parameter(
+     *          parameter="pictureURL",
+     *          name="pictureURL",
+     *          description="pictureURL",
+     *          in="query",
+     *          required=true,
+     *          @OA\Schema(
+     *              type="string",
      *          )
-     *        )
+     *      ),
+     *      @OA\Parameter(
+     *          parameter="idProperty",
+     *          name="idProperty",
+     *          description="idProperty",
+     *          in="path",
+     *          required=true,
+     *          @OA\Schema(
+     *              type="integer",
+     *              format="int64",
+     *          )
+     *      ), 
+     *      @OA\Parameter(
+     *          parameter="idPiece",
+     *          name="idPiece",
+     *          description="idPiece",
+     *          in="path",
+     *          required=true,
+     *          @OA\Schema(
+     *              type="integer",
+     *              format="int64",
+     *          )
      *      ),
      *      @OA\Response(
      *          response=200,
-     *          description="Picture created"      
+     *          description="Picture created",
+     *          content = {
+     *              @OA\MediaType(         
+     *                  mediaType="application/json",
+     *                  @OA\Schema(
+     *                      @OA\Property(
+     *                          property="idPicture",
+     *                          type="integer",
+     *                          description="Picture ID"
+     *                      ),
+     *                      @OA\Property(
+     *                          property="pictureURL",
+     *                          type="string",
+     *                          description="Picture URL",
+     *                      ),
+     *                      example = {
+     *                          "picture": {
+     *                              "idPicture": 1,
+     *                              "pictureURL": "example.png",
+     *                          },
+     *                      }
+     *                  )
+     *              )
+     *          }
      *      ),
      *      @OA\Response(
-     *          response=409,
-     *          description="Picture Creation Failed !"
+     *          response=401,
+     *          description="Unauthorized",
+     *          content= {
+     *              @OA\MediaType(
+     *                  mediaType="application/json",
+     *                  @OA\Schema(
+     *                      example="Unauthorized"
+     *                  )
+     *              )
+     *          },
+     *      ),
+     *      @OA\Response(
+     *          response=404,
+     *          description="Picture Registration Failed !",
+     *          content = {
+     *              @OA\MediaType(
+     *                  mediaType="application/json",
+     *                  @OA\Schema(
+     *                      example = {
+     *                          "message": "Picture Registration Failed !"
+     *                      }
+     *                  )
+     *              )
+     *          },
      *      )
-     *    )
+     *    
      * )
     */
     public function createPicture(Request $request) {
@@ -85,71 +147,113 @@ class PictureController extends Controller
         }
     }
 
-
     /**
      * @OA\Get(
-     *   path="/api/v1/property/{idProperty}",
-     *   summary="Return the list of pictures",
-     *   tags={"Pictures"},
-     *   @OA\Parameter(
-     *      parameter="idProperty",
-     *      name="idProperty",
-     *      description="Id of a specific property",
-     *      in="path",
-     *      required=true,
-     *      @OA\Schema(
-     *          type="integer",
-     *          format="int64",
-     *      )
-     *   ),
-     *   @OA\Response(
-     *      response=200,
-     *      description="List of pictures"      
-     *   )
+     *      path="/api/v1/property/{idProperty}/{idPiece}/{idPicture}",
+     *      summary="Return one picture info",
+     *      tags={"Pictures"},
+     *      @OA\Parameter(
+     *          parameter="idPicture",
+     *          name="idPicture",
+     *          description="idPicture",
+     *          in="path",
+     *          required=true,
+     *          @OA\Schema(
+     *              type="integer",
+     *              format="int64",
+     *          )
+     *      ),
+     *      @OA\Parameter(
+     *          parameter="idProperty",
+     *          name="idProperty",
+     *          description="idProperty",
+     *          in="path",
+     *          required=true,
+     *          @OA\Schema(
+     *              type="integer",
+     *              format="int64",
+     *          )
+     *      ), 
+     *      @OA\Parameter(
+     *          parameter="idPiece",
+     *          name="idPiece",
+     *          description="idPiece",
+     *          in="path",
+     *          required=true,
+     *          @OA\Schema(
+     *              type="integer",
+     *              format="int64",
+     *          )
+     *      ),
+     *      @OA\Response(
+     *          response=200,
+     *          description="Picture Found",
+     *          content= {
+     *              @OA\MediaType(
+     *                  mediaType="application/json",
+     *                  @OA\Schema(
+     *                      @OA\Property(
+     *                          property="idPicture",
+     *                          type="integer",
+     *                          description="Picture ID"
+     *                      ),
+     *                      @OA\Property(
+     *                          property="pictureURL",
+     *                          type="string",
+     *                          description="Picture URL"
+     *                      ),
+     *                      @OA\Property(
+     *                          property="idProperty",
+     *                          type="integer",
+     *                          description="Property ID"
+     *                      ),
+     *                      @OA\Property(
+     *                          property="idPiece",
+     *                          type="integer",
+     *                          description="Piece ID"
+     *                      ),
+     *                      example={
+     *                          "agency": {
+     *                              {
+     *                                  "idPicture": 8,
+     *                                  "pictureURL": "test.png",
+     *                                  "idProperty": 4,
+     *                                  "idPiece": 1,
+     *                              },
+     *                          }
+     *                      }
+     *                  )
+     *              )
+     *          },
+     *      ),
+     *      @OA\Response(
+     *          response="401",
+     *          description="Unauthorized",
+     *          content= {
+     *              @OA\MediaType(
+     *                  mediaType="application/json",
+     *                  @OA\Schema(
+     *                      example="Unauthorized"
+     *                  )
+     *              )
+     *          },
+     *      ),
+     *      @OA\Response(
+     *          response="404",
+     *          description="Picture not found!",
+     *          content= {
+     *              @OA\MediaType(
+     *                  mediaType="application/json",
+     *                  @OA\Schema(
+     *                      example={
+     *                          "message": "Picture not found!"
+     *                      }
+     *                  )
+     *              )
+     *          },
+     *      ),
      * )
-    */
-    public function allPictures()
-    {
-        return response()->json(['picture' =>  Picture::all()], 200);
-    }
-
-    /**
-     * @OA\Get(
-     *   path="/api/v1/property/{idProperty}/{idPiece}/{idPicture}",
-     *   summary="Return a Picture",
-     *   tags={"Pictures"},
-     *   @OA\Parameter(
-     *      parameter="idPicture",
-     *      name="idPicture",
-     *      description="Id of a specific Picture",
-     *      in="path",
-     *      required=true,
-     *      @OA\Schema(
-     *          type="integer",
-     *          format="int64",
-     *      )
-     *   ),
-     *   @OA\Parameter(
-     *      parameter="idPiece",
-     *      name="idPiece",
-     *      description="Id of a specific Piece",
-     *      in="path",
-     *      required=true,
-     *      @OA\Schema(
-     *          type="integer",
-     *          format="int64",
-     *      )
-     *   ),
-     *   @OA\Response(
-     *      response=200,
-     *      description="Successfull operation"
-     *   ),
-     *   @OA\Response(
-     *      response=404,
-     *      description="Document not found !"
-     *   ),
-     * )
-    */
+     */
     public function singlePicture($idPicture)
     {
         try {
@@ -163,41 +267,85 @@ class PictureController extends Controller
 
     /**
      * @OA\Delete(
-     *   path="/api/v1/property/{idProperty}/{idPiece}/{idPicture}",
-     *   summary="Delete a Picture",
-     *   tags={"Pictures"},
-     *   @OA\Parameter(
-     *      parameter="idProperty",
-     *      name="idProperty",
-     *      description="Id of a specific Property",
-     *      in="path",
-     *      required=true,
-     *      @OA\Schema(
-     *          type="integer",
-     *          format="int64",
-     *      )
-     *   ),
-     *   @OA\Parameter(
-     *      parameter="idPiece",
-     *      name="idPiece",
-     *      description="Id of a specific Piece",
-     *      in="path",
-     *      required=true,
-     *      @OA\Schema(
-     *          type="integer",
-     *          format="int64",
-     *      )
-     *   ),
-     *   @OA\Response(
-     *      response=200,
-     *      description="Document deleted"
-     *   ),
-     *   @OA\Response(
-     *      response=404,
-     *      description="Document not found !"
-     *   ),
+     *      path="/api/v1/property/{idProperty}/{idPiece}/{idPicture}",
+     *      summary="Delete one picture",
+     *      tags={"Pictures"},     
+     *      security={{"bearer_token":{}}}, 
+     *      @OA\Parameter(
+     *          parameter="idPicture",
+     *          name="idPicture",
+     *          description="idPicture",
+     *          in="path",
+     *          required=true,
+     *          @OA\Schema(
+     *              type="integer",
+     *              format="int64",
+     *          )
+     *      ),
+     *      @OA\Parameter(
+     *          parameter="idPiece",
+     *          name="idPiece",
+     *          description="idPiece",
+     *          in="path",
+     *          required=true,
+     *          @OA\Schema(
+     *              type="integer",
+     *              format="int64",
+     *          )
+     *      ),
+     *      @OA\Parameter(
+     *          parameter="idProperty",
+     *          name="idProperty",
+     *          description="idProperty",
+     *          in="path",
+     *          required=true,
+     *          @OA\Schema(
+     *              type="integer",
+     *              format="int64",
+     *          )
+     *      ),
+     *      @OA\Response(
+     *          response=200,
+     *          description="Picture deleted",
+     *          content= {
+     *              @OA\MediaType(
+     *                  mediaType="application/json",
+     *                  @OA\Schema(
+     *                      example={
+     *                          "message": "Picture deleted"
+     *                      }
+     *                  )
+     *              )
+     *          },
+     *      ),
+     *      @OA\Response(
+     *          response=401,
+     *          description="Unauthorized",
+     *          content= {
+     *              @OA\MediaType(
+     *                  mediaType="application/json",
+     *                  @OA\Schema(
+     *                      example="Unauthorized"
+     *                  )
+     *              )
+     *          },
+     *      ),
+     *      @OA\Response(
+     *          response=404,
+     *          description="Picture not deleted!",
+     *          content= {
+     *              @OA\MediaType(
+     *                  mediaType="application/json",
+     *                  @OA\Schema(
+     *                      example={
+     *                          "message": "Picture not deleted!"
+     *                      }
+     *                  )
+     *              )
+     *          },
+     *      ),
      * )
-    */
+     */
     public function deletePicture($idPicture)
     {
         try {
