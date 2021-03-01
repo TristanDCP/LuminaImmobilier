@@ -13,22 +13,27 @@ use App\Document;
  *      description="Documents",
  *      @OA\Property(
  *          property="{idDocument}", description="ID of the Document",
+ *          type="integer",
  *          @OA\Schema(type="number", example=1)
  *      ),
  *      @OA\Property(
  *          property="documentName", description="Name of the Document",
+ *          type="string",
  *          @OA\Schema(type="string", example="Lumina Le Havre")
  *      ),
  *      @OA\Property(
  *          property="documentType", description="Document Type",
+ *          type="integer",
  *          @OA\Schema(type="number", example=2)
  *      ),
  *      @OA\Property(
  *          property="documentURL", description="URL Document",
+ *          type="string",
  *          @OA\Schema(type="string", example="urlwebsite/folder/namefile.pdf")
  *      ),
  *      @OA\Property(
  *          property="idUser", description="User related to the document",
+ *          type="integer",
  *          @OA\Schema(type="number", example=2)
  *      ),
  * )

@@ -12,6 +12,29 @@ use App\Parameter;
 use App\Picture;
 use App\hasPicture;
 
+/**
+ * @OA\Schema(
+ *      schema="Property",
+ *      title="Property Model",
+ *      description="Agencies",
+ *      @OA\Property(
+ *          property="idProperty", description="Property ID",
+ *          type="integer",
+ *          @OA\Schema(type="number", example=1)
+ *      ),
+ *      @OA\Property(
+ *          property="propertyStatus", description="Property Status",
+ *          type="integer",
+ *          @OA\Schema(type="number", example=1)
+ *      ),
+ *      @OA\Property(
+ *          property="idUser", description="User related to the property",
+ *          type="integer",
+ *          @OA\Schema(type="number", example=1)
+ *      ),
+ * )
+ */
+
 class PropertyController extends Controller
 {
     /**
@@ -20,7 +43,8 @@ class PropertyController extends Controller
      * @param  Request  $request
      * @return Response
      */
-    public function createProperty(Request $request) {
+    public function createProperty(Request $request)
+    {
         //validate incoming request 
         $this->validate($request, [
             'propertyStatus' => 'required|integer',
@@ -29,7 +53,7 @@ class PropertyController extends Controller
         ]);
 
         try {
-           
+
             $property = new Property;
             $property->propertyStatus = $request->input('propertyStatus');
             $property->idUser = $request->input('idUser');
@@ -37,10 +61,10 @@ class PropertyController extends Controller
             $propertyId = $property->idProperty;
 
             $json = json_decode($request->input('propertyParameters'), true);
-            
-            foreach( $json as $k => $v ){
+
+            foreach ($json as $k => $v) {
                 $parameter = new Parameter;
-               
+
                 $keys = array_keys($v);
                 $values = array_values($v);
 
@@ -58,7 +82,6 @@ class PropertyController extends Controller
 
             //return successful response
             return response()->json(['property' => $property, 'message' => 'CREATED'], 201);
-
         } catch (\Exception $e) {
             // debug return
             return $e->getMessage();
@@ -69,20 +92,93 @@ class PropertyController extends Controller
 
 
     /**
-     * Get all Properties.
-     *
-     * @return Response
+     * @OA\Get(
+     *      path="/api/v1/properties",
+     *      summary="Return the list of properties",
+     *      tags={"Properties"},
+     *      @OA\Response(
+     *          response=200,
+     *          description="Properties found",
+     *          content= {
+     *              @OA\MediaType(
+     *                  mediaType="application/json",
+     *                  @OA\Schema(
+     *                      @OA\Property(
+     *                          property="idProperty",
+     *                          type="integer",
+     *                          description="Property ID"
+     *                      ),
+     *                      @OA\Property(
+     *                          property="propertyStatus",
+     *                          type="integer",
+     *                          description="Property Status"
+     *                      ),
+     *                      @OA\Property(
+     *                          property="idUser",
+     *                          type="integer",
+     *                          description="User related to the property",
+     *                      ),
+     *                      example={
+     *                          "property": {
+     *                              {
+     *                                  "idProperty": 1,
+     *                                  "propertyStatus": 1,
+     *                                  "createdAt": "2021-01-01 12:00:00",
+     *                                  "updatedAt": "2021-01-01 12:00:00",
+     *                                  "deletedAt": "2021-01-01 12:00:00",
+     *                                  "idUser": 1
+     *                              },
+     *                              {
+     *                                  "idProperty": 2,
+     *                                  "propertyStatus": 2,
+     *                                  "createdAt": "2022-02-01 12:00:00",
+     *                                  "updatedAt": "2022-02-01 12:00:00",
+     *                                  "deletedAt": "2022-02-01 12:00:00",
+     *                                  "idUser": 2
+     *                              }
+     *                          }
+     *                      }
+     *                  )
+     *              )
+     *          },
+     *      ),
+     *      @OA\Response(
+     *          response="401",
+     *          description="Unauthorized",
+     *          content= {
+     *              @OA\MediaType(
+     *                  mediaType="application/json",
+     *                  @OA\Schema(
+     *                      example="Unauthorized"
+     *                  )
+     *              )
+     *          },
+     *      ),
+     *      @OA\Response(
+     *          response="404",
+     *          description="Properties not found!",
+     *          content= {
+     *              @OA\MediaType(
+     *                  mediaType="application/json",
+     *                  @OA\Schema(
+     *                      example={
+     *                          "message": "Properties not found!"
+     *                      }
+     *                  )
+     *              )
+     *          },
+     *      ),
+     * )
      */
     public function allProperties()
     {
-        return response()->json(['property' =>  Property::all()], 200);
+        try {
+            return response()->json(['property' =>  Property::all()], 200);
+        } catch (\Exception $e) {
+            return response()->json(['message' => 'Properties not found!'], 404);
+        }
     }
 
-    /**
-     * Get one property.
-     *
-     * @return Response
-     */
     public function singleProperty($idProperty)
     {
         try {
@@ -97,50 +193,212 @@ class PropertyController extends Controller
     }
 
     /**
-     * Remove Property.
+     * @OA\Delete(
+     *      path="/api/v1/property/{idProperty}",
+     *      summary="Delete one property",
+     *      tags={"Properties"},     
+     *      security={{"bearer_token":{}}}, 
+     *      @OA\Parameter(
+     *          parameter="idProperty",
+     *          name="idProperty",
+     *          description="idProperty",
+     *          in="path",
+     *          required=true,
+     *          @OA\Schema(
+     *              type="integer",
+     *              format="int64",
+     *          )
+     *      ),
+     *      @OA\Response(
+     *          response="200",
+     *          description="Property deleted",
+     *          content= {
+     *              @OA\MediaType(
+     *                  mediaType="application/json",
+     *                  @OA\Schema(
+     *                      example={
+     *                          "message": "Property deleted"
+     *                      }
+     *                  )
+     *              )
+     *          },
+     *      ),
+     *      @OA\Response(
+     *          response="401",
+     *          description="Unauthorized",
+     *          content= {
+     *              @OA\MediaType(
+     *                  mediaType="application/json",
+     *                  @OA\Schema(
+     *                      example="Unauthorized"
+     *                  )
+     *              )
+     *          },
+     *      ),
+     *      @OA\Response(
+     *          response="404",
+     *          description="Property not deleted!",
+     *          content= {
+     *              @OA\MediaType(
+     *                  mediaType="application/json",
+     *                  @OA\Schema(
+     *                      example={
+     *                          "message": "Property not deleted!"
+     *                      }
+     *                  )
+     *              )
+     *          },
+     *      ),
+     * )
      */
-    public function deleteProperty($idProperty) 
+    public function deleteProperty($idProperty)
     {
         try {
             Property::findOrFail($idProperty)->delete();
             return response()->json(['message' => 'Property deleted'], 200);
-
         } catch (\Exception $e) {
             return response()->json(['message' => 'Property not found!'], 404);
         }
     }
 
     /**
-     * Update Property.
+     * @OA\Put(
+     *      path="/api/v1/property/{idProperty}",
+     *      summary="Update one Property",
+     *      tags={"Properties"},     
+     *      security={{"bearer_token":{}}},
+     *      @OA\Parameter(
+     *          parameter="idProperty",
+     *          name="idProperty",
+     *          description="idProperty",
+     *          in="path",
+     *          required=true,
+     *          @OA\Schema(
+     *              type="integer",
+     *              format="int64",
+     *          )
+     *      ), 
+     *      @OA\Parameter(
+     *          parameter="propertyStatus",
+     *          name="propertyStatus",
+     *          description="propertyStatus",
+     *          in="query",
+     *          @OA\Schema(
+     *              type="integer",
+     *          )
+     *      ),
+     *      @OA\Parameter(
+     *          parameter="idUser",
+     *          name="idUser",
+     *          description="idUser",
+     *          in="query",
+     *          @OA\Schema(
+     *              type="integer",
+     *          )
+     *      ),
+     *      @OA\Parameter(
+     *          parameter="propertyParameters",
+     *          name="propertyParameters",
+     *          description="propertyParameters",
+     *          in="query",
+     *          @OA\Schema(
+     *              type="json",
+     *          )
+     *      ), 
+     *      @OA\Response(
+     *          response=200,
+     *          description="Property updated",
+     *          content= {
+     *              @OA\MediaType(
+     *                  mediaType="application/json",
+     *                  @OA\Schema(
+     *                      @OA\Property(
+     *                          property="idProperty",
+     *                          type="integer",
+     *                          description="Property ID"
+     *                      ),
+     *                      @OA\Property(
+     *                          property="propertyStatus",
+     *                          type="integer",
+     *                          description="Property Status"
+     *                      ),
+     *                      @OA\Property(
+     *                          property="idUser",
+     *                          type="integer",
+     *                          description="User related to the property",
+     *                      ),
+     *                      example={
+     *                          "property": {
+     *                              {
+     *                                  "idProperty": 1,
+     *                                  "propertyStatus": 1,
+     *                                  "createdAt": "2021-01-01 12:00:00",
+     *                                  "updatedAt": "2021-01-01 12:00:00",
+     *                                  "deletedAt": null,
+     *                                  "idUser": 1
+     *                              },
+     *                          }
+     *                      }
+     *                  )
+     *              )
+     *          },
+     *      ),
+     *      @OA\Response(
+     *          response="401",
+     *          description="Unauthorized",
+     *          content= {
+     *              @OA\MediaType(
+     *                  mediaType="application/json",
+     *                  @OA\Schema(
+     *                      example="Unauthorized"
+     *                  )
+     *              )
+     *          },
+     *      ),
+     *      @OA\Response(
+     *          response="404",
+     *          description="Property not updated!",
+     *          content= {
+     *              @OA\MediaType(
+     *                  mediaType="application/json",
+     *                  @OA\Schema(
+     *                      example={
+     *                          "message": "Property not updated!"
+     *                      }
+     *                  )
+     *              )
+     *          },
+     *      ),
+     * )
      */
     public function updateProperty($idProperty, Request $request)
     {
         try {
             $property = Property::findOrFail($idProperty);
             $oldParameters = $this->getParameters($idProperty);
-            
+
             $requestParameters = json_decode($request->input('propertyParameters'), true);
 
             $oldParametersAsArray = [];
             $requestParametersAsArray = [];
-            
-            foreach( $oldParameters as $k => $v ){
+
+            foreach ($oldParameters as $k => $v) {
                 $oldParameterKey = $v->keyParameter;
                 $oldParameterValue = $v->valueParameter;
-                $oldParametersAsArray[$oldParameterKey] = $oldParameterValue;  
+                $oldParametersAsArray[$oldParameterKey] = $oldParameterValue;
             };
 
-            foreach( $requestParameters as $k => $v ){
+            foreach ($requestParameters as $k => $v) {
                 $requestParametersKeys = implode('|', array_keys($v));
                 $requestParametersValues = implode('|', array_values($v));
                 $requestParametersAsArray[$requestParametersKeys] = $requestParametersValues;
             };
 
             $result = array_diff($requestParametersAsArray, $oldParametersAsArray);
-            if($result != null) {
-                foreach($result as $resultKey => $resultValue) {
-                    
-                    if( array_key_exists($resultKey, $oldParametersAsArray) ) {
+            if ($result != null) {
+                foreach ($result as $resultKey => $resultValue) {
+
+                    if (array_key_exists($resultKey, $oldParametersAsArray)) {
                         $test = Parameter::where('keyParameter', '=', $resultKey)->first();
                         $test->valueParameter = $resultValue;
                         $test->save();
@@ -163,7 +421,8 @@ class PropertyController extends Controller
 
             return response()->json(['property' => $property, 'message' => 'UPDATED'], 200);
         } catch (\Exception $e) {
-            return response()->json(['message' => 'Property not found!'], 404);
+            return $e->getMessage();
+            // return response()->json(['message' => 'Property not found!'], 404);
         }
     }
 
@@ -178,9 +437,8 @@ class PropertyController extends Controller
             ->select('propertyparameters.*')
             ->where('property.idProperty', $idProperty)
             ->get();
-        
-        return $query;
 
+        return $query;
     }
 
     /**
@@ -191,8 +449,8 @@ class PropertyController extends Controller
         $query = DB::table('piece')
             ->where('idProperty', $idProperty)
             ->get();
-        
-            return $query;
+
+        return $query;
     }
 
     /**
@@ -204,7 +462,7 @@ class PropertyController extends Controller
             ->join('hasPicture', 'property.idProperty', '=', 'hasPicture.idProperty')
             ->join('picture', 'hasPicture.idPicture', '=', 'picture.idPicture')
             ->select('picture.*')
-            ->where('property.idProperty' , $idProperty)
+            ->where('property.idProperty', $idProperty)
             ->get();
 
         return $query;

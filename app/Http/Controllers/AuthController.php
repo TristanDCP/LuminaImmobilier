@@ -13,52 +13,64 @@ use Illuminate\Support\Facades\Auth;
  *      description="Login",
  *      @OA\Property(
  *          property="token", description="User token",
+ *          type="string",
  *          @OA\Schema(type="string", example="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvbG9naW4iLCJpYXQiOjE2MTQwNjc3MzIsImV4cCI6MTYxNDA3MTMzMiwibmJmIjoxNjE0MDY3NzMyLCJqdGkiOiJJdDBRWFlMUlZtdWI2ZTJKIiwic3ViIjo2LCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIiwiaWRVc2VyIjo2fQ._YBLX6lmdzM8Qzvgu0J76iyWaiYqtTocJ11xKNuNL7c")
  *      ),
  *      @OA\Property(
  *          property="token_type", description="Token Type",
+ *          type="string",
  *          @OA\Schema(type="string", example="bearer")
  *      ),
  *      @OA\Property(
  *          property="expires_in", description="Token expiration date",
+ *          type="integer",
  *          @OA\Schema(type="integer", example=3600)
  *      ),
  *      @OA\Property(
  *          property="user", description="Info user",
  *          @OA\Property(
  *              property="idUser", description="User Id",
+ *              type="integer",
  *              @OA\Schema(type="number", example=1)
  *          ),
  *          @OA\Property(
  *              property="userLastname", description="User Lastname",
+ *              type="string",
  *              @OA\Schema(type="string", example="Doe")
  *          ),
  *          @OA\Property(
  *              property="userFirstname", description="User Firstname",
+ *              type="string",
  *              @OA\Schema(type="string", example="John")
  *          ),
  *          @OA\Property(
  *              property="userEmail", description="User Email",
+ *              type="string",
  *              @OA\Schema(type="string", example="johndoe@gmail.com")
  *          ),
  *          @OA\Property(
  *              property="userDob", description="User birth date",
+ *              type="date",
  *              @OA\Schema(type="number", example="2020-01-01")
  *          ),
  *          @OA\Property(
  *              property="userPhone", description="User contact",
+ *              type="integer",
  *              @OA\Schema(type="number", example=0203040506)
  *          ),
  *          @OA\Property(
  *              property="userAdr", description="User address",
+ *              type="string",
  *              @OA\Schema(type="string", example="1 Boulevard de Strasbourg")
  *          ),
  *          @OA\Property(
  *              property="idRole", description="User role",
+ *              type="integer",
  *              @OA\Schema(type="string", example=1)
  *          ),
  *          @OA\Property(
  *              property="idAgency", description="Agency related to the Users",
+ *              type="integer",
  *              @OA\Schema(type="string", example=1)
  *          ),
  *      ),
@@ -122,6 +134,7 @@ class AuthController extends Controller
      *          required=true,
      *          @OA\Schema(
      *              type="string",
+     *              default="secretaire@lumina.fr",
      *          )
      *      ),
      *      @OA\Parameter(
@@ -132,6 +145,7 @@ class AuthController extends Controller
      *          required=true,
      *          @OA\Schema(
      *              type="string",
+     *              default="dflbog",
      *          )
      *      ),
      *      @OA\Response(
