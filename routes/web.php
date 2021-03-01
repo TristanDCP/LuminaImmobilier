@@ -137,7 +137,7 @@ $router->group(['prefix' => 'api/v1/'], function () use ($router) {
                 $router->post('property/{idProperty}/{idPiece}', 'PictureController@createPicture');
 
                 // Supprimer une image
-                // Matches "/api/v1/property/1/1/1" - Update info on a picture
+                // Matches "/api/v1/property/1/1/1" - Delete info on a picture
                 $router->delete('property/{idProperty}/{idPiece}/{idPicture}', 'PictureController@deletePicture');
 
                 // Créer un role
