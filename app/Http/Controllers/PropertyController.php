@@ -300,7 +300,7 @@ class PropertyController extends Controller
      *          parameter="propertyParameters",
      *          name="propertyParameters",
      *          description="propertyParameters",
-     *          in="path",
+     *          in="query",
      *          @OA\Schema(
      *              type="json",
      *          )
