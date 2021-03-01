@@ -13,26 +13,32 @@ use App\Appointment;
  *      description="Appointment",
  *      @OA\Property(
  *          property="idAppointment", description="Appointment ID",
+ *          type="integer",
  *          @OA\Schema(type="number", example=1)
  *      ),
  *      @OA\Property(
  *          property="appointmentDate", description="Appointment date",
+ *          type="date",
  *          @OA\Schema(type="string", example="2021-01-01 14:00:00")
  *      ),
  *      @OA\Property(
  *          property="appointmentAgent", description="ID of the agent for the appointment",
+ *          type="integer",
  *          @OA\Schema(type="string", example="1")
  *      ),
  *      @OA\Property(
  *          property="appointmentMotif", description="Appointment Motif",
+ *          type="string",
  *          @OA\Schema(type="string", example="Rendez-vous achat maison")
  *      ),
  *      @OA\Property(
  *          property="appointmentType", description="Appointment Type",
+ *          type="integer",
  *          @OA\Schema(type="number", example=1)
  *      ),
  *      @OA\Property(
  *          property="idUser", description="ID user related to appointment",
+ *          type="integer",
  *          @OA\Schema(type="number", example=1)
  *      ),
  * )

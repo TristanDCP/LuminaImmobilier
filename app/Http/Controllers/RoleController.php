@@ -13,10 +13,12 @@ use App\Role;
  *      description="Roles",
  *      @OA\Property(
  *          property="idRole", description="Role ID",
+ *          type="integer",
  *          @OA\Schema(type="number", example=1)
  *      ),
  *      @OA\Property(
  *          property="roleName", description="Role Name",
+ *          type="string",
  *          @OA\Schema(type="string", example="Patron")
  *      ),
  * )

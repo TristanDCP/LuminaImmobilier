@@ -13,38 +13,47 @@ use App\User;
  *      description="Users",
  *      @OA\Property(
  *          property="idUser", description="User Id",
+ *          type="integer",
  *          @OA\Schema(type="number", example=1)
  *      ),
  *      @OA\Property(
  *          property="userLastname", description="User Lastname",
+ *          type="string",
  *          @OA\Schema(type="string", example="Doe")
  *      ),
  *      @OA\Property(
  *          property="userFirstname", description="User Firstname",
+ *          type="string",
  *          @OA\Schema(type="string", example="John")
  *      ),
  *      @OA\Property(
  *          property="userEmail", description="User Email",
+ *          type="string",
  *          @OA\Schema(type="string", example="johndoe@gmail.com")
  *      ),
  *      @OA\Property(
  *          property="userDob", description="User birth date",
+ *          type="date",
  *          @OA\Schema(type="number", example="2020-01-01")
  *      ),
  *      @OA\Property(
  *          property="userPhone", description="User contact",
+ *          type="integer",
  *          @OA\Schema(type="number", example=0203040506)
  *      ),
  *      @OA\Property(
  *          property="userAdr", description="User address",
+ *          type="string",
  *          @OA\Schema(type="string", example="1 Boulevard de Strasbourg")
  *      ),
  *      @OA\Property(
  *          property="idRole", description="User role",
+ *          type="integer",
  *          @OA\Schema(type="string", example=1)
  *      ),
  *      @OA\Property(
  *          property="idAgency", description="Agency related to the Users",
+ *          type="integer",
  *          @OA\Schema(type="string", example=1)
  *      ),
  * )

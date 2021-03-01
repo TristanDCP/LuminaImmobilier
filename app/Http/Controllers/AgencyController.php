@@ -13,22 +13,27 @@ use App\Agency;
  *      description="Agencies",
  *      @OA\Property(
  *          property="idAgency", description="Agency ID",
+ *          type="integer",
  *          @OA\Schema(type="number", example=1)
  *      ),
  *      @OA\Property(
  *          property="agencyName", description="Agency Name",
+ *          type="string",
  *          @OA\Schema(type="string", example="Lumina Le Havre")
  *      ),
  *      @OA\Property(
  *          property="agencyAdr", description="Agency Address",
+ *          type="string",
  *          @OA\Schema(type="string", example="10 Rue de la République")
  *      ),
  *      @OA\Property(
  *          property="agencyPhone", description="Agency Phone Number",
+ *          type="integer",
  *          @OA\Schema(type="number", example=0235125895)
  *      ),
  *      @OA\Property(
  *          property="agencyContact", description="Agency Contact",
+ *          type="string",
  *          @OA\Schema(type="string", example="agence-lehavre@lumina.fr")
  *      ),
  * )
