@@ -38,10 +38,113 @@ use App\hasPicture;
 class PropertyController extends Controller
 {
     /**
-     * Store a new property.
-     *
-     * @param  Request  $request
-     * @return Response
+     * @OA\Post(
+     *      path="/api/v1/property",
+     *      summary="Create one Property",
+     *      tags={"Properties"},     
+     *      security={{"bearer_token":{}}},
+     *      @OA\Parameter(
+     *          parameter="propertyStatus",
+     *          name="propertyStatus",
+     *          description="propertyStatus",
+     *          in="query",
+     *          @OA\Schema(
+     *              type="integer",
+     *          )
+     *      ),
+     *      @OA\Parameter(
+     *          parameter="idUser",
+     *          name="idUser",
+     *          description="idUser",
+     *          in="query",
+     *          @OA\Schema(
+     *              type="integer",
+     *          )
+     *      ),
+     *      @OA\Parameter(
+     *          parameter="propertyParameters",
+     *          name="propertyParameters",
+     *          description="propertyParameters",
+     *          in="query",
+     *          @OA\Schema(
+     *              type="json",
+     *          )
+     *      ),
+     *      @OA\Response(
+     *          response=200,
+     *          description="Property created",
+     *          content= {
+     *              @OA\MediaType(
+     *                  mediaType="application/json",
+     *                  @OA\Schema(
+     *                      @OA\Property(
+     *                          property="idAgency",
+     *                          type="integer",
+     *                          description="Appointment ID"
+     *                      ),
+     *                      @OA\Property(
+     *                          property="agencyName",
+     *                          type="string",
+     *                          description="Agency Name"
+     *                      ),
+     *                      @OA\Property(
+     *                          property="agencyAdr",
+     *                          type="string",
+     *                          description="Address Agency",
+     *                      ),
+     *                      @OA\Property(
+     *                          property="agencyPhone",
+     *                          type="integer",
+     *                          description="Agency Phone",
+     *                      ),
+     *                      @OA\Property(
+     *                          property="agencyContact",
+     *                          type="string",
+     *                          description="Agency Contact",
+     *                      ),
+     *                      example={
+     *                          "property": {
+     *                              {
+     *                                  "idProperty": 1,
+     *                                  "propertyStatus": 1,
+     *                                  "createdAt": "2021-01-01 12:00:00",
+     *                                  "updatedAt": "2021-01-01 12:00:00",
+     *                                  "deletedAt": "2021-01-01 12:00:00",
+     *                                  "idUser": 1
+     *                              },
+     *                          }
+     *                      }
+     *                  )
+     *              )
+     *          },
+     *      ),
+     *      @OA\Response(
+     *          response="401",
+     *          description="Unauthorized",
+     *          content= {
+     *              @OA\MediaType(
+     *                  mediaType="application/json",
+     *                  @OA\Schema(
+     *                      example="Unauthorized"
+     *                  )
+     *              )
+     *          },
+     *      ),
+     *      @OA\Response(
+     *          response="404",
+     *          description="Agency Registration Failed!",
+     *          content= {
+     *              @OA\MediaType(
+     *                  mediaType="application/json",
+     *                  @OA\Schema(
+     *                      example={
+     *                          "message": "Property Registration Failed!"
+     *                      }
+     *                  )
+     *              )
+     *          },
+     *      ),
+     * )
      */
     public function createProperty(Request $request)
     {
