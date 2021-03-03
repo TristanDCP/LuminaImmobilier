@@ -282,6 +282,88 @@ class PropertyController extends Controller
         }
     }
 
+    /**
+     * @OA\Get(
+     *      path="/api/v1/property/{idProperty}",
+     *      summary="Return one agency info",
+     *      tags={"Properties"},
+     *      @OA\Parameter(
+     *          parameter="idProperty",
+     *          name="idProperty",
+     *          description="idProperty",
+     *          in="path",
+     *          required=true,
+     *          @OA\Schema(
+     *              type="integer",
+     *              format="int64",
+     *          )
+     *      ),
+     *      @OA\Response(
+     *          response=200,
+     *          description="Property found",
+     *          content= {
+     *              @OA\MediaType(
+     *                  mediaType="application/json",
+     *                  @OA\Schema(
+     *                      @OA\Property(
+     *                          property="idProperty",
+     *                          type="integer",
+     *                          description="Property ID"
+     *                      ),
+     *                      @OA\Property(
+     *                          property="propertyStatus",
+     *                          type="integer",
+     *                          description="Property Status"
+     *                      ),
+     *                      @OA\Property(
+     *                          property="idUser",
+     *                          type="integer",
+     *                          description="User related to the property",
+     *                      ),
+     *                      example={
+     *                          "property": {
+     *                              {
+     *                                  "idProperty": 1,
+     *                                  "propertyStatus": 1,
+     *                                  "createdAt": "2021-01-01 12:00:00",
+     *                                  "updatedAt": "2021-01-01 12:00:00",
+     *                                  "deletedAt": "2021-01-01 12:00:00",
+     *                                  "idUser": 1
+     *                              },
+     *                          }
+     *                      }
+     *                  )
+     *              )
+     *          },
+     *      ),
+     *      @OA\Response(
+     *          response="401",
+     *          description="Unauthorized",
+     *          content= {
+     *              @OA\MediaType(
+     *                  mediaType="application/json",
+     *                  @OA\Schema(
+     *                      example="Unauthorized"
+     *                  )
+     *              )
+     *          },
+     *      ),
+     *      @OA\Response(
+     *          response="404",
+     *          description="Agency not found!",
+     *          content= {
+     *              @OA\MediaType(
+     *                  mediaType="application/json",
+     *                  @OA\Schema(
+     *                      example={
+     *                          "message": "Property not found!"
+     *                      }
+     *                  )
+     *              )
+     *          },
+     *      ),
+     * )
+     */
     public function singleProperty($idProperty)
     {
         try {
